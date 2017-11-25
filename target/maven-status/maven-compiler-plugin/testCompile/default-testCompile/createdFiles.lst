@@ -1,4 +1,4 @@
-GoodJobProject\DefinitionSteps.class
-GoodJobProject\pages\DictionaryPage.class
-GoodJobProject\steps\EndUserSteps.class
+GoodJobProject\LoginDefinition.class
+GoodJobProject\pages\LoginPage.class
+GoodJobProject\steps\LoginStep.class
 GoodJobProject\DefinitionTestSuite.class

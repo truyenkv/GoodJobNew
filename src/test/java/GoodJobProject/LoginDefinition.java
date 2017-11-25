@@ -35,7 +35,7 @@ public class LoginDefinition {
 
 	@Then("^the user should see company list title \"([^\"]*)\"$")
 	public void the_user_should_see_company_list_title(String expectTitle) throws Exception {
-		Assert.assertEquals(loginStep.getCompanyListTit, expectTitle);
+		Assert.assertEquals(loginStep.getCompanyListTit(), expectTitle);
 	}
 
 }
