@@ -53,7 +53,7 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -61,7 +61,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors',  0],
+                ['Errors',  1],
                 ['Compromised',  0]
             ]
         ], {
@@ -92,18 +92,18 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '1 / 1 tests passed' },
+                {label: '0 / 1 tests passed' },
                 {label: '0 / 1 tests pending'},
                 {label: '0 / 1 tests not executed'},
                 {label: '0 / 1 tests failed'},
-                {label: '0 / 1 errors'},
+                {label: '1 / 1 errors'},
                 {label: '0 / 1 compromised tests'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 1],
+                ['Passing', 0],
                 
                 ['Pending', 0],
                 
@@ -111,7 +111,7 @@
                 
                 ['Failing', 0],
                 
-                ['Errors', 0],
+                ['Errors', 1],
                 ['Compromised', 0],
             ]
         ], {
@@ -143,11 +143,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '1 / 1 tests passed (1% of all test steps)' },
+                {label: '0 / 1 tests passed (0% of all test steps)' },
                 {label: '0 / 1 tests pending'},
                 {label: '0 / 1 tests not executed'},
                 {label: '0 / 1 tests failed (0% of all test steps)'},
-                {label: '0 / 1 errors (0% of all test steps)'}
+                {label: '1 / 1 errors (1% of all test steps)'}
             ]
         });
 
@@ -194,8 +194,8 @@
 <div id="contenttop">
     <div class="middlebg">
         <span class="breadcrumbs"><a href="index.html">Home</a>
-                > Feature  (with Feature Login To Good Job)
-                > <span class="truncate-60">Login To Good Job</span>
+                > Feature  (with Feature Change User Profile)
+                > <span class="truncate-60">Change User Profile</span>
         </span>
     </div>
     <div class="rightbg"></div>
@@ -216,7 +216,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-11-2017 01:38</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-11-2017 22:05</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -225,7 +225,7 @@
 <div class="middlb">
 <div class="table">
 
-<h2><i class='fa fa-tags'></i> Feature: Login To Good Job</h2>
+<h2><i class='fa fa-tags'></i> Feature: Change User Profile</h2>
 <table class='overview'>
     <tr>
         <td width="375px" valign="top">
@@ -236,16 +236,26 @@
 
                     <span class="test-count"> |
                         1
-                            <a href="5a3bcbb2b3a63438845a0541af1a07a719d41803643e8fd75de67397d8b6845e.html">passed</a>
+                            <a href="32c1c01eafce89569c0c8ba42f779937c9e32d26567a770a9c8970ed90fe7c31.html">unsuccessful</a>
                         
+                    </span>(
+                    <span class="test-count">
+                        0
+                            <a href="3279df90ac7e36dd896525abb921d2c8421403b5d7830579e341d4cdf36bce28.html">failed</a>
+                        ,
                     </span>
+                    <span class="test-count">
+                        1
+                            <a href="d3538808241dca69d0cf388686276c869a24209bd7f8550c9f2186948164ef97.html">with errors</a>
+                        
+                    </span>)
 
                 
 
 
 
                  |
-                    <a href="b5cd53e674f27afb555f5f243bac0c4aab5e78db21cc323ab8e016a6c71b71ea.csv" title="Download CSV"> <i class="fa fa-download" title="Download CSV"></i></a>
+                    <a href="e2ee22ee5b69a8735490ff0f55fd7fb8775bfc6ec081ed5a488d1626dcfe96bf.csv" title="Download CSV"> <i class="fa fa-download" title="Download CSV"></i></a>
                 </div>
             </div>
 
@@ -290,8 +300,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>1</td>
-            <td>1 (100%)</td>
             <td>0 (0%)</td>
+            <td>1 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -306,14 +316,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>1</td>
-            <td>1 (100%)</td>
             <td>0 (0%)</td>
+            <td>1 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">47 seconds</td>
+                <td colspan="5">58 seconds</td>
         </tr>
         </body>
     </table>
@@ -369,8 +379,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>1</td>
-            <td>1 (100%)</td>
             <td>0 (0%)</td>
+            <td>1 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -385,14 +395,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>1</td>
-            <td>1 (100%)</td>
             <td>0 (0%)</td>
+            <td>1 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">47 seconds</td>
+                <td colspan="5">58 seconds</td>
         </tr>
         </body>
     </table>
@@ -436,27 +446,27 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-SUCCESS">
-                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">SUCCESS</span></td>
-                                <td class="SUCCESS-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
-                                        <a href="9370464ad6a95866cf7557cd036ea2643f21809ab62cda22d593ff2ee1c73301.html" class="ellipsis"
-                                           title="Login by Admin account ">
-                                            Login by Admin account
+                                        <a href="e290355d9270ec7339bf06e3927f566c9f792d5b9c4aeaf2d00deed82fa6ce21.html" class="ellipsis"
+                                           title="Change Last Name Web driver exception: The following e...">
+                                            Change Last Name
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="SUCCESS-text">10</td>
+                                <td class="ERROR-text">10</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2017-11-26 01:37:26">01:37:26</td>
+                                <td class="ERROR-text" data-sort="2017-11-26 22:04:43">22:04:43</td>
 
-                                <td class="SUCCESS-text">46.53</td>
+                                <td class="ERROR-text">58.35</td>
                             </tr>
                         </tbody>
                     </table>

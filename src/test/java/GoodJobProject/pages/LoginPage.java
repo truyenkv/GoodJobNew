@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 public class LoginPage extends PageObject {
 
-	//Define localtor land
+	//---------------- Define localtor land --------------------
 	
 	//get email's locator
 	WebElementFacade loginEmail; 
@@ -35,9 +35,9 @@ public class LoginPage extends PageObject {
 		loginBtn.click();		
 	}
 
-	public String get_title_Com() {
-		waitABit(10000);
-		return titleCompanyList.getText();
-	}
+//	public String get_title_Com() {
+//		waitABit(10000);
+//		return titleCompanyList.getText();
+//	}
 
 }

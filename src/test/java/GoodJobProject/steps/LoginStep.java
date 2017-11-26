@@ -2,10 +2,12 @@ package GoodJobProject.steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
+import GoodJobProject.pages.HomePage;
 import GoodJobProject.pages.LoginPage;
 
 public class LoginStep extends ScenarioSteps{
 	LoginPage loginPage;
+	HomePage homePage;
 	
 	@Step
 	public void open_login_page() {
@@ -30,7 +32,7 @@ public class LoginStep extends ScenarioSteps{
 	@Step
 	public String getCompanyListTit()
 	{
-		return loginPage.get_title_Com();
+		return homePage.get_title_company();
 	}
 	
 }

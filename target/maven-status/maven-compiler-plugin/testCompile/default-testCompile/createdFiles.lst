@@ -1,4 +1,6 @@
-GoodJobProject\LoginDefinition.class
+GoodJobProject\GoodJobDefinition.class
+GoodJobProject\steps\HomeStep.class
+GoodJobProject\pages\HomePage.class
 GoodJobProject\pages\LoginPage.class
 GoodJobProject\steps\LoginStep.class
 GoodJobProject\DefinitionTestSuite.class
