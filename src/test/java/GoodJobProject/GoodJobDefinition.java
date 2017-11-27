@@ -4,6 +4,7 @@ import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
+import GoodJobProject.steps.ManageStep;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -16,6 +17,9 @@ public class GoodJobDefinition {
 	
 	@Steps
 	HomeStep homeStep;
+	
+	@Steps
+	ManageStep manageStep;
 	
 	//------------------------------------------- login scenario -----------------------------------------------------------------------
 	@Given("^the user is on the GoodJob login page\\.$")
@@ -75,5 +79,18 @@ public class GoodJobDefinition {
 	public void system_should_navigate_to_screen(String systemAdminTitle) throws Exception {
 		Assert.assertEquals(homeStep.get_sysAdminTitle(), systemAdminTitle);
 	}
+	
+	//----------------------------Update user by Scenario OutLine ---------------------
+	@When("^User go to Manage page$")
+	public void user_go_to_Manage_page() throws Exception {
+		homeStep.open_Manage_page();
+	}
+	
+	@When("^User open manage system administrator screen\\.$")
+	public void user_open_manage_system_administrator_screen() throws Exception {
+		manageStep.open_User_Manage_page();
+	}
+
+	
 
 }
