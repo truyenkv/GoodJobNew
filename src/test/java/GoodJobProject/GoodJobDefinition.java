@@ -5,7 +5,8 @@ import net.thucydides.core.annotations.Steps;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageStep;
-import cucumber.api.PendingException;
+import GoodJobProject.steps.UserDetailStep;
+import GoodJobProject.steps.UserManageStep;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -21,6 +22,11 @@ public class GoodJobDefinition {
 	@Steps
 	ManageStep manageStep;
 	
+	@Steps
+	UserManageStep userManageStep;
+	
+	@Steps
+	UserDetailStep userdetailStep;
 	//------------------------------------------- login scenario -----------------------------------------------------------------------
 	@Given("^the user is on the GoodJob login page\\.$")
 	public void the_user_is_on_the_GoodJob_login_page() throws Exception {
@@ -90,7 +96,12 @@ public class GoodJobDefinition {
 	public void user_open_manage_system_administrator_screen() throws Exception {
 		manageStep.open_User_Manage_page();
 	}
-
+	
+	@Then("^User open \"([^\"]*)\" detail and update is \"([^\"]*)\"$")
+	public void user_open_admin_a_detail_and_update_is_tr(String user, String lastName) throws Exception {
+	    userManageStep.open_detail_user_screen(user);
+	    userdetailStep.update_last_name(lastName);
+	}
 	
 
 }

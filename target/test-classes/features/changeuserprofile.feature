@@ -16,7 +16,7 @@ Feature: Change User Profile
 	Given The user login site by "admin@yopmail.com" and "1" successfully
 	When User go to Manage page
 	And User open manage system administrator screen.
-	Then User open '<user>' detail and update is '<lastname>'
+	Then User open <user> detail and update is <lastname>
 	
 	Examples: 
 	|user						|lastname|
