@@ -1,6 +1,12 @@
-GoodJobProject\GoodJobDefinition.class
 GoodJobProject\steps\HomeStep.class
+GoodJobProject\pages\ManageAllPage.class
+GoodJobProject\steps\ManageStep.class
+GoodJobProject\steps\UserManageStep.class
 GoodJobProject\pages\HomePage.class
-GoodJobProject\pages\LoginPage.class
 GoodJobProject\steps\LoginStep.class
 GoodJobProject\DefinitionTestSuite.class
+GoodJobProject\pages\UserDetailPage.class
+GoodJobProject\GoodJobDefinition.class
+GoodJobProject\pages\UserManagePage.class
+GoodJobProject\pages\LoginPage.class
+GoodJobProject\steps\UserDetailStep.class
