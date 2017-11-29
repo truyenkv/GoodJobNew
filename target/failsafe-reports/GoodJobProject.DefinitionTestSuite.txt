@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: GoodJobProject.DefinitionTestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 102.181 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
+Update all user(Change User Profile)  Time elapsed: 50.726 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: Expected enabled element was not enabled
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //*[contains(text(),'Yen'] to be enabled (tried for 5 second(s) with 100 MILLISECONDS interval)
+Caused by: org.openqa.selenium.InvalidSelectorException: 
+Given css selector expression "//*[contains(text(),'Yen']" is invalid: InvalidSelectorError: '//*[contains(text(),'Yen']' is not a valid selector: "//*[contains(text(),'Yen']"
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12136, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: e67ecabc-78b3-4d42-a943-41936d79f713
+*** Element info: {Using=css selector, value=//*[contains(text(),'Yen']}
+
+Update all user(Change User Profile)  Time elapsed: 49.47 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: Expected enabled element was not enabled
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //*[contains(text(),'FPT_123'] to be enabled (tried for 5 second(s) with 100 MILLISECONDS interval)
+Caused by: org.openqa.selenium.InvalidSelectorException: 
+Given css selector expression "//*[contains(text(),'FPT_123']" is invalid: InvalidSelectorError: '//*[contains(text(),'FPT_123']' is not a valid selector: "//*[contains(text(),'FPT_123']"
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4436, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ecb1c0a7-b906-4959-a5ac-0a2160ed7bf9
+*** Element info: {Using=css selector, value=//*[contains(text(),'FPT_123']}
+

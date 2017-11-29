@@ -97,7 +97,7 @@ public class GoodJobDefinition {
 		manageStep.open_User_Manage_page();
 	}
 	
-	@Then("^User open \"([^\"]*)\" detail and update is \"([^\"]*)\"$")
+	@Then("^User open '(.*)' detail and update is '(.*)'$")
 	public void user_open_admin_a_detail_and_update_is_tr(String user, String lastName) throws Exception {
 	    userManageStep.open_detail_user_screen(user);
 	    userdetailStep.update_last_name(lastName);

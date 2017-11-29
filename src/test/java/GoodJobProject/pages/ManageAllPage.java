@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class ManageAllPage extends PageObject {
 //---------------- Define localtor land --------------------
-	@FindBy(xpath="")
+	@FindBy(xpath="//*[@class='sidebar']/ul/li[3]")
 	WebElement userManage;
 
 	public void click_User_Manage_icon() {

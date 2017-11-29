@@ -16,14 +16,13 @@ Feature: Change User Profile
 	Given The user login site by "admin@yopmail.com" and "1" successfully
 	When User go to Manage page
 	And User open manage system administrator screen.
-	Then User open <user> detail and update is <lastname>
+	Then User open '<user>' detail and update is '<lastname>'
 	
 	Examples: 
-	|user						|lastname|
-	|admin a				|tr001|
-	|admin a1				|tr002|
-	|admin Testing A|tr003|
-	|Admin FPT_123	|tr003|
+	|user|lastname|
+	|Yen|Yen QC	|
+	|FPT_123|FPT company|
+
 
 	
 	

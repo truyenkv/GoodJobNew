@@ -12,7 +12,7 @@ public class HomePage extends PageObject{
 	@FindBy(xpath="//*[@class='gj-title-text']")
 	WebElement titleCompanyList;
 	//get user profile menu
-	@FindBy(xpath="//*[@id='gj-nav-dropdown']")
+	@FindBy(xpath="//a[@id='gj-nav-dropdown']")
 	WebElement companyMenu;
 	//get User Profile option
 	@FindBy(xpath="//a[contains(text(),'User Profile')]")
@@ -26,7 +26,7 @@ public class HomePage extends PageObject{
 	@FindBy(xpath="//*[@class='gj-title-admin']/div/div[1]")
 	WebElement adminListTitle;
 	//get Manage menu 
-	@FindBy(xpath="//button[contains(text(),'Manage')]")
+	@FindBy(xpath="//a[contains(text(),'Manage')]")
 	WebElement manageBtn;
 	//------------------- Define method ----------------------------	
 	public String get_title_company() {
@@ -35,7 +35,7 @@ public class HomePage extends PageObject{
 	}
 	
 	public void click_on_company_profile() {
-		waitABit(5000);
+		waitABit(10000);
 		companyMenu.click();
 	}
 

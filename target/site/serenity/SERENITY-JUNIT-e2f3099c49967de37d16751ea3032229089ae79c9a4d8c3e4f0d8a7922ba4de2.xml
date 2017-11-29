@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="Change User Profile" skipped="0" tests="2" time="100.54" timestamp="2017-11-29T20:14:56.267+07:00[Asia/Bangkok]"><testcase name="Update all user"><failure message="The following error occurred: Expected enabled element was not enabled&#10;Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'&#10;System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown</failure><system-err>The following error occurred: Expected enabled element was not enabled
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown&#13;
+GoodJobProject.pages.UserManagePage.open_user_detail(UserManagePage.java:13)&#13;
+GoodJobProject.steps.UserManageStep.open_detail_user_screen(UserManageStep.java:10)&#13;
+GoodJobProject.GoodJobDefinition.user_open_admin_a_detail_and_update_is_tr(GoodJobDefinition.java:102)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
