@@ -20,8 +20,8 @@ Feature: Change User Profile
 	
 	Examples: 
 	|user|lastname|
-	|Yen|Yen QC	|
-	|FPT_123|FPT company|
+	|Admin Truyen|Truyen KV	|
+	|a1|role|
 
 
 	

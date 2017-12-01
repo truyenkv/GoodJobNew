@@ -11,6 +11,7 @@ public class UserManagePage extends PageObject{
 	//--------------define method------------------
 	public void open_user_detail(String user) {
 		$("//*[contains(text(),'"+user+"']").click();
+		withAction().moveToElement($("//*[contains(text(),'"+user+"']")).click().perform();
 	}
 
 }

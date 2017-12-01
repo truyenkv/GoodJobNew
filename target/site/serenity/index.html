@@ -59,9 +59,9 @@
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 1],
+                ['Failing', 0.5],
                 
-                ['Errors',  0],
+                ['Errors',  0.5],
                 ['Compromised',  0]
             ]
         ], {
@@ -95,8 +95,8 @@
                 {label: '0 / 2 tests passed' },
                 {label: '0 / 2 tests pending'},
                 {label: '0 / 2 tests not executed'},
-                {label: '2 / 2 tests failed'},
-                {label: '0 / 2 errors'},
+                {label: '1 / 2 tests failed'},
+                {label: '1 / 2 errors'},
                 {label: '0 / 2 compromised tests'}
             ]
         });
@@ -109,9 +109,9 @@
                 
                 ['Ignored', 0],
                 
-                ['Failing', 1],
+                ['Failing', 0.5],
                 
-                ['Errors', 0],
+                ['Errors', 0.5],
                 ['Compromised', 0],
             ]
         ], {
@@ -146,8 +146,8 @@
                 {label: '0 / 2 tests passed (0% of all test steps)' },
                 {label: '0 / 2 tests pending'},
                 {label: '0 / 2 tests not executed'},
-                {label: '2 / 2 tests failed (1% of all test steps)'},
-                {label: '0 / 2 errors (0% of all test steps)'}
+                {label: '1 / 2 tests failed (0.5% of all test steps)'},
+                {label: '1 / 2 errors (0.5% of all test steps)'}
             ]
         });
 
@@ -213,7 +213,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 29-11-2017 20:16</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-12-2017 18:40</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -238,13 +238,14 @@
                         
                     </span>(
                     <span class="test-count">
-                        1
+                        0
                             <a href="da5b0c51b332adf0ef993a9f086d6a1b51a3d800248ec6ae281212092f35bd37.html">failed</a>
                         ,
                     </span>
                     <span class="test-count">
-                        0
-errors
+                        1
+                            <a href="c8a926210aeff57f8aa7ea799262d4b730915a909cd5ecd6a705b1fa13bc7aa8.html">with errors</a>
+                        
                     </span>)
 
                 
@@ -320,7 +321,7 @@ errors
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 40 seconds</td>
+                <td colspan="5">1 minutes 55 seconds</td>
         </tr>
         </body>
     </table>
@@ -342,7 +343,7 @@ errors
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="FAILURE-text truncated-tag-title">
+                        <span class="ERROR-text truncated-tag-title">
                                 <a href="98fbfa6835e429de33762cb03d9800c2a07bbdd9bda39785da7e5e34b385944a.html" title="Change User Profile">Change User Profile</a>
                         </span>
                     </td>
@@ -365,10 +366,10 @@ errors
                                                      title="0 out of 2 tests (0 steps) compromised">
                                                     <div class="errorbar"
                                                          style="width: 150px;"
-                                                         title="0 out of 2 tests (0 steps) broken">
+                                                         title="1 out of 2 tests (20 steps) broken">
                                                         <div class="failingbar"
-                                                             style="width: 150px;"
-                                                             title="2 out of 2 tests (20 steps) failing">
+                                                             style="width: 75px;"
+                                                             title="1 out of 2 tests (0 steps) failing">
                                                             <div class="passingbar"
                                                                  style="width: 0px;"
                                                                  title="0 out of 2 tests (0 steps) passing">
@@ -451,7 +452,7 @@ errors
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 40 seconds</td>
+                <td colspan="5">1 minutes 55 seconds</td>
         </tr>
         </body>
     </table>
@@ -473,7 +474,7 @@ errors
             </tr>
                 <tr>
                     <td class="bluetext tag-title">
-                        <span class="FAILURE-text truncated-tag-title">
+                        <span class="ERROR-text truncated-tag-title">
                                 <a href="98fbfa6835e429de33762cb03d9800c2a07bbdd9bda39785da7e5e34b385944a.html" title="Change User Profile">Change User Profile</a>
                         </span>
                     </td>
@@ -496,10 +497,10 @@ errors
                                                      title="0 out of 2 tests (0 steps) compromised">
                                                     <div class="errorbar"
                                                          style="width: 150px;"
-                                                         title="0 out of 2 tests (0 steps) broken">
+                                                         title="1 out of 2 tests (20 steps) broken">
                                                         <div class="failingbar"
-                                                             style="width: 150px;"
-                                                             title="2 out of 2 tests (20 steps) failing">
+                                                             style="width: 75px;"
+                                                             title="1 out of 2 tests (0 steps) failing">
                                                             <div class="passingbar"
                                                                  style="width: 0px;"
                                                                  title="0 out of 2 tests (0 steps) passing">
@@ -547,27 +548,27 @@ errors
                         </thead>
                         <tbody>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-ERROR">
+                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">ERROR</span></td>
+                                <td class="ERROR-text">
                                     <div class="ellipsis">
 
                                         <a href="e2f3099c49967de37d16751ea3032229089ae79c9a4d8c3e4f0d8a7922ba4de2.html" class="ellipsis"
-                                           title="Update all user Element should be enabled exception: ...">
+                                           title="Update all user Stale element reference exception: Th...">
                                             Update all user&nbsp;(2  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">20</td>
+                                <td class="ERROR-text">20</td>
 
 
-                                <td class="FAILURE-text" data-sort="2017-11-29 20:14:56">20:14:56</td>
+                                <td class="ERROR-text" data-sort="2017-12-01 18:38:06">18:38:06</td>
 
-                                <td class="FAILURE-text">100.54</td>
+                                <td class="ERROR-text">115.99</td>
                             </tr>
                         </tbody>
                     </table>

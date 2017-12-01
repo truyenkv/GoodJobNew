@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="102.181" tests="2" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="118" tests="2" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -66,20 +66,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Update all user" classname="Change User Profile" time="50.726">
-    <error message="The following error occurred: Expected enabled element was not enabled" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: Expected enabled element was not enabled
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //*[contains(text(),'Yen'] to be enabled (tried for 5 second(s) with 100 MILLISECONDS interval)
-Caused by: org.openqa.selenium.InvalidSelectorException: 
-Given css selector expression "//*[contains(text(),'Yen']" is invalid: InvalidSelectorError: '//*[contains(text(),'Yen']' is not a valid selector: "//*[contains(text(),'Yen']"
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+  <testcase name="Update all user" classname="Change User Profile" time="51.374">
+    <error message="The following error occurred: The element reference of &lt;a&gt; stale: either the element is no longer attached to the DOM or the page has been refreshed&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4612, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}&#10;Session ID: 3f19d73b-79e3-44a8-9a61-59efe371a068" type="net.serenitybdd.core.exceptions.SerenityManagedException"><![CDATA[net.serenitybdd.core.exceptions.SerenityManagedException: 
+The following error occurred: The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
 System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 12136, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: e67ecabc-78b3-4d42-a943-41936d79f713
-*** Element info: {Using=css selector, value=//*[contains(text(),'Yen']}
-</error>
-    <system-out><![CDATA[XXX Created runtime cucumber.runtime.RuntimeOptions@4e7912d8
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4612, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 3f19d73b-79e3-44a8-9a61-59efe371a068
+]]></error>
+    <system-out><![CDATA[XXX Created runtime cucumber.runtime.RuntimeOptions@5fd4f8f5
 Separator = ;
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - &amp#27;[36m
@@ -110,8 +107,10 @@ Separator = ;
 
 TEST STARTED: Update all user
 -------------------------------------------------------------------(change-user-profile;update-all-user)
-Nov 29, 2017 8:15:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Dec 01, 2017 6:38:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+Dec 01, 2017 6:38:57 PM org.openqa.selenium.remote.ErrorCodes toStatus
+INFO: HTTP Status: '400' -> incorrect JSON status mapping for 'stale element reference' (404 expected)
 [main] ERROR net.serenitybdd.core.Serenity - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
   _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
@@ -120,24 +119,24 @@ INFO: Detected dialect: W3C
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Update all user
---------------------------------------------------------------------------
-[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open detail user screen: Yen
-[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: Expected enabled element was not enabledBuild info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknown
+TEST FAILED WITH ERROR: Update all user
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open manage page
+[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
 ]]></system-err>
   </testcase>
-  <testcase name="Update all user" classname="Change User Profile" time="49.47">
+  <testcase name="Update all user" classname="Change User Profile" time="64.142">
     <error message="The following error occurred: Expected enabled element was not enabled" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: Expected enabled element was not enabled
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //*[contains(text(),'FPT_123'] to be enabled (tried for 5 second(s) with 100 MILLISECONDS interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.cssSelector: //*[contains(text(),'a1'] to be enabled (tried for 5 second(s) with 100 MILLISECONDS interval)
 Caused by: org.openqa.selenium.InvalidSelectorException: 
-Given css selector expression "//*[contains(text(),'FPT_123']" is invalid: InvalidSelectorError: '//*[contains(text(),'FPT_123']' is not a valid selector: "//*[contains(text(),'FPT_123']"
+Given css selector expression "//*[contains(text(),'a1']" is invalid: InvalidSelectorError: '//*[contains(text(),'a1']' is not a valid selector: "//*[contains(text(),'a1']"
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
 Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
 System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4436, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: ecb1c0a7-b906-4959-a5ac-0a2160ed7bf9
-*** Element info: {Using=css selector, value=//*[contains(text(),'FPT_123']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 56.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 11628, moz:profile: C:\Users\kvtruyen\AppData\L..., pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, specificationLevel: 0, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d5e97c3d-d1f7-4530-9714-019b1e331d8f
+*** Element info: {Using=css selector, value=//*[contains(text(),'a1']}
 </error>
     <system-out><![CDATA[Separator = ;
 ]]></system-out>
@@ -149,11 +148,11 @@ Session ID: ecb1c0a7-b906-4959-a5ac-0a2160ed7bf9
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Update all user
---------------------------------------------------------------------------
-[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open detail user screen: Yen
-[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: Expected enabled element was not enabledBuild info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknown
-Nov 29, 2017 8:15:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+TEST FAILED WITH ERROR: Update all user
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open manage page
+[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
+Dec 01, 2017 6:39:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [main] ERROR net.serenitybdd.core.Serenity - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
@@ -163,10 +162,10 @@ INFO: Detected dialect: W3C
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Update all user
---------------------------------------------------------------------------
-[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open detail user screen: FPT_123
-[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: Expected enabled element was not enabledBuild info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknown
+TEST FAILED WITH ERROR: Update all user
+---------------------------------------------------------------------
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Open detail user screen: a1
+[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: The element reference of <a> stale: either the element is no longer attached to the DOM or the page has been refreshed
 ]]></system-err>
   </testcase>
 </testsuite>

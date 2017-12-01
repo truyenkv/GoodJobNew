@@ -58,6 +58,7 @@ public class HomePage extends PageObject{
 	}
 
 	public void click_Manage_button() {
+		waitABit(5000);
 		manageBtn.click();
 	}
 

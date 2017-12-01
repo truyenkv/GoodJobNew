@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class ManageAllPage extends PageObject {
 //---------------- Define localtor land --------------------
-	@FindBy(xpath="//*[@class='sidebar']/ul/li[3]")
+	@FindBy(xpath="//*[contains(text(),'Manage Administrators')]")
 	WebElement userManage;
 
 	public void click_User_Manage_icon() {
