@@ -53,15 +53,15 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 1],
                 
                 ['Pending', 0],
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 0.5],
+                ['Failing', 0],
                 
-                ['Errors',  0.5],
+                ['Errors',  0],
                 ['Compromised',  0]
             ]
         ], {
@@ -92,26 +92,26 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 / 2 tests passed' },
+                {label: '2 / 2 tests passed' },
                 {label: '0 / 2 tests pending'},
                 {label: '0 / 2 tests not executed'},
-                {label: '1 / 2 tests failed'},
-                {label: '1 / 2 errors'},
+                {label: '0 / 2 tests failed'},
+                {label: '0 / 2 errors'},
                 {label: '0 / 2 compromised tests'}
             ]
         });
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 1],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 0.5],
+                ['Failing', 0],
                 
-                ['Errors', 0.5],
+                ['Errors', 0],
                 ['Compromised', 0],
             ]
         ], {
@@ -143,11 +143,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 / 2 tests passed (0% of all test steps)' },
+                {label: '2 / 2 tests passed (1% of all test steps)' },
                 {label: '0 / 2 tests pending'},
                 {label: '0 / 2 tests not executed'},
-                {label: '1 / 2 tests failed (0.5% of all test steps)'},
-                {label: '1 / 2 errors (0.5% of all test steps)'}
+                {label: '0 / 2 tests failed (0% of all test steps)'},
+                {label: '0 / 2 errors (0% of all test steps)'}
             ]
         });
 
@@ -216,7 +216,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-12-2017 18:40</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-12-2017 19:28</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -237,19 +237,9 @@
 
                     <span class="test-count"> |
                         1
-                            <a href="32c1c01eafce89569c0c8ba42f779937c9e32d26567a770a9c8970ed90fe7c31.html">unsuccessful</a>
+                            <a href="e388aa1bd2ff086fffdb67894c4587cefa73a57ee0d9faec3f25f78c8a6dcb95.html">passed</a>
                         
-                    </span>(
-                    <span class="test-count">
-                        0
-                            <a href="3279df90ac7e36dd896525abb921d2c8421403b5d7830579e341d4cdf36bce28.html">failed</a>
-                        ,
                     </span>
-                    <span class="test-count">
-                        1
-                            <a href="d3538808241dca69d0cf388686276c869a24209bd7f8550c9f2186948164ef97.html">with errors</a>
-                        
-                    </span>)
 
                 
 
@@ -301,8 +291,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
-            <td>0 (0%)</td>
             <td>2 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -317,14 +307,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
-            <td>0 (0%)</td>
             <td>2 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 55 seconds</td>
+                <td colspan="5">2 minutes 15 seconds</td>
         </tr>
         </body>
     </table>
@@ -380,8 +370,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>2</td>
-            <td>0 (0%)</td>
             <td>2 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -396,14 +386,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>2</td>
-            <td>0 (0%)</td>
             <td>2 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 55 seconds</td>
+                <td colspan="5">2 minutes 15 seconds</td>
         </tr>
         </body>
     </table>
@@ -447,27 +437,27 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-ERROR">
-                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">ERROR</span></td>
-                                <td class="ERROR-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
-                                        <a href="e2f3099c49967de37d16751ea3032229089ae79c9a4d8c3e4f0d8a7922ba4de2.html" class="ellipsis"
-                                           title="Update all user Stale element reference exception: Th...">
-                                            Update all user&nbsp;(2  examples)
+                                        <a href="71b3f2d59b647ec3aae00ed5cc57e032571907bc55487aee6481dd92f56124da.html" class="ellipsis"
+                                           title="Create user ">
+                                            Create user&nbsp;(2  examples)
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="ERROR-text">20</td>
+                                <td class="SUCCESS-text">20</td>
 
 
-                                <td class="ERROR-text" data-sort="2017-12-01 18:38:06">18:38:06</td>
+                                <td class="SUCCESS-text" data-sort="2017-12-05 19:26:26">19:26:26</td>
 
-                                <td class="ERROR-text">115.99</td>
+                                <td class="SUCCESS-text">135.12</td>
                             </tr>
                         </tbody>
                     </table>

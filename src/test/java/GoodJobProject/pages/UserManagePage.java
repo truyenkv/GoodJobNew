@@ -8,10 +8,15 @@ import org.openqa.selenium.WebElement;
 public class UserManagePage extends PageObject{
 
 	
+	@FindBy(xpath="//*[@class='manage-content']/div[2]/div/button/span")
+	WebElement addBtn;
 	//--------------define method------------------
-	public void open_user_detail(String user) {
-		$("//*[contains(text(),'"+user+"']").click();
-		withAction().moveToElement($("//*[contains(text(),'"+user+"']")).click().perform();
+
+	public void click_On_Add_Btn() {
+		waitABit(5000);
+		addBtn.click();		
 	}
 
+
+	
 }

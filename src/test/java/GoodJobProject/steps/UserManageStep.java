@@ -6,8 +6,10 @@ import net.thucydides.core.steps.ScenarioSteps;
 public class UserManageStep extends ScenarioSteps{
 
 	UserManagePage userManagerPage;
-	public void open_detail_user_screen(String user) {
-		userManagerPage.open_user_detail(user);
+
+	public void click_On_Add_Button() {
+		userManagerPage.click_On_Add_Btn();
+		
 	}
 
 }

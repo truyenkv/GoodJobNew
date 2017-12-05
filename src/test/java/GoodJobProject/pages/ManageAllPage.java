@@ -11,6 +11,7 @@ public class ManageAllPage extends PageObject {
 	WebElement userManage;
 
 	public void click_User_Manage_icon() {
+		waitABit(5000);
 		userManage.click();
 	}
 	

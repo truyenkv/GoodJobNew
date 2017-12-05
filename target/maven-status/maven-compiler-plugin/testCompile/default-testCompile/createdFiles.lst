@@ -5,8 +5,8 @@ GoodJobProject\steps\UserManageStep.class
 GoodJobProject\pages\HomePage.class
 GoodJobProject\steps\LoginStep.class
 GoodJobProject\DefinitionTestSuite.class
-GoodJobProject\pages\UserDetailPage.class
+GoodJobProject\pages\ManageUserProfilePage.class
 GoodJobProject\GoodJobDefinition.class
 GoodJobProject\pages\UserManagePage.class
 GoodJobProject\pages\LoginPage.class
-GoodJobProject\steps\UserDetailStep.class
+GoodJobProject\steps\ManageUserProfileStep.class

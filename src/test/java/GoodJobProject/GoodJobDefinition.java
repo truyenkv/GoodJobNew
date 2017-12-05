@@ -5,7 +5,7 @@ import net.thucydides.core.annotations.Steps;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageStep;
-import GoodJobProject.steps.UserDetailStep;
+import GoodJobProject.steps.ManageUserProfileStep;
 import GoodJobProject.steps.UserManageStep;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -26,7 +26,8 @@ public class GoodJobDefinition {
 	UserManageStep userManageStep;
 	
 	@Steps
-	UserDetailStep userdetailStep;
+	ManageUserProfileStep manageUserProfileStep;
+	
 	//------------------------------------------- login scenario -----------------------------------------------------------------------
 	@Given("^the user is on the GoodJob login page\\.$")
 	public void the_user_is_on_the_GoodJob_login_page() throws Exception {
@@ -96,11 +97,18 @@ public class GoodJobDefinition {
 	public void user_open_manage_system_administrator_screen() throws Exception {
 		manageStep.open_User_Manage_page();
 	}
+		
+	@When("^User open Manage User Profile screen$")
+	public void user_open_Manage_User_Profile_screen() throws Exception {
+		userManageStep.click_On_Add_Button();
+	}
 	
-	@Then("^User open '(.*)' detail and update is '(.*)'$")
-	public void user_open_admin_a_detail_and_update_is_tr(String user, String lastName) throws Exception {
-	    userManageStep.open_detail_user_screen(user);
-	    userdetailStep.update_last_name(lastName);
+	@When("^Creating new account with '(.*)', '(.*)' and '(.*)'$")
+	public void creating_new_account(String firstName, String lastName, String email) throws Exception {
+	    manageUserProfileStep.input_FistName(firstName);
+	    manageUserProfileStep.input_LastName(lastName);
+	    manageUserProfileStep.input_Email(email);
+	    manageUserProfileStep.click_On_Save_Button();
 	}
 	
 
