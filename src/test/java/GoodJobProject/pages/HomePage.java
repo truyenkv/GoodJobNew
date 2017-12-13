@@ -19,11 +19,13 @@ public class HomePage extends PageObject{
 	WebElement userProfile;
 	//get First Name text
 	WebElementFacade formControlsFirstName;
+	//get Last Name text
+	WebElementFacade formControlsLastName;
 	//get Save button
 	@FindBy(xpath="//button[contains(text(),'Save')]")
 	WebElement SaveBtn;
 	//get admin list title
-	@FindBy(xpath="//*[@class='gj-title-admin']/div/div[1]")
+	@FindBy(xpath="//*[@class='manage-content']/div[1]/div")
 	WebElement adminListTitle;
 	//get Manage menu 
 	@FindBy(xpath="//a[contains(text(),'Manage')]")
@@ -47,6 +49,10 @@ public class HomePage extends PageObject{
 	public void update_First_Name(String firstName) {
 		typeInto(formControlsFirstName, firstName);
 	}
+	
+	public void update_Last_Name(String lastName) {
+		typeInto(formControlsLastName, lastName);
+	}
 
 	public void clickSaveButton() {
 		SaveBtn.click();
@@ -61,6 +67,8 @@ public class HomePage extends PageObject{
 		waitABit(5000);
 		manageBtn.click();
 	}
+
+	
 
 	
 	
