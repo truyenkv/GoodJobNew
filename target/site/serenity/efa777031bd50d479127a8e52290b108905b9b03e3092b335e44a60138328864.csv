@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
+<<<<<<< HEAD
 "Create user","Create user normally","PENDING","2017-12-26T17:05:29.992+07:00[Asia/Bangkok]","0.0","102.56"
+=======
+"Change User Profile","Change User Profile","SUCCESS","2017-12-13T19:19:15.632+07:00[Asia/Bangkok]","0.0","117.61"
+>>>>>>> e14688759f789da30d4a24dfed1f9633f492ab51

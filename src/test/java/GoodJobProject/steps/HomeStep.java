@@ -17,6 +17,10 @@ public class HomeStep extends ScenarioSteps {
 	public void update_First_Name(String firstName) {
 		homePage.update_First_Name(firstName);
 	}
+	
+	public void update_Last_Name(String lastName) {
+		homePage.update_Last_Name(lastName);
+	}
 
 	public void click_on_Save_button() {
 		homePage.clickSaveButton();		
@@ -26,6 +30,8 @@ public class HomeStep extends ScenarioSteps {
 	public void open_Manage_page() {
 		homePage.click_Manage_button();	
 	}
+
+	
 
 	
 	

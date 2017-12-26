@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Serenity report generated 26-12-2017 17:07
+=======
+Serenity report generated 13-12-2017 19:21
+>>>>>>> e14688759f789da30d4a24dfed1f9633f492ab51
 1 test scenarios 
 
 Passed:             0

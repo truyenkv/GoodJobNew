@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageAdminStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageUserProfileStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\DefinitionTestSuite.java
@@ -10,3 +11,17 @@ D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\LoginPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\HomeStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\LoginStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageStep.java
+=======
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\pages\ManageAllPage.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\steps\UserManageStep.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\steps\HomeStep.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\pages\UserManagePage.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\pages\ManageUserProfilePage.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\pages\LoginPage.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\steps\LoginStep.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\pages\HomePage.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\steps\ManageStep.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\DefinitionTestSuite.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\steps\ManageUserProfileStep.java
+D:\GitLocal\GoodJobNew\src\test\java\GoodJobProject\GoodJobDefinition.java
+>>>>>>> e14688759f789da30d4a24dfed1f9633f492ab51
