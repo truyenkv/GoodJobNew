@@ -24,12 +24,6 @@ public class HomePage extends PageObject{
 	//get Save button
 	@FindBy(xpath="//button[contains(text(),'Save')]")
 	WebElement SaveBtn;
-<<<<<<< HEAD
-=======
-	//get admin list title
-	@FindBy(xpath="//*[@class='manage-content']/div[1]/div")
-	WebElement adminListTitle;
->>>>>>> e14688759f789da30d4a24dfed1f9633f492ab51
 	//get Manage menu 
 	@FindBy(xpath="//a[contains(text(),'Manage')]")
 	WebElement manageBtn;

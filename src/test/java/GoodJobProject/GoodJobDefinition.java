@@ -55,44 +55,6 @@ public class GoodJobDefinition {
 		Assert.assertEquals(loginStep.getCompanyListTit(), expectTitle);
 	}
 
-	//------------------------------------------------ update profile -------------------------------------------------------------------------------
-<<<<<<< HEAD
-	
-
-
-	@When("^Click on User menu$")
-=======
-	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
-	public void the_user_login_site_by_and_successfully(String email, String password) throws Exception {
-		loginStep.open_login_page();
-		loginStep.input_email(email);
-		loginStep.input_password(password);
-		loginStep.click_Login_button();
-	}
-
-
-	@When("^Click on User Profile in user's action menu$")
->>>>>>> e14688759f789da30d4a24dfed1f9633f492ab51
-	public void user_show_Company_menu() throws Exception {
-	    homeStep.show_Company_Menu();	    
-	}
-
-<<<<<<< HEAD
-	@When("^Click on User Profile link in dropdown menu$")
-=======
-	@When("^Choose User Profile action$")
->>>>>>> e14688759f789da30d4a24dfed1f9633f492ab51
-	public void open_User_Profile() throws Exception {
-	    homeStep.choose_UserProfile_option();
-	}
-
-	@When("^Update First Name is \"([^\"]*)\", Last Name is \"([^\"]*)\" and click Save button\\.$")
-	public void update_First_Name_is_and_click_Save_button(String firstName, String lastName) throws Exception {
-	    homeStep.update_First_Name(firstName);
-	    homeStep.update_Last_Name(lastName);
-	    homeStep.click_on_Save_button();
-	}
-
 	
 	//----------------------------Create new User ---------------------
 	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
