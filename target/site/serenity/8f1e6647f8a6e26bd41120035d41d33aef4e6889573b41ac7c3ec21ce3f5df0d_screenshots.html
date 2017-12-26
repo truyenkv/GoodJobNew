@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Se3renity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="a8689f207d1a33525e89d7ef344b6fd58d1c696486c83789f7df6efaddda3fd1.html">Create User</a></span>
+                > <span class="truncate-60"><a
+                    href="8f1e6647f8a6e26bd41120035d41d33aef4e6889573b41ac7c3ec21ce3f5df0d.html">Create user normally </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 26-12-2017 17:05</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Create User </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                <pre><code>Update my admin profile
+</code></pre>
+
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-square-o pending-icon fa-2x' title='PENDING'></i></span>
+                            <span class="test-case-title">
+                                <span class="pending-color">Create user normally
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_6de982ac90b27509eb293fa81d53da9a7c392bc42f28d81302977885e1ee460a.png" title="Given The user login site by &quot;admin@yopmail.com&quot; and &quot;Voyen!1412&quot; successfully" width="960"/>
+                <img src="scaled_a46ae9444f83f668bbfea9811b7c483f40adfc38c821fe3e182c0fb4143fd41b.png" title="Open login page" width="960"/>
+                <img src="scaled_13742aa1ab3636b20040468df5a24207edecf1e8211aca107bcf75ec01e9464c.png" title="Input email: admin@yopmail.com" width="960"/>
+                <img src="scaled_eba047e40870894ea77b8b58e50e2a02892e3fe38b2e4b3094b1ecf0d18b3470.png" title="Input email: admin@yopmail.com" width="960"/>
+                <img src="scaled_cbbd0604d2148271e865f41ec6e46ce9aea43c8d7a0f7c6336c1efba7d7dc59a.png" title="Input password: Voyen!1412" width="960"/>
+                <img src="scaled_e3d18c287cc78763c679d155c9ebce89c56a7b870a544169ec5807e9ee1e8288.png" title="Input password: Voyen!1412" width="960"/>
+                <img src="e3d18c287cc78763c679d155c9ebce89c56a7b870a544169ec5807e9ee1e8288.png" title="Click  login button" width="960"/>
+                <img src="6de982ac90b27509eb293fa81d53da9a7c392bc42f28d81302977885e1ee460a.png" title="Click  login button" width="960"/>
+                <img src="scaled_6fb081385d1cc8773b2cb5d2dd9c0b1bdce5644e87d5ea684d88a6e147cb9ea0.png" title="When Click on Manage menu." width="960"/>
+                <img src="scaled_c683c8a5ff1f2659fb078b1c4296d579b7b2b29c555ceebd89b411232e83664d.png" title="And Click on Manage Administrators menu." width="960"/>
+                <img src="6fb081385d1cc8773b2cb5d2dd9c0b1bdce5644e87d5ea684d88a6e147cb9ea0.png" title="And Click on Manage Administrators menu." width="960"/>
+                <img src="c683c8a5ff1f2659fb078b1c4296d579b7b2b29c555ceebd89b411232e83664d.png" title="And Click on Add User button." width="960"/>
+                <img src="scaled_26bb14347a178901cbc0337dfc6eb2a6f5067b97ef720fd9729ce206fb2206a6.png" title="And Click on Add User button." width="960"/>
+                <img src="scaled_d550f8b0fdcb37f5dec8c51bef1b25bb8f37e6baaa7b4a78ae21c372fca44202.png" title="And Input First Name is &quot;Truyen&quot;, Last Name is &quot;Kieu&quot; and Email is &quot;truyen.kieu.02@yopmail.com&quot;." width="960"/>
+                <img src="scaled_b5c5bd800b9218b3b8f37c547ff6a7cfed6abd5a7f5f2557a774fb6f4e3c5a81.png" title="And Click on Save button" width="960"/>
+                <img src="scaled_d254bc6f61dbb1060f7dd674f5c0173cf6f686b517be07ef6fd7a3277986ef94.png" title="Then System should navigate to &quot;Manage System Administrators&quot; screen." width="960"/>
+                <img src="scaled_e8155faaf847e33923cd212c850ecc1f815bec41b5a95c7455d5d3e7a8234650.png" title="Then System should navigate to &quot;Manage System Administrators&quot; screen." width="960"/>
+                <img src="e8155faaf847e33923cd212c850ecc1f815bec41b5a95c7455d5d3e7a8234650.png" title="And &quot;truyen.kieu.02@yopmail.com&quot; should be shown on screen.: <span class='pending-color'>PENDING</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>

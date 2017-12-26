@@ -22,9 +22,6 @@ public class HomeStep extends ScenarioSteps {
 		homePage.clickSaveButton();		
 	}
 
-	public String get_sysAdminTitle() {
-		return homePage.get_Manage_System_admin_title();
-	}
 
 	public void open_Manage_page() {
 		homePage.click_Manage_button();	

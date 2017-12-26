@@ -1,12 +1,12 @@
+GoodJobProject\steps\ManageAdminStep.class
 GoodJobProject\steps\HomeStep.class
-GoodJobProject\pages\ManageAllPage.class
 GoodJobProject\steps\ManageStep.class
-GoodJobProject\steps\UserManageStep.class
 GoodJobProject\pages\HomePage.class
 GoodJobProject\steps\LoginStep.class
 GoodJobProject\DefinitionTestSuite.class
+GoodJobProject\pages\ManagePage.class
 GoodJobProject\pages\ManageUserProfilePage.class
 GoodJobProject\GoodJobDefinition.class
-GoodJobProject\pages\UserManagePage.class
+GoodJobProject\pages\ManageAdminPage.class
 GoodJobProject\pages\LoginPage.class
 GoodJobProject\steps\ManageUserProfileStep.class

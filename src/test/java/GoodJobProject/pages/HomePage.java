@@ -22,9 +22,6 @@ public class HomePage extends PageObject{
 	//get Save button
 	@FindBy(xpath="//button[contains(text(),'Save')]")
 	WebElement SaveBtn;
-	//get admin list title
-	@FindBy(xpath="//*[@class='gj-title-admin']/div/div[1]")
-	WebElement adminListTitle;
 	//get Manage menu 
 	@FindBy(xpath="//a[contains(text(),'Manage')]")
 	WebElement manageBtn;
@@ -50,11 +47,6 @@ public class HomePage extends PageObject{
 
 	public void clickSaveButton() {
 		SaveBtn.click();
-	}
-
-	public String get_Manage_System_admin_title() {
-		waitABit(5000);
-		return adminListTitle.getText();
 	}
 
 	public void click_Manage_button() {
