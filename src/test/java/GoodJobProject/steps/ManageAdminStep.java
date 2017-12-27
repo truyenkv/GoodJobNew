@@ -1,5 +1,6 @@
 package GoodJobProject.steps;
 
+import junit.framework.Assert;
 import GoodJobProject.pages.ManageAdminPage;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -16,8 +17,17 @@ public class ManageAdminStep extends ScenarioSteps{
 		return userManagerPage.get_Manage_Admin_title();
 	}
 
-	public String get_Email() {
-		return userManagerPage.getEmail();
+	public void get_Email_Expected(String email) {
+		Assert.assertEquals(userManagerPage.get_Email(), email);
+		
 	}
+
+	public void get_Username_Expected(String username) {
+		Assert.assertEquals(userManagerPage.get_Username(), username);
+		
+	}
+
+
+
 
 }

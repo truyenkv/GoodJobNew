@@ -9,7 +9,7 @@ Feature: Create user
   And Input First Name is "Truyen", Last Name is "Kieu" and Email is "truyen.kieu.03@yopmail.com".
   And Click on Save button
   Then System should navigate to "Manage System Administrators" screen.
-  And "truyen.kieu.03@yopmail.com" should be shown on screen.
+  And "truyen.kieu.03@yopmail.com" and User Name is "Truyen Kieu" should be shown on screen.
 
 	
 	
