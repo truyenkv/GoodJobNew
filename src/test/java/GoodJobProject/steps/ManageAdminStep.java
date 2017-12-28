@@ -17,13 +17,21 @@ public class ManageAdminStep extends ScenarioSteps{
 		return userManagerPage.get_Manage_Admin_title();
 	}
 
-	public String get_Email_Is_Shown() {
-		return userManagerPage.getEmail();
+	public boolean get_Email_Is_Shown(String email) {
+		waitABit(5000);
+		return userManagerPage.getEmail(email);
 	}
 
-//	public String get_User_Name_Is_Shown() {
-//		return userManagerPage.getUserName();
-//	}
+	public boolean get_User_Name_Is_Shown(String username) {
+		return userManagerPage.getUserName(username);
+	}
+
+
+
+	
+	
+
+
 
 
 

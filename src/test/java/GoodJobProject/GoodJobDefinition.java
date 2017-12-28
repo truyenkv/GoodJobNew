@@ -101,12 +101,12 @@ public class GoodJobDefinition {
 
 	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
 	public void email_should_be_shown_on_screen(String email) throws Exception {
-		Assert.assertEquals(userManageStep.get_Email_Is_Shown(), email);
+		Assert.assertEquals(userManageStep.get_Email_Is_Shown(email), true);
 	}
-//	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
-//	public void User_name_should_be_shown_on_screen(String username) throws Exception {
-//		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(), username);
-//	}
+	@Then("^\"([^\"]*)\" Shows correctly be shown on screen\\.$")
+	public void User_name_should_be_shown_on_screen(String username) throws Exception {
+		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(username), true);
+	}
 
 
 	

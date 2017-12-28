@@ -40,48 +40,51 @@ public class ManageAdminPage extends PageObject{
 		return title.getText();
 	}
 
-	public String getEmail() {
+	public boolean getEmail(String email) {
 		for(int i=0; i<emailOdd.size(); i++)
-		{
-			if(emailOdd.get(i).getText().equals(""))
 			{
-				count+=1;
-				indexOdd=i;
+				if(emailOdd.get(i).getText().equals(email))
+				{
+					count+=1;
+					indexOdd=i;
+				}
+				
 			}
 			
-		}
-		
-		for(int j=0; j<emailEven.size(); j++)
-		{
-			if(emailOdd.get(j).getText().equals(""))
+			for(int j=0; j<emailEven.size(); j++)
 			{
-				count+=1;
-				indexEven = j;
+				if(emailOdd.get(j).getText().equals(email))
+				{
+					count+=1;
+					indexEven = j;
+				}
+				
 			}
-			
+			if (count==1)
+				return true;
+			else 
+				return false;
 		}
+
+	public boolean getUserName(String username) {
 		if(count!=1)
-		{
-			return null;
-		}
+			return false;
 		else
 		{
-			if (indexOdd!=-1)
+			if((usernameOdd.get(indexOdd).getText().equals(username)) || (usernameEven.get(indexEven).getText().equals(username)))
 			{
-				return emailOdd.get(indexOdd).getText();
+				return true;
 			}
 			else
-				return emailEven.get(indexEven).getText();
+				return false;
 		}
+	
 	}
+}
 
-//	public String getUserName() {
-//		// TODO Auto-generated method stub
-//		return null;
-//	}
 
 
 
 
 	
-}
+

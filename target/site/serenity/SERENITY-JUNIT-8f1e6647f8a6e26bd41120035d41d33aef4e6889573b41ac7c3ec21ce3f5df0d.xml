@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Create user" skipped="0" tests="1" time="86.62" timestamp="2017-12-28T15:18:03.640+07:00[Asia/Bangkok]"><testcase name="Create user normally"><error message="-1" type="java.lang.ArrayIndexOutOfBoundsException">-1</error><system-err>-1&#13;
+GoodJobProject.pages.ManageAdminPage.getUserName(ManageAdminPage.java:74)&#13;
+GoodJobProject.steps.ManageAdminStep.get_User_Name_Is_Shown(ManageAdminStep.java:26)&#13;
+GoodJobProject.GoodJobDefinition.User_name_should_be_shown_on_screen(GoodJobDefinition.java:108)&#13;
+✽."Truyen Kieu1" Shows correctly be shown on screen.(src/test/resources/features/changeuserprofile.feature:13)&#13;
+</system-err></testcase></testsuite>

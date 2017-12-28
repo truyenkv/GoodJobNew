@@ -6,11 +6,11 @@ Feature: Create user
 	When Click on Manage menu.
   And Click on Manage Administrators menu.
   And Click on Add User button.
-  And Input First Name is "Truyen", Last Name is "Kieu" and Email is "truyen.kieu.05@yopmail.com".
+  And Input First Name is "Truyen", Last Name is "Kieu" and Email is "truyen.kieu.14@yopmail.com".
   And Click on Save button
   Then System should navigate to "Manage System Administrators" screen.
-  And "truyen.kieu.05@yopmail.com" should be shown on screen.
-  #And "Truyen Kieu" should be shown on screen.
+  And "truyen.kieu.14@yopmail.com" should be shown on screen.
+  And "Truyen Kieu1" Shows correctly be shown on screen.
 
 	
 	

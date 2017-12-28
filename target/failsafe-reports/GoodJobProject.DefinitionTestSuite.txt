@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: GoodJobProject.DefinitionTestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 91.287 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
+Create user normally(Create user)  Time elapsed: 86.175 sec  <<< ERROR!
+java.lang.ArrayIndexOutOfBoundsException: -1
+
