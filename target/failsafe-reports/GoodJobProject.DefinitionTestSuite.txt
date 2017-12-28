@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: GoodJobProject.DefinitionTestSuite
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 70.662 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
-Create user normally(Create user)  Time elapsed: 67.013 sec  <<< FAILURE!
-junit.framework.ComparisonFailure: expected:<null> but was:<truyen.kieu.03@yopmail.com>
-

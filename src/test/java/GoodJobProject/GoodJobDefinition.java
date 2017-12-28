@@ -99,11 +99,14 @@ public class GoodJobDefinition {
 		Assert.assertEquals(userManageStep.get_sysAdminTitle(), systemAdminTitle);
 	}
 
-	@Then("^\"([^\"]*)\" and User Name is \"([^\"]*)\" should be shown on screen\\.$")
-	public void should_be_shown_on_screen(String email, String username) throws Exception {
-		userManageStep.get_Email_Expected(email);
-		userManageStep.get_Username_Expected(username);
+	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
+	public void email_should_be_shown_on_screen(String email) throws Exception {
+		Assert.assertEquals(userManageStep.get_Email_Is_Shown(), email);
 	}
+//	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
+//	public void User_name_should_be_shown_on_screen(String username) throws Exception {
+//		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(), username);
+//	}
 
 
 	

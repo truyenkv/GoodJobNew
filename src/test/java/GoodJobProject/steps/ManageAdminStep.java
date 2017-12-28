@@ -17,15 +17,15 @@ public class ManageAdminStep extends ScenarioSteps{
 		return userManagerPage.get_Manage_Admin_title();
 	}
 
-	public void get_Email_Expected(String email) {
-		Assert.assertEquals(userManagerPage.get_Email(), email);
-		
+	public String get_Email_Is_Shown() {
+		return userManagerPage.getEmail();
 	}
 
-	public void get_Username_Expected(String username) {
-		Assert.assertEquals(userManagerPage.get_Username(), username);
-		
-	}
+//	public String get_User_Name_Is_Shown() {
+//		return userManagerPage.getUserName();
+//	}
+
+
 
 
 

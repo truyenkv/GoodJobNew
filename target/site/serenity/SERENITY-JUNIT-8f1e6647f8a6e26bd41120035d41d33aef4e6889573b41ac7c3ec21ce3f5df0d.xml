@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Create user" skipped="0" tests="1" time="67.35" timestamp="2017-12-26T18:21:21.767+07:00[Asia/Bangkok]"><testcase name="Create user normally"><failure message="expected:&lt;null&gt; but was:&lt;truyen.kieu.03@yopmail.com&gt;" type="java.lang.AssertionError">expected:&lt;null&gt; but was:&lt;truyen.kieu.03@yopmail.com&gt;</failure><system-err>expected:&lt;null&gt; but was:&lt;truyen.kieu.03@yopmail.com&gt;&#13;
-junit.framework.Assert.assertEquals(Assert.java:100)&#13;
-junit.framework.Assert.assertEquals(Assert.java:107)&#13;
-GoodJobProject.GoodJobDefinition.should_be_shown_on_screen(GoodJobDefinition.java:104)&#13;
-✽."truyen.kieu.03@yopmail.com" should be shown on screen.(src/test/resources/features/changeuserprofile.feature:12)&#13;
-</system-err></testcase></testsuite>
