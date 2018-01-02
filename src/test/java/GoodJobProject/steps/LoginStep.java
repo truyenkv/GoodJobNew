@@ -30,10 +30,5 @@ public class LoginStep extends ScenarioSteps{
 		loginPage.click_Login_button();
 	}
 	
-	@Step
-	public String getCompanyListTit()
-	{
-		return homePage.get_title_company();
-	}
 	
 }

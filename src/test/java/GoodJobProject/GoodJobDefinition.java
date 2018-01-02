@@ -50,21 +50,53 @@ public class GoodJobDefinition {
 		loginStep.click_Login_button();
 	}
 
-	@Then("^the user should see company list title \"([^\"]*)\"$")
-	public void the_user_should_see_company_list_title(String expectTitle) throws Exception {
-		Assert.assertEquals(loginStep.getCompanyListTit(), expectTitle);
-	}
 
-	
-	//----------------------------Create new User ---------------------
+
+	//---------------------------------Update Usser menu----------------------
 	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
 	public void the_user_login_site_by_and_successfully(String email, String password) throws Exception {
 		loginStep.open_login_page();
 		loginStep.input_email(email);
 		loginStep.input_password(password);
 		loginStep.click_Login_button();
-		
 	}
+	@When("^Click User menu$")
+	public void click_User_menu() throws Exception {
+	    homeStep.click_on_user_menu();
+	}
+
+
+	@When("^Click User profile link$")
+	public void click_User_profile_link() throws Exception {
+	    homeStep.click_on_user_profile_link();
+	}
+
+	@When("^Update First Name is \"([^\"]*)\", Last Name is \"([^\"]*)\"$")
+	public void update_First_Name_is_Last_Name_is(String firstName, String lastName) throws Exception {
+		manageUserProfileStep.input_FistName(firstName);
+		manageUserProfileStep.input_LastName(lastName);
+	}
+	
+	@When("^Click on Save button$")
+	public void click_on_Save_button() throws Exception {
+		manageUserProfileStep.click_On_Save_Button();
+	}
+	
+	@Then("^System should navigate to \"([^\"]*)\" screen\\.$")
+	public void system_should_navigate_to_screen(String systemAdminTitle) throws Exception {
+		Assert.assertEquals(userManageStep.get_sysAdminTitle(), systemAdminTitle);
+	}
+	
+	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
+	public void email_should_be_shown_on_screen(String email) throws Exception {
+		Assert.assertEquals(userManageStep.get_Email_Is_Shown(email), true);
+	}
+	@Then("^\"([^\"]*)\" Shows correctly be shown on screen\\.$")
+	public void User_name_should_be_shown_on_screen(String username) throws Exception {
+		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(username), true);
+	}
+	//----------------------------Create new User ---------------------
+
 	
 	@When("^Click on Manage menu\\.$")
 	public void click_on_Manage_menu() throws Exception {
@@ -88,27 +120,5 @@ public class GoodJobDefinition {
 	    manageUserProfileStep.input_LastName(lastName);
 	    manageUserProfileStep.input_Email(email);
 	}
-
-	@When("^Click on Save button$")
-	public void click_on_Save_button() throws Exception {
-		manageUserProfileStep.click_On_Save_Button();
-	}
-
-	@Then("^System should navigate to \"([^\"]*)\" screen\\.$")
-	public void system_should_navigate_to_screen(String systemAdminTitle) throws Exception {
-		Assert.assertEquals(userManageStep.get_sysAdminTitle(), systemAdminTitle);
-	}
-
-	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
-	public void email_should_be_shown_on_screen(String email) throws Exception {
-		Assert.assertEquals(userManageStep.get_Email_Is_Shown(email), true);
-	}
-	@Then("^\"([^\"]*)\" Shows correctly be shown on screen\\.$")
-	public void User_name_should_be_shown_on_screen(String username) throws Exception {
-		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(username), true);
-	}
-
-
-	
 
 }

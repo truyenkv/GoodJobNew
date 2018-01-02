@@ -13,7 +13,7 @@ public class HomePage extends PageObject{
 	WebElement titleCompanyList;
 	//get user profile menu
 	@FindBy(xpath="//a[@id='gj-nav-dropdown']")
-	WebElement companyMenu;
+	WebElement userMenu;
 	//get User Profile option
 	@FindBy(xpath="//a[contains(text(),'User Profile')]")
 	WebElement userProfile;
@@ -28,20 +28,6 @@ public class HomePage extends PageObject{
 	@FindBy(xpath="//a[contains(text(),'Manage')]")
 	WebElement manageBtn;
 	//------------------- Define method ----------------------------	
-	public String get_title_company() {
-		waitABit(10000);
-		return titleCompanyList.getText();
-	}
-	
-	public void click_on_company_profile() {
-		waitABit(10000);
-		companyMenu.click();
-	}
-
-	public void click_on_UserProfile_option() {
-		waitABit(5000);
-		withAction().moveToElement(userProfile).click().perform();
-	}
 
 	public void update_First_Name(String firstName) {
 		typeInto(formControlsFirstName, firstName);
@@ -51,13 +37,23 @@ public class HomePage extends PageObject{
 		typeInto(formControlsLastName, lastName);
 	}
 
-	public void clickSaveButton() {
+	public void click_SaveButton() {
 		SaveBtn.click();
 	}
 
 	public void click_Manage_button() {
 		waitABit(5000);
 		manageBtn.click();
+	}
+
+	public void click_user_menu() {
+		waitABit(10000);
+		userMenu.click();
+	}
+
+	public void click_profile_link() {
+		waitABit(5000);
+		withAction().moveToElement(userProfile).click().perform();
 	}
 
 	

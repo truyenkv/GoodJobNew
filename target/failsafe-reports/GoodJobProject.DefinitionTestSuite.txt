@@ -1,7 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: GoodJobProject.DefinitionTestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 91.287 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
-Create user normally(Create user)  Time elapsed: 86.175 sec  <<< ERROR!
-java.lang.ArrayIndexOutOfBoundsException: -1
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 71.255 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
+Update User Profile(Update User Profile)  Time elapsed: 68.127 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+The following error occurred: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
 

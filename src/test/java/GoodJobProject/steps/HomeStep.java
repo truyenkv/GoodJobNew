@@ -6,14 +6,6 @@ import GoodJobProject.pages.HomePage;
 public class HomeStep extends ScenarioSteps {
 	HomePage homePage;
 
-	public void show_Company_Menu() {
-		homePage.click_on_company_profile();	
-	}
-
-	public void choose_UserProfile_option() {
-		homePage.click_on_UserProfile_option();
-	}
-
 	public void update_First_Name(String firstName) {
 		homePage.update_First_Name(firstName);
 	}
@@ -23,7 +15,7 @@ public class HomeStep extends ScenarioSteps {
 	}
 
 	public void click_on_Save_button() {
-		homePage.clickSaveButton();		
+		homePage.click_SaveButton();		
 	}
 
 
@@ -31,8 +23,16 @@ public class HomeStep extends ScenarioSteps {
 		homePage.click_Manage_button();	
 	}
 
-	
+	public void click_on_user_menu() {
+		homePage.click_user_menu();
+		
+	}
 
-	
+	public void click_on_user_profile_link() {
+		homePage.click_profile_link();
+		
+	}
+
+
 	
 }

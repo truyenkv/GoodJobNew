@@ -1,8 +1,8 @@
-Feature: Create user
-	Update my admin profile
+Feature: Create Admin user
+	Create new admin user
 
 	Scenario: Create user normally
-	Given The user login site by "admin@yopmail.com" and "Voyen!1412" successfully
+	Given The user login site by "truyen.kieu12@yopmail.com" and "Cdbently2408^" successfully
 	When Click on Manage menu.
   And Click on Manage Administrators menu.
   And Click on Add User button.
