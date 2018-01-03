@@ -1,5 +1,7 @@
 package GoodJobProject.steps;
 
+import org.openqa.selenium.By;
+
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import GoodJobProject.pages.HomePage;
@@ -12,7 +14,7 @@ public class LoginStep extends ScenarioSteps{
 	@Step
 	public void open_login_page() {
 		loginPage.open();
-		
+		loginPage.getDriver().manage().window().maximize();
 	}
 
 	@Step
