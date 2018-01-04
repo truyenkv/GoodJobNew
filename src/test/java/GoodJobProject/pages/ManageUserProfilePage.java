@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 
 public class ManageUserProfilePage extends PageObject {
 	//get fist name
-	WebElementFacade formControlsFirstName;
+	WebElementFacade firstNameInput;
 	//get last name
-	WebElementFacade formControlsLastName;
+	WebElementFacade lastNameInput;
 	//get email
 	WebElementFacade formControlsEmail;
 	//get cancel button
@@ -23,11 +23,12 @@ public class ManageUserProfilePage extends PageObject {
 	
 	// ------------- define method -------------------------
 	public void input_fist_name(String firstName) {
-		typeInto(formControlsFirstName, firstName);	
+		waitABit(3000);
+		typeInto(firstNameInput, firstName);	
 	}
 
 	public void input_last_name(String lastName) {
-		typeInto(formControlsLastName, lastName);
+		typeInto(lastNameInput, lastName);
 	}
 
 	public void input_email(String email) {
