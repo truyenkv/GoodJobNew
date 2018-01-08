@@ -5,7 +5,7 @@ Feature: Update User Profile
 	Given The user login site by "truyen.kieu.10@yopmail.com" and "Cdbently2408^" successfully
 	When Click User menu
   And Click User profile link
-  And Update First Name is "Truyen Cong", Last Name is "Kieu Van"
+  And Update First Name is "Truyen FirstName", Last Name is "Kieu LastName"
   And Click on Save button
   Then System should navigate to "Manage System Administrators" screen.
   And "truyen.kieu.10@yopmail.com" should be shown on screen.
