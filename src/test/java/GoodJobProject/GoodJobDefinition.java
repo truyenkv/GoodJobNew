@@ -2,6 +2,7 @@ package GoodJobProject;
 
 import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
+import GoodJobProject.pages.HomePage;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageStep;
@@ -35,12 +36,12 @@ public class GoodJobDefinition {
 	}
 
 
-	@When("^the user input email is \"([^\"]*)\"$")
+	@When("^the user input email is ([^\"]*)$")
 	public void the_user_input_email_is(String email) throws Exception {
 	    loginStep.input_email(email);
 	}
 
-	@When("^the user input password is \"([^\"]*)\"$")
+	@When("^the user input password is ([^\"]*)$")
 	public void the_user_input_password_is(String password) throws Exception {
 	    loginStep.input_password(password);
 	}
@@ -49,8 +50,33 @@ public class GoodJobDefinition {
 	public void the_user_click_on_Login_button() throws Exception {
 		loginStep.click_Login_button();
 	}
-
-
+	
+	@Then("^the user should see ([^\"]*) shows correctly$")
+	public void the_user_should_see_User_menu(String welcome) throws Exception {
+		Assert.assertEquals(welcome, homeStep.get_welcome_user_menu());
+	}
+	
+	@Then("^([^\"]*) is shown ([^\"]*)$")
+	public void companies_is_shown_on_screen(String role,String item) throws Exception {
+		switch(role)
+		{
+		case "Admin":
+			Assert.assertEquals(item, homeStep.get_company_title());
+			break;
+		
+		case "Company":
+			Assert.assertEquals(item, homeStep.get_upload_employee_data_menu());
+			break;
+			
+		case "Partner":
+			Assert.assertEquals(item, homeStep.get_dashboard());
+			break;
+		default:
+			break;
+		}
+			
+				
+	}
 
 	//---------------------------------Update Usser menu----------------------
 	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")

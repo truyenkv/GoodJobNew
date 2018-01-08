@@ -4,6 +4,7 @@ import net.thucydides.core.steps.ScenarioSteps;
 import GoodJobProject.pages.HomePage;
 
 public class HomeStep extends ScenarioSteps {
+	
 	HomePage homePage;
 
 	public void update_First_Name(String firstName) {
@@ -31,6 +32,22 @@ public class HomeStep extends ScenarioSteps {
 	public void click_on_user_profile_link() {
 		homePage.click_profile_link();
 		
+	}
+
+	public String get_welcome_user_menu() {
+		return homePage.get_welcome_user_menu_text();
+	}
+
+	public String get_upload_employee_data_menu() {
+		return homePage.get_upload_employ_data_menu();
+	}
+
+	public String get_dashboard() {
+		return homePage.get_dashboard_title();
+	}
+
+	public String get_company_title() {
+		return homePage.get_companies_title();
 	}
 
 

@@ -27,6 +27,13 @@ public class HomePage extends PageObject{
 	//get Manage menu 
 	@FindBy(xpath="//a[contains(text(),'Manage')]")
 	WebElement manageBtn;
+	
+	@FindBy(xpath="//li[@role='presentation' and @class='selected']")
+	WebElement uploadEmployBtn;
+	
+	@FindBy(xpath="//*[@class='col-xs-12']")
+	WebElement title;
+	
 	//------------------- Define method ----------------------------	
 
 	public void update_First_Name(String firstName) {
@@ -54,6 +61,22 @@ public class HomePage extends PageObject{
 	public void click_profile_link() {
 		waitABit(5000);
 		withAction().moveToElement(userProfile).click().perform();
+	}
+
+	public String get_welcome_user_menu_text() {
+		return userMenu.getText();
+	}
+
+	public String get_upload_employ_data_menu() {
+		return uploadEmployBtn.getText();
+	}
+
+	public String get_dashboard_title() {
+		return title.getText();
+	}
+
+	public String get_companies_title() {
+		return title.getText();
 	}
 
 	

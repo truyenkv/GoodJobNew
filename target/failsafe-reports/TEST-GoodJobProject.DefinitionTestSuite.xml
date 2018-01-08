@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="93.78" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="176.803" tests="3" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -46,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_144\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dwebdriver.driver=chrome -Dwebdriver.chrome.driver=d:\Driver\chromedriver.exe"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify -Dwebdriver.driver=chrome -Dwebdriver.chrome.driver=D:\Driver\chromedriver.exe"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -54,7 +54,7 @@
     <property name="java.version" value="1.8.0_144"/>
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_144\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_144\jre\classes"/>
-    <property name="webdriver.chrome.driver" value="d:\Driver\chromedriver.exe"/>
+    <property name="webdriver.chrome.driver" value="D:\Driver\chromedriver.exe"/>
     <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\maven\apache-maven-3.5.0\bin\.."/>
@@ -66,42 +66,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Update User Profile" classname="Update User Profile" time="90.115">
-    <failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="junit.framework.AssertionFailedError"><![CDATA[junit.framework.AssertionFailedError: expected:<false> but was:<true>
+  <testcase name="Login and verify on home page" classname="Login to GoodJob" time="68.651"/>
+  <testcase name="Login and verify on home page" classname="Login to GoodJob" time="50.294"/>
+  <testcase name="Login and verify on home page" classname="Login to GoodJob" time="54.323">
+    <failure message="expected:&lt;Welcome Partner[1]&gt; but was:&lt;Welcome Partner[]&gt;" type="junit.framework.ComparisonFailure"><![CDATA[junit.framework.ComparisonFailure: expected:<Welcome Partner[1]> but was:<Welcome Partner[]>
 ]]></failure>
-    <system-out><![CDATA[XXX Created runtime cucumber.runtime.RuntimeOptions@4e7912d8
-]]></system-out>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - &amp#27;[36m
+    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
 
--------------------------------------------------------------------------------------
-     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
-    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
-   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
-    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
-.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
-|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
-                                                                                     
- News and tutorials at http://www.serenity-bdd.info                                  
- Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
- Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
--------------------------------------------------------------------------------------
-&amp#27;[0m
-[main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Update User Profile
-[main] INFO net.serenitybdd.core.Serenity - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Update User Profile
--------------------------------------------------------------------(update-user-profile;update-user-profile)
-Starting ChromeDriver 2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1) on port 30653
-Only local connections are allowed.
-Jan 05, 2018 3:42:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+TEST PASSED: Login and verify on home page
+----------------------------------------------------------------------------
+Jan 08, 2018 5:43:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 [main] ERROR net.serenitybdd.core.Serenity - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
@@ -111,10 +91,10 @@ INFO: Detected dialect: OSS
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Update User Profile
+TEST FAILED: Login and verify on home page
 --------------------------------------------------------------------------
-[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP And "truyen.kieu.10@yopmail.com" should be shown on screen.
-[main] ERROR net.serenitybdd.core.Serenity - expected:<false> but was:<true>
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Then the user should see Welcome Partner1 shows correctly
+[main] ERROR net.serenitybdd.core.Serenity - expected:<Welcome Partner[1]> but was:<Welcome Partner[]>
 ]]></system-err>
   </testcase>
 </testsuite>

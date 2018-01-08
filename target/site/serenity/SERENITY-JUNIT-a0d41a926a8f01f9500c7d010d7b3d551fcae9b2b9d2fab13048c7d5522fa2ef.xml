@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Update User Profile" skipped="0" tests="1" time="90.47" timestamp="2018-01-05T15:42:35.433+07:00[Asia/Bangkok]"><testcase name="Update User Profile"><failure message="expected:&lt;false&gt; but was:&lt;true&gt;" type="junit.framework.AssertionFailedError">expected:&lt;false&gt; but was:&lt;true&gt;</failure><system-err>expected:&lt;false&gt; but was:&lt;true&gt;&#13;
-junit.framework.Assert.fail(Assert.java:57)&#13;
-junit.framework.Assert.failNotEquals(Assert.java:329)&#13;
-junit.framework.Assert.assertEquals(Assert.java:78)&#13;
-junit.framework.Assert.assertEquals(Assert.java:174)&#13;
-junit.framework.Assert.assertEquals(Assert.java:181)&#13;
-GoodJobProject.GoodJobDefinition.email_should_be_shown_on_screen(GoodJobDefinition.java:92)&#13;
-✽."truyen.kieu.10@yopmail.com" should be shown on screen.(src/test/resources/features/updateuser.feature:11)&#13;
-</system-err></testcase></testsuite>

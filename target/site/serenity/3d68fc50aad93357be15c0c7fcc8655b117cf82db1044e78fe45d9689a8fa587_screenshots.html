@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Demo Project using Se3renity and Cucumber</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="f9aaba28926eb27a564d7091f4593b3dcafcd83317845af5929f85e5087dac09.html">Login To Good Job</a></span>
+                > <span class="truncate-60"><a
+                    href="3d68fc50aad93357be15c0c7fcc8655b117cf82db1044e78fe45d9689a8fa587.html">Login and verify on home page </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 08-01-2018 17:41</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login To Good Job </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Login site with many users'role
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Login and verify on home page
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given the user is on the GoodJob login page.<br>When the user input email is &lt;email&gt;<br>And the user input password is &lt;password&gt;<br>And the user click on Login button<br>Then the user should see &lt;welcome&gt; shows correctly<br>And &lt;item&gt; is shown on screen</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+                <div class="panel-heading"><span class='error-caption ellipsis'>FAILURE: Assertion error: expected:(Welcome Pa...</span></div>
+                <div class="panel-body">
+                    <a href="pagesource1348911217597417144.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e150265b32fc833c2462396cca81149648c89e95985398859984d8da992a0191.png" title="Login and verify on home page #1: {Role=Admin, email=truyen.kieu.10@yopmail.com, password=Cdbently2408^, welcome=Welcome Admin, item=Companies}" width="960"/>
+                <img src="c1f395300ab8545ee193951a37051ccb0e859df5ed362c52f222b3e009766dde.png" title="Given the user is on the GoodJob login page." width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="Open login page" width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="When the user input email is truyen.kieu.10@yopmail.com" width="960"/>
+                <img src="168125dfb1ce3db8b72cedbb520d7c473ee1a0690d32c1cbe030d046e8597fee.png" title="When the user input email is truyen.kieu.10@yopmail.com" width="960"/>
+                <img src="c1f395300ab8545ee193951a37051ccb0e859df5ed362c52f222b3e009766dde.png" title="Input email: truyen.kieu.10@yopmail.com" width="960"/>
+                <img src="ab1340d0d174dd397d314a86842e36feda53ecff92f10f8ba8e416a350f0c893.png" title="Input email: truyen.kieu.10@yopmail.com" width="960"/>
+                <img src="168125dfb1ce3db8b72cedbb520d7c473ee1a0690d32c1cbe030d046e8597fee.png" title="And the user input password is Cdbently2408^" width="960"/>
+                <img src="04aca5dd716d1a60e2feed690447b75e63c3de8d32357c7428a240a50e338db0.png" title="And the user input password is Cdbently2408^" width="960"/>
+                <img src="ab1340d0d174dd397d314a86842e36feda53ecff92f10f8ba8e416a350f0c893.png" title="Input password: Cdbently2408^" width="960"/>
+                <img src="ee608fed842395f2bcb7617f50daf34af5e6b4f66899bc7c8433333f686e8beb.png" title="Input password: Cdbently2408^" width="960"/>
+                <img src="04aca5dd716d1a60e2feed690447b75e63c3de8d32357c7428a240a50e338db0.png" title="And the user click on Login button" width="960"/>
+                <img src="a16d7a69e70c9493545b56b87dae26ff4d7f9d4283f30b06956cf148ffaebe2b.png" title="And the user click on Login button" width="960"/>
+                <img src="ee608fed842395f2bcb7617f50daf34af5e6b4f66899bc7c8433333f686e8beb.png" title="Click  login button" width="960"/>
+                <img src="a16d7a69e70c9493545b56b87dae26ff4d7f9d4283f30b06956cf148ffaebe2b.png" title="Click  login button" width="960"/>
+                <img src="a16d7a69e70c9493545b56b87dae26ff4d7f9d4283f30b06956cf148ffaebe2b.png" title="Then the user should see Welcome Admin shows correctly" width="960"/>
+                <img src="385ac8051644e80307e3583fc23c967f14db1665b1ad159cb34a8d848e9a53d9.png" title="Then the user should see Welcome Admin shows correctly" width="960"/>
+                <img src="e150265b32fc833c2462396cca81149648c89e95985398859984d8da992a0191.png" title="And Companies is shown on screen" width="960"/>
+                <img src="4d0cec007d5fda15a4bd13c4ecc10ecf54970caecb1c65facbc44ac9abcb8b38.png" title="And Companies is shown on screen" width="960"/>
+                <img src="9679a3f7bb418a06b105c3b8d0f009d8bfb4eb0d3fb6622f0fb8f35fb8cd3cdc.png" title="Login and verify on home page #2: {Role=Company, email=company.tr.02@yopmail.com, password=Cdbently2408^, welcome=Welcome Company, item=Complete these steps to provide employee data}" width="960"/>
+                <img src="c1f395300ab8545ee193951a37051ccb0e859df5ed362c52f222b3e009766dde.png" title="Given the user is on the GoodJob login page." width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="Open login page" width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="When the user input email is company.tr.02@yopmail.com" width="960"/>
+                <img src="771b189d9dca81550418fba9a48762f0a5727433c58121fda4e99f363b28bcb2.png" title="When the user input email is company.tr.02@yopmail.com" width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="Input email: company.tr.02@yopmail.com" width="960"/>
+                <img src="2a93c4ae98f4d587c1eb401ce3ad2e1be7ce53e181975d1b731f965a13b93967.png" title="Input email: company.tr.02@yopmail.com" width="960"/>
+                <img src="771b189d9dca81550418fba9a48762f0a5727433c58121fda4e99f363b28bcb2.png" title="And the user input password is Cdbently2408^" width="960"/>
+                <img src="f54801622f0a5ce599eeb864b0df622e8529fd45e87ddddd94d9de650e91143c.png" title="And the user input password is Cdbently2408^" width="960"/>
+                <img src="2a93c4ae98f4d587c1eb401ce3ad2e1be7ce53e181975d1b731f965a13b93967.png" title="Input password: Cdbently2408^" width="960"/>
+                <img src="b7c2c274c01428db5f4cb5913795ad5794e0935c40620b29e154a21220365f94.png" title="Input password: Cdbently2408^" width="960"/>
+                <img src="f54801622f0a5ce599eeb864b0df622e8529fd45e87ddddd94d9de650e91143c.png" title="And the user click on Login button" width="960"/>
+                <img src="c34426052ab8cf1d46a39e314bae111ebf9a39877f5985c7ae3b2b9e4b100dda.png" title="And the user click on Login button" width="960"/>
+                <img src="b7c2c274c01428db5f4cb5913795ad5794e0935c40620b29e154a21220365f94.png" title="Click  login button" width="960"/>
+                <img src="c34426052ab8cf1d46a39e314bae111ebf9a39877f5985c7ae3b2b9e4b100dda.png" title="Click  login button" width="960"/>
+                <img src="c34426052ab8cf1d46a39e314bae111ebf9a39877f5985c7ae3b2b9e4b100dda.png" title="Then the user should see Welcome Company shows correctly" width="960"/>
+                <img src="86f3e3ffb15f80b9831b35c2a3c3959fbcdcb3b978db2d9547df18ee8e319824.png" title="Then the user should see Welcome Company shows correctly" width="960"/>
+                <img src="e01d17ef53c454863aa142ed210f7badbc4db8aa4af02ad65afca446e151f881.png" title="And Complete these steps to provide employee data is shown on screen" width="960"/>
+                <img src="c1f395300ab8545ee193951a37051ccb0e859df5ed362c52f222b3e009766dde.png" title="Given the user is on the GoodJob login page." width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="Open login page" width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="When the user input email is partner.tr.01@yopmail.com" width="960"/>
+                <img src="557d614d8e3b1661e89fe02aa72b7f538b81dc8356e81fd1f83680b2841206c8.png" title="When the user input email is partner.tr.01@yopmail.com" width="960"/>
+                <img src="fda99ee45cc5afa39c6a7bb95d080a2a485983f732adcda460a740fd797fca54.png" title="Input email: partner.tr.01@yopmail.com" width="960"/>
+                <img src="ecd5621c5c08459811c688cf4bd49d763b96584308a4602e393ae3116f0c2b84.png" title="Input email: partner.tr.01@yopmail.com" width="960"/>
+                <img src="557d614d8e3b1661e89fe02aa72b7f538b81dc8356e81fd1f83680b2841206c8.png" title="And the user input password is Cdbently2408^" width="960"/>
+                <img src="307a546766bb280ad9efd2f25121ef1eb4108fc59d95b55bf3b71629758ff8bb.png" title="And the user input password is Cdbently2408^" width="960"/>
+                <img src="ecd5621c5c08459811c688cf4bd49d763b96584308a4602e393ae3116f0c2b84.png" title="Input password: Cdbently2408^" width="960"/>
+                <img src="d3853bf9f732072807b4d2410338979c57978b32c9837d6f48590a8f2c2cdf75.png" title="Input password: Cdbently2408^" width="960"/>
+                <img src="d3853bf9f732072807b4d2410338979c57978b32c9837d6f48590a8f2c2cdf75.png" title="And the user click on Login button" width="960"/>
+                <img src="9a8838edef1f36a51ed23a0b1f581de570c576a3cff61c9df67ff5b7bb2b5984.png" title="And the user click on Login button" width="960"/>
+                <img src="d3853bf9f732072807b4d2410338979c57978b32c9837d6f48590a8f2c2cdf75.png" title="Click  login button" width="960"/>
+                <img src="9a8838edef1f36a51ed23a0b1f581de570c576a3cff61c9df67ff5b7bb2b5984.png" title="Click  login button" width="960"/>
+                <img src="9a8838edef1f36a51ed23a0b1f581de570c576a3cff61c9df67ff5b7bb2b5984.png" title="Then the user should see Welcome Partner1 shows correctly" width="960"/>
+                <img src="a369676d74309f49b07a8276050707ac266e40c7cccad77fd02da030067b53ff.png" title="Then the user should see Welcome Partner1 shows correctly: <span class='failing-color'>FAILURE</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1</span>
+</div>
+</body>
+</html>
