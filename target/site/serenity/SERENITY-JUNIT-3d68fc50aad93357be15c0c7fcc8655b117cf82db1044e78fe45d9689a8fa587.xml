@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Login to GoodJob" skipped="0" tests="3" time="173.8" timestamp="2018-01-08T17:41:32.152+07:00[Asia/Bangkok]"><testcase name="Login and verify on home page"><failure message="expected:&lt;Welcome Partner[1]&gt; but was:&lt;Welcome Partner[]&gt;" type="java.lang.AssertionError">expected:&lt;Welcome Partner[1]&gt; but was:&lt;Welcome Partner[]&gt;</failure><system-err>expected:&lt;Welcome Partner[1]&gt; but was:&lt;Welcome Partner[]&gt;&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Login to GoodJob" skipped="0" tests="3" time="211.65" timestamp="2018-01-09T10:31:04.124+07:00[Asia/Bangkok]"><testcase name="Login and verify on home page"><failure message="expected:&lt;Companies[1]&gt; but was:&lt;Companies[]&gt;" type="java.lang.AssertionError">expected:&lt;Companies[1]&gt; but was:&lt;Companies[]&gt;</failure><system-err>expected:&lt;Companies[1]&gt; but was:&lt;Companies[]&gt;&#13;
 junit.framework.Assert.assertEquals(Assert.java:100)&#13;
 junit.framework.Assert.assertEquals(Assert.java:107)&#13;
-GoodJobProject.GoodJobDefinition.the_user_should_see_User_menu(GoodJobDefinition.java:55)&#13;
-✽.the user should see Welcome Partner1 shows correctly(src/test/resources/features/login.feature:9)&#13;
+GoodJobProject.GoodJobDefinition.companies_is_shown_on_screen(GoodJobDefinition.java:63)&#13;
+✽.Admin is shown Companies1(src/test/resources/features/login.feature:10)&#13;
 </system-err></testcase></testsuite>

@@ -68,14 +68,17 @@ public class HomePage extends PageObject{
 	}
 
 	public String get_upload_employ_data_menu() {
+		waitABit(5000);
 		return uploadEmployBtn.getText();
 	}
 
 	public String get_dashboard_title() {
+		waitABit(5000);
 		return title.getText();
 	}
 
 	public String get_companies_title() {
+		waitABit(5000);
 		return title.getText();
 	}
 

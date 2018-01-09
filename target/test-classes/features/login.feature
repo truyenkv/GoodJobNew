@@ -7,14 +7,14 @@ Feature: Login to GoodJob
     And the user input password is <password>
     And the user click on Login button
     Then the user should see <welcome> shows correctly
-    And <item> is shown on screen
+    And <role> is shown <item>
     
    
   Examples:
-  	|Role				|email											|password			|welcome				|item																					|
-  	|Admin 			|truyen.kieu.10@yopmail.com	|Cdbently2408^|Welcome Admin	|Companies																		|
-  	|Company		|company.tr.02@yopmail.com	|Cdbently2408^|Welcome Company|Complete these steps to provide employee data|
-  	|Partner		|partner.tr.01@yopmail.com	|Cdbently2408^|Welcome Partner1|Dashboard																		|
+  	|role				|email											|password			|welcome				|item																					|
+  	|Admin 			|truyen.kieu.10@yopmail.com	|Cdbently2408^|Welcome Admin	|Companies1																		|
+  	|Company		|company.tr.02@yopmail.com	|Cdbently2408^|Welcome Company|Upload Employee Data|
+  	|Partner		|partner.tr.01@yopmail.com	|Cdbently2408^|Welcome Partner|Dashboard																		|
   
     
 

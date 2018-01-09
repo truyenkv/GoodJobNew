@@ -2,12 +2,11 @@ package GoodJobProject;
 
 import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
-import GoodJobProject.pages.HomePage;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
+import GoodJobProject.steps.ManageAdminStep;
 import GoodJobProject.steps.ManageStep;
 import GoodJobProject.steps.ManageUserProfileStep;
-import GoodJobProject.steps.ManageAdminStep;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
