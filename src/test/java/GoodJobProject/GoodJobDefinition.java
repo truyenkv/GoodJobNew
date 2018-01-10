@@ -2,11 +2,14 @@ package GoodJobProject;
 
 import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
+import GoodJobProject.steps.EmailStep;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageAdminStep;
 import GoodJobProject.steps.ManageStep;
 import GoodJobProject.steps.ManageUserProfileStep;
+import GoodJobProject.steps.UpdatePasswordStep;
+import GoodJobProject.steps.WelcomeStep;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -27,6 +30,16 @@ public class GoodJobDefinition {
 	
 	@Steps
 	ManageUserProfileStep manageUserProfileStep;
+	
+	@Steps
+	EmailStep emailStep;
+	
+	@Steps
+	WelcomeStep welcomeStep;
+	
+	@Steps
+	UpdatePasswordStep updatePassStep;
+	
 	
 	//------------------------------------------- login scenario -----------------------------------------------------------------------
 	@Given("^the user is on the GoodJob login page\\.$")
@@ -49,12 +62,7 @@ public class GoodJobDefinition {
 	public void the_user_click_on_Login_button() throws Exception {
 		loginStep.click_Login_button();
 	}
-	
-	@Then("^the user should see ([^\"]*) shows correctly$")
-	public void the_user_should_see_User_menu(String welcome) throws Exception {
-		Assert.assertEquals(welcome, homeStep.get_welcome_user_menu());
-	}
-	
+		
 	@Then("^([^\"]*) is shown ([^\"]*)$")
 	public void companies_is_shown_on_screen(String role,String item) throws Exception {
 		switch(role)
@@ -78,13 +86,7 @@ public class GoodJobDefinition {
 	}
 
 	//---------------------------------Update Usser menu----------------------
-	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
-	public void the_user_login_site_by_and_successfully(String email, String password) throws Exception {
-		loginStep.open_login_page();
-		loginStep.input_email(email);
-		loginStep.input_password(password);
-		loginStep.click_Login_button();
-	}
+
 	@When("^Click User menu$")
 	public void click_User_menu() throws Exception {
 	    homeStep.click_on_user_menu();
@@ -102,26 +104,16 @@ public class GoodJobDefinition {
 		manageUserProfileStep.input_LastName(lastName);
 	}
 	
-	@When("^Click on Save button$")
-	public void click_on_Save_button() throws Exception {
-		manageUserProfileStep.click_On_Save_Button();
-	}
 	
-	@Then("^System should navigate to \"([^\"]*)\" screen\\.$")
-	public void system_should_navigate_to_screen(String systemAdminTitle) throws Exception {
-		Assert.assertEquals(userManageStep.get_sysAdminTitle(), systemAdminTitle);
-	}
-	
-	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
-	public void email_should_be_shown_on_screen(String email) throws Exception {
-		Assert.assertEquals(userManageStep.get_Email_Is_Shown(email), true);
-	}
-	@Then("^\"([^\"]*)\" Shows correctly be shown on screen\\.$")
-	public void User_name_should_be_shown_on_screen(String username) throws Exception {
-		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(username), true);
-	}
 	//----------------------------Create new User ---------------------
-
+	
+	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
+	public void the_user_login_site_by_and_successfully(String email, String password) throws Exception {
+		loginStep.open_login_page();
+		loginStep.input_email(email);
+		loginStep.input_password(password);
+		loginStep.click_Login_button();
+	}
 	
 	@When("^Click on Manage menu\\.$")
 	public void click_on_Manage_menu() throws Exception {
@@ -145,5 +137,52 @@ public class GoodJobDefinition {
 	    manageUserProfileStep.input_LastName(lastName);
 	    manageUserProfileStep.input_Email(email);
 	}
+	
+	@When("^Click on Save button$")
+	public void click_on_Save_button() throws Exception {
+		manageUserProfileStep.click_On_Save_Button();
+	}
+	
+	@Then("^System should navigate to \"([^\"]*)\" screen\\.$")
+	public void system_should_navigate_to_screen(String systemAdminTitle) throws Exception {
+		Assert.assertEquals(userManageStep.get_sysAdminTitle(), systemAdminTitle);
+	}
+	
+	@Then("^\"([^\"]*)\" should be shown on screen\\.$")
+	public void email_should_be_shown_on_screen(String email) throws Exception {
+		Assert.assertEquals(userManageStep.get_Email_Is_Shown(email), true);
+	}
+	@Then("^\"([^\"]*)\" Shows correctly be shown on screen\\.$")
+	public void User_name_should_be_shown_on_screen(String username) throws Exception {
+		Assert.assertEquals(userManageStep.get_User_Name_Is_Shown(username), true);
+	}
+	
+	@Then("^Open email to confirm passwordby email \"([^\"]*)\"\\.$")
+	public void open_email_to_confirm_password(String emailConfirm) throws Exception {
+		emailStep.open_email_webapp();
+	    emailStep.input_email_value(emailConfirm);
+	}
+	
+	@Then("^Click on Get Start button.$")
+	public void click_on_getstart_button() throws Exception {
+		emailStep.click_on_get_start_buton();
+	}
+
+	@Then("^Create an account$")
+	public void create_an_account() throws Exception {
+	    welcomeStep.click_on_Create_An_Account_button();
+	}
+
+	@Then("^Update new Password is \"([^\"]*)\"$")
+	public void update_new_Password_is(String password) throws Exception {
+	    updatePassStep.update_password(password);
+	}
+
+	@Then("^the user should see \"([^\"]*)\" shows correctly$")
+	public void the_user_should_see_User_menu(String welcome) throws Exception {
+		Assert.assertEquals(welcome, homeStep.get_welcome_user_menu());
+	}
+	
+
 
 }
