@@ -42,7 +42,7 @@ public class GoodJobDefinition {
 	
 	
 	//------------------------------------------- login scenario -----------------------------------------------------------------------
-	@Given("^the user is on the GoodJob login page\\.$")
+	@Given("^the user is in Login page$")
 	public void the_user_is_on_the_GoodJob_login_page() throws Exception {
 	    loginStep.open_login_page();
 	}
@@ -62,30 +62,16 @@ public class GoodJobDefinition {
 	public void the_user_click_on_Login_button() throws Exception {
 		loginStep.click_Login_button();
 	}
+	
+	
+	
 		
-	@Then("^([^\"]*) is shown ([^\"]*)$")
-	public void companies_is_shown_on_screen(String role,String item) throws Exception {
-		switch(role)
-		{
-		case "Admin":
-			Assert.assertEquals(item, homeStep.get_company_title());
-			break;
-		
-		case "Company":
-			Assert.assertEquals(item, homeStep.get_upload_employee_data_menu());
-			break;
-			
-		case "Partner":
-			Assert.assertEquals(item, homeStep.get_dashboard());
-			break;
-		default:
-			break;
-		}
+	
 			
 				
-	}
+	
 
-	//---------------------------------Update Usser menu----------------------
+	//---------------------------------Update User menu----------------------
 
 	@When("^Click User menu$")
 	public void click_User_menu() throws Exception {
@@ -177,12 +163,49 @@ public class GoodJobDefinition {
 	public void update_new_Password_is(String password) throws Exception {
 	    updatePassStep.update_password(password);
 	}
+//------------------------------------ login in first time -------------------------------------------
+	@Given("^Open browser with ([^\"]*)$")
+	public void open_browser_with(String token) throws Exception {
+	    welcomeStep.open_site(token);
+	}
 
-	@Then("^the user should see \"([^\"]*)\" shows correctly$")
+
+	@When("^User clicks on Create an account button$")
+	public void user_clicks_on_Create_an_account_button() throws Exception {
+		welcomeStep.click_on_Create_An_Account_button();
+	}
+
+	@When("^User creates password is ([^\"]*)$")
+	public void user_creates_password_is(String password) throws Exception {
+		updatePassStep.update_password(password);
+	}
+
+	@Then("^the user should see ([^\"]*) shows correctly$")
 	public void the_user_should_see_User_menu(String welcome) throws Exception {
 		Assert.assertEquals(welcome, homeStep.get_welcome_user_menu());
 	}
 	
-
+	@Then("^([^\"]*) is shown ([^\"]*)$")
+	public void companies_is_shown_on_screen(String role,String item) throws Exception {
+		switch(role)
+		{
+		case "Admin":
+			Assert.assertEquals(item, homeStep.get_company_title());
+			break;
+		
+		case "Company":
+			Assert.assertEquals(item, homeStep.get_upload_employee_data_menu());
+			break;
+			
+		case "Partner":
+			Assert.assertEquals(item, homeStep.get_dashboard());
+			break;
+		default:
+			break;
+		}
+	}
+	
+	
+	
 
 }

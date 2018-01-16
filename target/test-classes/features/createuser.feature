@@ -11,10 +11,11 @@ Feature: Create User Account
   Then System should navigate to "Manage System Administrators" screen.
   And "truyen.kieu.15@yopmail.com" should be shown on screen.
   And "Truyen Kieu" Shows correctly be shown on screen.
-  And Open email to confirm password.
+  And Open email to confirm password by email "truyen.kieu.16".
+  And Click on Get Start button.
   And Create an account
   And Update new Password is "Cdbently!"
-  And Should show usermenu is "Welcome truyen"
+  And the user should see "Welcome truyen" shows correctly
   
 	
 	

@@ -12,6 +12,7 @@ public class WelcomPage extends PageObject{
 	WebElement createAccountBtn;
 	
 	public void click_Create_An_Account_button() {
+		waitABit(5000);
 		createAccountBtn.click();
 	}
 }
