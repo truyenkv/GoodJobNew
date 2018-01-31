@@ -7,35 +7,60 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.WebElement;
 
 public class ManageUserProfilePage extends PageObject {
-	//get fist name
-	WebElementFacade firstNameInput;
-	//get last name
-	WebElementFacade lastNameInput;
-	//get email
-	WebElementFacade formControlsEmail;
-	//get cancel button
+	
+	private WebElementFacade firstNameInput;
+	
+	private WebElementFacade lastNameInput;
+	
+	private WebElementFacade formControlsEmail;
+	
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
-	WebElement cancelBtn;
-	//get save button
+	private WebElementFacade cancelBtn;
+	
 	@FindBy(xpath="//button[contains(text(),'Save')]")
-	WebElement saveBtn;
+	private WebElementFacade saveBtn;
 	
 	
-	// ------------- define method -------------------------
+	
+	/**
+	 * Update First Name 
+	 * 
+	 * @param firstName
+	 */
 	public void input_fist_name(String firstName) {
-		waitABit(3000);
-		typeInto(firstNameInput, firstName);	
+		firstNameInput.waitUntilPresent().type(firstName);
 	}
 
+	
+	/**
+	 * Update Last Name 
+	 * 
+	 * @param lastName
+	 */
 	public void input_last_name(String lastName) {
-		typeInto(lastNameInput, lastName);
+		lastNameInput.waitUntilPresent().type(lastName);
 	}
 
+	
+	/**
+	 * Input email 
+	 * 
+	 * @param email
+	 */
 	public void input_email(String email) {
+		formControlsEmail.waitUntilPresent().type(email);
 		typeInto(formControlsEmail, email);
 	}
-
+	
+	
+	
+	
+	/**
+	 * Click on Save button  
+	 * 
+	 * @param saveBtn
+	 */
 	public void click_save() {
-		saveBtn.click();
+		saveBtn.waitUntilPresent().click();
 	}
 }

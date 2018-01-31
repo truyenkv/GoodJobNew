@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Login to GoodJob" skipped="0" tests="3" time="211.18" timestamp="2018-01-11T14:24:32.713+07:00[Asia/Bangkok]"><testcase name="Login and verify on home page"><failure message="expected:&lt;Companies[1]&gt; but was:&lt;Companies[]&gt;" type="java.lang.AssertionError">expected:&lt;Companies[1]&gt; but was:&lt;Companies[]&gt;</failure><system-err>expected:&lt;Companies[1]&gt; but was:&lt;Companies[]&gt;&#13;
-junit.framework.Assert.assertEquals(Assert.java:100)&#13;
-junit.framework.Assert.assertEquals(Assert.java:107)&#13;
-GoodJobProject.GoodJobDefinition.companies_is_shown_on_screen(GoodJobDefinition.java:77)&#13;
-✽.Admin is shown Companies1(src/test/resources/features/login.feature:10)&#13;
-</system-err></testcase></testsuite>

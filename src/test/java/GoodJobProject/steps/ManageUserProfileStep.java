@@ -13,12 +13,10 @@ public class ManageUserProfileStep extends ScenarioSteps{
 	public void input_LastName(String lastName) {
 		manageUserProfilePage.input_last_name(lastName);
 	}
-
+	
 	public void input_Email(String email) {
 		manageUserProfilePage.input_email(email);
-		
 	}
-
 	public void click_On_Save_Button() {
 		manageUserProfilePage.click_save();
 	}

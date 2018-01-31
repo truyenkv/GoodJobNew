@@ -8,8 +8,10 @@ import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageAdminStep;
 import GoodJobProject.steps.ManageStep;
 import GoodJobProject.steps.ManageUserProfileStep;
+import GoodJobProject.steps.ReportStep;
 import GoodJobProject.steps.UpdatePasswordStep;
-import GoodJobProject.steps.WelcomeStep;
+import GoodJobProject.steps.UploadEmployedDataStep;
+import GoodJobProject.steps.WorkingMetricsStep;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -35,13 +37,17 @@ public class GoodJobDefinition {
 	EmailStep emailStep;
 	
 	@Steps
-	WelcomeStep welcomeStep;
+	WorkingMetricsStep welcomeStep;
 	
 	@Steps
 	UpdatePasswordStep updatePassStep;
 	
+	@Steps
+	UploadEmployedDataStep uploadEmployeeDataStep;
 	
-	//------------------------------------------- login scenario -----------------------------------------------------------------------
+	@Steps
+	ReportStep reportStep;
+	
 	@Given("^the user is in Login page$")
 	public void the_user_is_on_the_GoodJob_login_page() throws Exception {
 	    loginStep.open_login_page();
@@ -64,14 +70,6 @@ public class GoodJobDefinition {
 	}
 	
 	
-	
-		
-	
-			
-				
-	
-
-	//---------------------------------Update User menu----------------------
 
 	@When("^Click User menu$")
 	public void click_User_menu() throws Exception {
@@ -91,7 +89,6 @@ public class GoodJobDefinition {
 	}
 	
 	
-	//----------------------------Create new User ---------------------
 	
 	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
 	public void the_user_login_site_by_and_successfully(String email, String password) throws Exception {
@@ -156,13 +153,15 @@ public class GoodJobDefinition {
 
 	@Then("^Create an account$")
 	public void create_an_account() throws Exception {
-	    welcomeStep.click_on_Create_An_Account_button();
+	    welcomeStep.click_on_create_an_account_button();
 	}
 
 	@Then("^Update new Password is \"([^\"]*)\"$")
 	public void update_new_Password_is(String password) throws Exception {
 	    updatePassStep.update_password(password);
 	}
+	
+	
 //------------------------------------ login in first time -------------------------------------------
 	@Given("^Open browser with ([^\"]*)$")
 	public void open_browser_with(String token) throws Exception {
@@ -172,7 +171,7 @@ public class GoodJobDefinition {
 
 	@When("^User clicks on Create an account button$")
 	public void user_clicks_on_Create_an_account_button() throws Exception {
-		welcomeStep.click_on_Create_An_Account_button();
+		welcomeStep.click_on_create_an_account_button();
 	}
 
 	@When("^User creates password is ([^\"]*)$")
@@ -196,7 +195,12 @@ public class GoodJobDefinition {
 		case "Company":
 			Assert.assertEquals(item, homeStep.get_upload_employee_data_menu());
 			break;
-			
+		case "Company Manager":
+			Assert.assertEquals(item, uploadEmployeeDataStep.get_compelente_step_title());
+			break;	
+		case "Company User":
+			Assert.assertEquals(item, reportStep.get_social_impact_scorecard_title());
+			break;	
 		case "Partner":
 			Assert.assertEquals(item, homeStep.get_dashboard());
 			break;

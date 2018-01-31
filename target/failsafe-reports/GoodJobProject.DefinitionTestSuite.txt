@@ -1,7 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: GoodJobProject.DefinitionTestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 213.688 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
-Login and verify on home page(Login to GoodJob)  Time elapsed: 89.828 sec  <<< FAILURE!
-junit.framework.ComparisonFailure: expected:<Companies[1]> but was:<Companies[]>
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 84.841 sec <<< FAILURE! - in GoodJobProject.DefinitionTestSuite
+Login first time and verify role(Login first time)  Time elapsed: 81.096 sec  <<< ERROR!
+net.serenitybdd.core.exceptions.SerenityManagedException: 
+The following error occurred: Expected condition failed: waiting for ReportPage.showReportBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '10.64.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Caused by: org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for ReportPage.showReportBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '10.64.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
 
