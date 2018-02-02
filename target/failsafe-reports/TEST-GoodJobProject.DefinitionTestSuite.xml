@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="84.841" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="82.673" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -66,19 +66,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Login first time and verify role" classname="Login first time" time="81.096">
-    <error message="The following error occurred: Expected condition failed: waiting for ReportPage.showReportBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;10.64.0.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
-The following error occurred: Expected condition failed: waiting for ReportPage.showReportBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+  <testcase name="Create Partner account" classname="Create User Account" time="76.988">
+    <error message="The following error occurred: Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;10.64.0.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+The following error occurred: Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
 Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
-System info: host: 'KVTRUYEN', ip: '10.64.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: driver.version: unknown
 Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for ReportPage.showReportBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
 Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
-System info: host: 'KVTRUYEN', ip: '10.64.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: driver.version: unknown
 </error>
-    <system-out><![CDATA[XXX Created runtime cucumber.runtime.RuntimeOptions@272ed83b
+    <system-out><![CDATA[XXX Created runtime cucumber.runtime.RuntimeOptions@1e6454ec
 ]]></system-out>
     <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - &amp#27;[36m
 
@@ -97,7 +97,7 @@ Driver info: driver.version: unknown
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 &amp#27;[0m
-[main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Login first time
+[main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Create User Account
 [main] INFO net.serenitybdd.core.Serenity - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
@@ -106,11 +106,11 @@ Driver info: driver.version: unknown
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: Login first time and verify role
--------------------------------------------------------------------(login-first-time;login-first-time-and-verify-role)
-Starting ChromeDriver 2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1) on port 2557
+TEST STARTED: Create Partner account
+-------------------------------------------------------------------(create-user-account;create-partner-account)
+Starting ChromeDriver 2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1) on port 24097
 Only local connections are allowed.
-Jan 31, 2018 5:48:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 02, 2018 5:46:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 [main] ERROR net.serenitybdd.core.Serenity - 
            __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
@@ -120,10 +120,10 @@ INFO: Detected dialect: OSS
  (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
           \_\                                                            
 
-TEST FAILED: Login first time and verify role
+TEST FAILED: Create Partner account
 --------------------------------------------------------------------------
-[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Get social impact scorecard title
-[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: Expected condition failed: waiting for ReportPage.showReportBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '10.64.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknownBuild info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '10.64.0.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknown
+[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Click on add partner button
+[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknownBuild info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknown
 ]]></system-err>
   </testcase>
 </testsuite>

@@ -1,11 +1,15 @@
 package GoodJobProject;
 
+import javax.validation.constraints.AssertTrue;
+
 import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
 import GoodJobProject.steps.EmailStep;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageAdminStep;
+import GoodJobProject.steps.ManagePartnerProfileStep;
+import GoodJobProject.steps.ManagePartnerStep;
 import GoodJobProject.steps.ManageStep;
 import GoodJobProject.steps.ManageUserProfileStep;
 import GoodJobProject.steps.ReportStep;
@@ -48,9 +52,15 @@ public class GoodJobDefinition {
 	@Steps
 	ReportStep reportStep;
 	
-	@Given("^the user is in Login page$")
-	public void the_user_is_on_the_GoodJob_login_page() throws Exception {
-	    loginStep.open_login_page();
+	@Steps
+	ManagePartnerStep managepartStep;
+	
+	@Steps
+	ManagePartnerProfileStep managePartProfileStep;
+	
+	@Given("^open page with url is \"([^\"]*)\"$")
+	public void the_user_is_on_the_GoodJob_login_page(String url) throws Exception {
+	    loginStep.open_login_page(url);
 	}
 
 
@@ -90,9 +100,9 @@ public class GoodJobDefinition {
 	
 	
 	
-	@Given("^The user login site by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
-	public void the_user_login_site_by_and_successfully(String email, String password) throws Exception {
-		loginStep.open_login_page();
+	@Given("^The user login \"([^\"]*)\" by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
+	public void the_user_login_site_by_and_successfully(String url, String email, String password) throws Exception {
+		loginStep.open_login_page(url);
 		loginStep.input_email(email);
 		loginStep.input_password(password);
 		loginStep.click_Login_button();
@@ -103,11 +113,6 @@ public class GoodJobDefinition {
 		homeStep.open_Manage_page();
 	}
 
-
-	@When("^Click on Manage Administrators menu\\.$")
-	public void click_on_Manage_Administrators_menu() throws Exception {
-		manageStep.open_User_Manage_page();
-	}
 
 	@When("^Click on Add User button\\.$")
 	public void click_on_Add_User_button() throws Exception {
@@ -121,10 +126,7 @@ public class GoodJobDefinition {
 	    manageUserProfileStep.input_Email(email);
 	}
 	
-	@When("^Click on Save button$")
-	public void click_on_Save_button() throws Exception {
-		manageUserProfileStep.click_On_Save_Button();
-	}
+
 	
 	@Then("^System should navigate to \"([^\"]*)\" screen\\.$")
 	public void system_should_navigate_to_screen(String systemAdminTitle) throws Exception {
@@ -162,8 +164,7 @@ public class GoodJobDefinition {
 	}
 	
 	
-//------------------------------------ login in first time -------------------------------------------
-	@Given("^Open browser with ([^\"]*)$")
+	@Given("^open page with url is ([^\"]*)$")
 	public void open_browser_with(String token) throws Exception {
 	    welcomeStep.open_site(token);
 	}
@@ -179,6 +180,33 @@ public class GoodJobDefinition {
 		updatePassStep.update_password(password);
 	}
 
+	@When("^Click on Manage Administrators menu\\.$")
+	public void click_on_Manage_Administrators_menu() throws Exception {
+	    manageStep.click_on_Manage_Partners_button();
+	}
+
+
+	@When("^Click on Manage Partner menu\\.$")
+	public void click_on_Manage_Partner_menu() throws Exception {
+	    
+	}
+	
+	@When("^Click on Add Partner button and create Partner is \"([^\"]*)\"$")
+	public void click_on_Add_Partner_button_and_create_Partner_is(String partnerName) throws Exception {
+	    managepartStep.click_on_add_partner_button();
+	    managePartProfileStep.create_partner_name(partnerName);
+	}
+
+	@When("^Let create user has \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" successfully\\.$")
+	public void let_create_user_has_successfully(String firstName, String lastName, String email, String role) throws Exception {
+	    managePartProfileStep.click_on_add_a_user_button();
+	    managePartProfileStep.input_user_information(firstName, lastName, email, role);
+	}
+	
+	@When("^Click on Save button on Manage Partner screen.$")
+	public void click_on_Save_button() throws Exception {
+		managePartProfileStep.click_On_Save_Button();
+	}
 	@Then("^the user should see ([^\"]*) shows correctly$")
 	public void the_user_should_see_User_menu(String welcome) throws Exception {
 		Assert.assertEquals(welcome, homeStep.get_welcome_user_menu());

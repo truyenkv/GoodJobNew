@@ -2,18 +2,35 @@ package GoodJobProject.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
 
 import org.openqa.selenium.WebElement;
 
 public class ManagePage extends PageObject {
-//---------------- Define localtor land --------------------
-	@FindBy(xpath="//*[contains(text(),'Manage Administrators')]")
-	WebElement userManage;
-
-	public void click_User_Manage_icon() {
-		waitABit(5000);
-		userManage.click();
-	}
 	
+	@FindBy(xpath="//*[contains(text(),'Manage Administrators')]")
+	private WebElementFacade manageAdminBtn;
+
+	@FindBy(xpath="//*[contains(text(),'Manage Partners')]")
+	private WebElementFacade managePartnerBtn;
+	
+	@FindBy(xpath="//span[contains(text(),'Manage Companies')]")
+	private WebElementFacade manageCompanyBtn;
+
+	
+	/**
+	 * Click on Manage Partners menu
+	 * 
+	 * @param managePartnerBtn
+	 */
+	public void click_open_Manage_Partners() {
+		managePartnerBtn.waitUntilPresent().click();
+	}
+
+
+	
+
+
+
 	
 }

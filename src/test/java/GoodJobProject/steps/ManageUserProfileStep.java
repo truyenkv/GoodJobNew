@@ -17,7 +17,8 @@ public class ManageUserProfileStep extends ScenarioSteps{
 	public void input_Email(String email) {
 		manageUserProfilePage.input_email(email);
 	}
-	public void click_On_Save_Button() {
+
+	public void click_on_save_button() {
 		manageUserProfilePage.click_save();
 	}
 

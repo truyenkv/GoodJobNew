@@ -4,6 +4,7 @@ import java.util.List;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -12,22 +13,22 @@ public class ManageAdminPage extends PageObject{
 
 	
 	@FindBy(xpath="//*[@class='manage-content']/div[2]/div/button/span")
-	WebElement addBtn;
+	private WebElementFacade addBtn;
 	
 	@FindBy(xpath="//*[@class='manage-content']/div[1]")
-	WebElement title;
+	private WebElementFacade title;
 	
 	@FindBy(xpath="//*[@class='rt-tr -odd']/div[2]")
-	List<WebElement> emailOdd;
+	private List<WebElementFacade> emailOdd;
 	
 	@FindBy(xpath="//*[@class='rt-tr -odd']/div[1]")
-	List<WebElement> usernameOdd;
+	private List<WebElementFacade> usernameOdd;
 	
 	@FindBy(xpath="/*[@class='rt-tr -even']/div[2]")
-	List<WebElement> emailEven;
+	private List<WebElementFacade> emailEven;
 	
 	@FindBy(xpath="//*[@class='rt-tr -even']/div[1]")
-	List<WebElement> usernameEven;
+	private List<WebElementFacade> usernameEven;
 	//--------------define method------------------
 
 	int count = 0;
@@ -52,19 +53,19 @@ public class ManageAdminPage extends PageObject{
 				
 			}
 			
-			for(int j=0; j<emailEven.size(); j++)
+		for(int j=0; j<emailEven.size(); j++)
+		{
+			if(emailOdd.get(j).getText().equals(email))
 			{
-				if(emailOdd.get(j).getText().equals(email))
-				{
-					count+=1;
-					indexEven = j;
-				}
-				
+				count+=1;
+				indexEven = j;
 			}
-			if (count==1)
-				return true;
-			else 
-				return false;
+			
+		}
+		if (count==1)
+			return true;
+		else 
+			return false;
 		}
 
 	public boolean getUserName(String username) {

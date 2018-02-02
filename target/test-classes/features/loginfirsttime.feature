@@ -3,7 +3,7 @@ Feature: Login first time
 
 @tag1
 Scenario Outline: Login first time and verify role
-Given Open browser with <token>
+Given open page with url is <token>
 When User clicks on Create an account button
 And User creates password is <password>
 Then the user should see <dashboard> shows correctly

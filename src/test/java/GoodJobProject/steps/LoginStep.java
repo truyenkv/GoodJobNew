@@ -7,14 +7,13 @@ import net.thucydides.core.steps.ScenarioSteps;
 import GoodJobProject.pages.HomePage;
 import GoodJobProject.pages.LoginPage;
 
-public class LoginStep extends ScenarioSteps{
+public class LoginStep extends baseStep{
 	LoginPage loginPage;
 	HomePage homePage;
 	
 	@Step
-	public void open_login_page() {
-		loginPage.open();
-		loginPage.getDriver().manage().window().maximize();
+	public void open_login_page(String url) {
+		open_browser_with_url(url);
 	}
 
 	@Step

@@ -10,29 +10,29 @@ public class HomePage extends PageObject{
 	//---------------- Define localtor land --------------------
 	//get company title
 	@FindBy(xpath="//*[@class='gj-title-text']")
-	WebElement titleCompanyList;
+	private WebElementFacade titleCompanyList;
 	//get user profile menu
 	@FindBy(xpath="//a[@id='gj-nav-dropdown']")
-	WebElement userMenu;
+	private WebElementFacade userMenu;
 	//get User Profile option
 	@FindBy(xpath="//a[contains(text(),'User Profile')]")
-	WebElement userProfile;
+	private WebElementFacade userProfile;
 	//get First Name text
-	WebElementFacade formControlsFirstName;
+	private WebElementFacade formControlsFirstName;
 	//get Last Name text
-	WebElementFacade formControlsLastName;
+	private WebElementFacade formControlsLastName;
 	//get Save button
 	@FindBy(xpath="//button[contains(text(),'Save')]")
-	WebElement SaveBtn;
+	private WebElementFacade SaveBtn;
 	//get Manage menu 
 	@FindBy(xpath="//a[contains(text(),'Manage')]")
-	WebElement manageBtn;
+	private WebElementFacade manageBtn;
 	
 	@FindBy(xpath="//li[@role='presentation' and @class='selected']")
-	WebElement uploadEmployBtn;
+	private WebElementFacade uploadEmployBtn;
 	
 	@FindBy(xpath="//*[@class='col-xs-12']")
-	WebElement title;
+	private WebElementFacade title;
 	
 	//------------------- Define method ----------------------------	
 
@@ -49,8 +49,7 @@ public class HomePage extends PageObject{
 	}
 
 	public void click_Manage_button() {
-		waitABit(5000);
-		manageBtn.click();
+		manageBtn.waitUntilPresent().click();
 	}
 
 	public void click_user_menu() {

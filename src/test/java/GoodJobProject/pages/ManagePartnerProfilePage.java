@@ -1,0 +1,72 @@
+package GoodJobProject.pages;
+
+import net.serenitybdd.core.annotations.findby.FindBy;
+import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.WebElementFacade;
+
+public class ManagePartnerProfilePage extends PageObject{
+	
+	private WebElementFacade partnerNameInput;
+	
+	@FindBy(xpath="//button[contains(text(),'Save')]")
+	private WebElementFacade saveBtn;
+	
+	@FindBy(xpath="//button[contains(text(),'Cancel')]")
+	private WebElementFacade CancelBtn;
+
+	@FindBy(xpath="//button[contains(text(),'Add a user')]")
+	private WebElementFacade addUserBtn;
+	
+	private WebElementFacade firstNameInput;
+	
+	private WebElementFacade lastNameInput;
+	
+	private WebElementFacade emailInput;
+	
+	@FindBy(xpath="//span[@class='glyphicon glyphicon-ok']")
+	private WebElementFacade okIcon;
+	/**
+	 * Input Partner name to Partner fields.
+	 * 
+	 * @param partnerName
+	 */
+	public void input_partner_name(String partnerName) {
+		partnerNameInput.waitUntilPresent().type(partnerName);
+		
+	}
+
+	/**
+	 * Click on Save button
+	 * 
+	 * @param 
+	 */
+	public void click_on_save_button() {
+		saveBtn.waitUntilPresent().click();
+	}
+
+	
+	
+	/**
+	 * Click on Add button to allow input user information
+	 * 
+	 * @param 
+	 */
+	public void click_add_user_button() {		
+		addUserBtn.waitUntilPresent().click();
+	}
+
+	
+	
+	/**
+	 * Let input user information and click add icon
+	 * 
+	 * @param 
+	 */
+	public void input_user_infor(String firstName, String lastName,	String email, String role) {
+		firstNameInput.waitUntilPresent().type(firstName);
+		lastNameInput.waitUntilPresent().type(lastName);
+		emailInput.waitUntilPresent().type(email);
+		okIcon.waitUntilPresent().click();
+		
+	}
+}

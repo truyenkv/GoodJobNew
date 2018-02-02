@@ -9,20 +9,16 @@ import org.openqa.selenium.support.ui.Wait;
 
 public class LoginPage extends PageObject {
 
-	//---------------- Define localtor land --------------------
-	
-	//get email's locator
-	WebElementFacade loginEmail; 
-	//get password's locator
-	WebElementFacade loginPassword; 
-	//get login's locator
+	private WebElementFacade loginEmail; 
+
+	private WebElementFacade loginPassword; 
+
 	@FindBy(xpath="//button[@type='submit']") 
-	WebElement loginBtn;
-	//get company list title 
+	private WebElementFacade loginBtn;
+
 	@FindBy(xpath="//*[@class='gj-title-text']")
-	WebElement titleCompanyList;
+	private WebElementFacade titleCompanyList;
 	
-	//------------------- Define method ----------------------------
 	public void input_email(String email) {
 		typeInto(loginEmail, email);
 	}
@@ -32,12 +28,6 @@ public class LoginPage extends PageObject {
 	}
 
 	public void click_Login_button() {
-		loginBtn.click();		
+		loginBtn.waitUntilPresent().click();		
 	}
-
-//	public String get_title_Com() {
-//		waitABit(10000);
-//		return titleCompanyList.getText();
-//	}
-
 }

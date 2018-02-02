@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Create User Account" skipped="0" tests="1" time="77.69" timestamp="2018-02-02T17:46:24.897+07:00[Asia/Bangkok]"><testcase name="Create Partner account"><failure message="The following error occurred: Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)&#10;Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'&#10;System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'&#10;System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">The following error occurred: Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown</failure><system-err>The following error occurred: Expected condition failed: waiting for ManagePartnerPage.addPartBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '10.64.0.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown&#13;
+GoodJobProject.pages.ManagePartnerPage.click_add_button(ManagePartnerPage.java:19)&#13;
+GoodJobProject.steps.ManagePartnerStep.click_on_add_partner_button(ManagePartnerStep.java:11)&#13;
+GoodJobProject.GoodJobDefinition.click_on_Add_Partner_button_and_create_Partner_is(GoodJobDefinition.java:196)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
