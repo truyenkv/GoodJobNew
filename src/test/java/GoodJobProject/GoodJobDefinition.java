@@ -1,5 +1,7 @@
 package GoodJobProject;
 
+import java.awt.AWTException;
+
 import javax.validation.constraints.AssertTrue;
 
 import junit.framework.Assert;
@@ -180,15 +182,9 @@ public class GoodJobDefinition {
 		updatePassStep.update_password(password);
 	}
 
-	@When("^Click on Manage Administrators menu\\.$")
-	public void click_on_Manage_Administrators_menu() throws Exception {
-	    manageStep.click_on_Manage_Partners_button();
-	}
-
-
 	@When("^Click on Manage Partner menu\\.$")
 	public void click_on_Manage_Partner_menu() throws Exception {
-	    
+		 manageStep.click_on_Manage_Partners_button();
 	}
 	
 	@When("^Click on Add Partner button and create Partner is \"([^\"]*)\"$")
@@ -198,12 +194,12 @@ public class GoodJobDefinition {
 	}
 
 	@When("^Let create user has \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" successfully\\.$")
-	public void let_create_user_has_successfully(String firstName, String lastName, String email, String role) throws Exception {
+	public void let_create_user_has_successfully(String firstName, String lastName, String email, String role) throws Exception, AWTException  {
 	    managePartProfileStep.click_on_add_a_user_button();
 	    managePartProfileStep.input_user_information(firstName, lastName, email, role);
 	}
 	
-	@When("^Click on Save button on Manage Partner screen.$")
+	@When("^Click on Save button on Manage Partner Profile screen.$")
 	public void click_on_Save_button() throws Exception {
 		managePartProfileStep.click_On_Save_Button();
 	}

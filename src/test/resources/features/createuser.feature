@@ -17,10 +17,9 @@ Feature: Create User Account
   Given The user login "http://goodjobs-dev.dynagility.us/login" by "hl.01@yopmail.com" and "Cdbently2408!" successfully
 	When Click on Manage menu.
   And Click on Manage Partner menu.
-  And Click on Add Partner button and create Partner is "Truyen"
-  And Let create user has "Truyen", "Kieu", "kvt.hl01@yopmail.com", "Manage" successfully.
-  And Let create user has "Truyen1", "Kieu1", "kvt.hl02@yopmail.com", "User" successfully.
-  And Click on Save button on Manage Partner screen.
+  And Click on Add Partner button and create Partner is "Truyen21"
+  And Let create user has "Truyen26", "Kieu26", "kvt.hl26@yopmail.com", "User" successfully.
+  And Click on Save button on Manage Partner Profile screen.
   
   
   

@@ -1,5 +1,7 @@
 package GoodJobProject.steps;
 
+import java.awt.AWTException;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -21,14 +23,13 @@ public class ManagePartnerProfileStep extends ScenarioSteps{
 	}
 
 
-	public void input_user_information(String firstName, String lastName, String email, String role) {
+	public void input_user_information(String firstName, String lastName, String email, String role) throws AWTException  {
 		managePartProfilePage.input_user_infor(firstName, lastName, email, role);
 	}
 
 
 	public void click_On_Save_Button() {
 		managePartProfilePage.click_on_save_button();
-		
 	}
 	
 }

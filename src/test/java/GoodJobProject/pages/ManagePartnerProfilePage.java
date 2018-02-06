@@ -1,5 +1,9 @@
 package GoodJobProject.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -22,6 +26,10 @@ public class ManagePartnerProfilePage extends PageObject{
 	private WebElementFacade lastNameInput;
 	
 	private WebElementFacade emailInput;
+	
+
+	@FindBy(xpath="//span[contains(text(),'Manager')]")
+	private WebElementFacade roleOption;
 	
 	@FindBy(xpath="//span[@class='glyphicon glyphicon-ok']")
 	private WebElementFacade okIcon;
@@ -61,11 +69,23 @@ public class ManagePartnerProfilePage extends PageObject{
 	 * Let input user information and click add icon
 	 * 
 	 * @param 
+	 * @throws AWTException 
 	 */
-	public void input_user_infor(String firstName, String lastName,	String email, String role) {
+	public void input_user_infor(String firstName, String lastName,	String email, String role) throws AWTException {
 		firstNameInput.waitUntilPresent().type(firstName);
 		lastNameInput.waitUntilPresent().type(lastName);
 		emailInput.waitUntilPresent().type(email);
+		Robot r = new Robot();
+		if(role.equals("User"))
+		{
+			roleOption.click();
+			waitABit(5000);
+			r.keyPress(KeyEvent.VK_DOWN);
+			r.keyRelease(KeyEvent.VK_DOWN);
+			waitABit(5000);
+			r.keyPress(KeyEvent.VK_ENTER);
+			r.keyRelease(KeyEvent.VK_ENTER);
+		}		
 		okIcon.waitUntilPresent().click();
 		
 	}

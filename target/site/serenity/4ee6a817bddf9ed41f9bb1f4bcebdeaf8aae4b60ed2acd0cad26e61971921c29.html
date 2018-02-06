@@ -50,10 +50,10 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 1],
                 ['Pending', 0],
                 ['Ignored', 0],
-                ['Failing', 1],
+                ['Failing', 0],
                 ['Errors',  0],
                 ['Compromised',  0],
                 ['Untested',  0],
@@ -83,10 +83,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 requirements tested successfully'},
+                {label: '1 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
-                {label: '1} requirements with failures'},
+                {label: '0} requirements with failures'},
                 {label: '0} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
@@ -183,7 +183,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-02-2018 17:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 05-02-2018 18:55</span>
     <br style="clear:left"/>
 </div>
 
@@ -220,8 +220,8 @@
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
                                     <td>1</td>
-                                    <td>0</td>
                                     <td>1</td>
+                                    <td>0</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -251,8 +251,8 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>1</td>
-            <td>0 (0%)</td>
             <td>1 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -267,14 +267,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>1</td>
-            <td>0 (0%)</td>
             <td>1 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 17 seconds</td>
+                <td colspan="5">1 minutes 21 seconds</td>
         </tr>
         </body>
     </table>
@@ -303,27 +303,27 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="aa72f1e7b5a37aa8c4618f073a823a8b28f674d1d542a9b532edc0002f2a7103.html" class="ellipsis"
-                                           title="Create Partner account Element should be present exception: ...">
+                                           title="Create Partner account ">
                                             Create Partner account
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">12</td>
+                                <td class="SUCCESS-text">10</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-02-02 17:46:24">17:46:24</td>
+                                <td class="SUCCESS-text" data-sort="2018-02-05 18:55:25">18:55:25</td>
 
-                                <td class="FAILURE-text">77.69</td>
+                                <td class="SUCCESS-text">81.86</td>
                             </tr>
                         </tbody>
                     </table>
