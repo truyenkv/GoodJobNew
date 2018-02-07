@@ -11,6 +11,11 @@ public class ManageStep extends ScenarioSteps{
 		managePage.click_open_Manage_Partners();
 	}
 
+	public void click_on_manage_admin_button() {
+		managePage.click_on_manage_administrator_button();
+		
+	}
+
 
 
 }

@@ -11,6 +11,7 @@ GoodJobProject\pages\EmailPage.class
 GoodJobProject\pages\ManageAdminPage.class
 GoodJobProject\pages\WorkingMetricsPage.class
 GoodJobProject\steps\ManagePartnerStep.class
+GoodJobProject\steps\models\ListUserAccount.class
 GoodJobProject\pages\UploadEmployedDataPage.class
 GoodJobProject\steps\HomeStep.class
 GoodJobProject\pages\ReportPage.class

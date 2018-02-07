@@ -27,6 +27,15 @@ public class ManagePage extends PageObject {
 		managePartnerBtn.waitUntilPresent().click();
 	}
 
+	/**
+	 * Click on Manage Administrators menu
+	 * 
+	 * @param manageAdminBtn;
+	 */
+	public void click_on_manage_administrator_button() {
+		manageAdminBtn.waitUntilPresent().click();
+	}
+
 
 	
 

@@ -3,6 +3,7 @@ D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManagePartnerProfileStep
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageUserProfileStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManagePartnerProfilePage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\WorkingMetricsPage.java
+D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\models\ListUserAccount.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\DefinitionTestSuite.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManageUserProfilePage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\HomePage.java

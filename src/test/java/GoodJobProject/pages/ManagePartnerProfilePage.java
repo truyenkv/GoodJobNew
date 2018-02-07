@@ -73,20 +73,23 @@ public class ManagePartnerProfilePage extends PageObject{
 	 */
 	public void input_user_infor(String firstName, String lastName,	String email, String role) throws AWTException {
 		firstNameInput.waitUntilPresent().type(firstName);
+		waitABit(2000);
 		lastNameInput.waitUntilPresent().type(lastName);
+		waitABit(2000);
 		emailInput.waitUntilPresent().type(email);
+		waitABit(2000);
 		Robot r = new Robot();
 		if(role.equals("User"))
 		{
 			roleOption.click();
-			waitABit(5000);
+			waitABit(3000);
 			r.keyPress(KeyEvent.VK_DOWN);
 			r.keyRelease(KeyEvent.VK_DOWN);
-			waitABit(5000);
+			waitABit(3000);
 			r.keyPress(KeyEvent.VK_ENTER);
 			r.keyRelease(KeyEvent.VK_ENTER);
 		}		
 		okIcon.waitUntilPresent().click();
-		
+		waitABit(3000);
 	}
 }

@@ -6,24 +6,29 @@ import net.thucydides.core.steps.ScenarioSteps;
 
 public class ManageAdminStep extends ScenarioSteps{
 
-	ManageAdminPage userManagerPage;
+	ManageAdminPage manageAdminPage;
 
 	public void click_On_Add_Button() {
-		userManagerPage.click_On_Add_Btn();
+		manageAdminPage.click_On_Add_Btn();
 		
 	}
 
 	public String get_sysAdminTitle() {
-		return userManagerPage.get_Manage_Admin_title();
+		return manageAdminPage.get_Manage_Admin_title();
 	}
 
 	public boolean get_Email_Is_Shown(String email) {
 		waitABit(5000);
-		return userManagerPage.getEmail(email);
+		return manageAdminPage.getEmail(email);
 	}
 
 	public boolean get_User_Name_Is_Shown(String username) {
-		return userManagerPage.getUserName(username);
+		return manageAdminPage.getUserName(username);
+	}
+
+	public void click_on_save_button() {
+		manageAdminPage.click_on_save_button();
+		
 	}
 
 
