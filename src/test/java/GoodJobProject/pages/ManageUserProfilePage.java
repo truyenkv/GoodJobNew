@@ -12,7 +12,7 @@ public class ManageUserProfilePage extends PageObject {
 	
 	private WebElementFacade lastNameInput;
 	
-	private WebElementFacade formControlsEmail;
+	private WebElementFacade emailInput;
 	
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
 	private WebElementFacade cancelBtn;
@@ -20,6 +20,11 @@ public class ManageUserProfilePage extends PageObject {
 	@FindBy(xpath="//button[contains(text(),'Save')]")
 	private WebElementFacade saveBtn;
 	
+	@FindBy(xpath="//button[contains(text(),'Enable')]")
+	private WebElementFacade enableBtn;
+	
+	@FindBy(xpath="//*[@class='gj-error alert alert-danger']")
+	private WebElementFacade errMess;
 	
 	
 	/**
@@ -48,8 +53,7 @@ public class ManageUserProfilePage extends PageObject {
 	 * @param email
 	 */
 	public void input_email(String email) {
-		formControlsEmail.waitUntilPresent().type(email);
-		typeInto(formControlsEmail, email);
+		typeInto(emailInput, email);
 	}
 	
 	
@@ -63,4 +67,22 @@ public class ManageUserProfilePage extends PageObject {
 	public void click_save() {
 		saveBtn.waitUntilPresent().click();
 	}
+
+	
+	/**
+	 * Click on Enable button for re-enable account  
+	 * 
+	 * @param saveBtn
+	 */
+	public void click_enable_button() {
+		enableBtn.waitUntilPresent().click();
+	}
+
+
+	public String get_err_message() {
+		return errMess.waitUntilPresent().getText();
+	}
+
+
+	
 }

@@ -4,6 +4,7 @@ import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 public class HomePage extends PageObject{
@@ -24,7 +25,7 @@ public class HomePage extends PageObject{
 	@FindBy(xpath="//button[contains(text(),'Save')]")
 	private WebElementFacade SaveBtn;
 
-	@FindBy(xpath="//a[contains(text(),'Manage')]")
+	@FindBy(xpath="//*[contains(text(),'Manage')]")
 	private WebElementFacade manageBtn;
 	
 	@FindBy(xpath="//li[@role='presentation' and @class='selected']")
@@ -47,7 +48,9 @@ public class HomePage extends PageObject{
 	}
 
 	public void click_Manage_button() {
-		manageBtn.waitUntilPresent().click();
+		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
+		excutor.executeScript("arguments[0].click();", manageBtn);
+		//manageBtn.waitUntilPresent().click();
 	}
 
 	public void click_user_menu() {

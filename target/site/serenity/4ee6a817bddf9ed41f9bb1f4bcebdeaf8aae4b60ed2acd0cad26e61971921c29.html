@@ -50,11 +50,11 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 1],
                 ['Pending', 0],
                 ['Ignored', 0],
-                ['Failing', 1],
-                ['Errors',  1],
+                ['Failing', 0],
+                ['Errors',  0],
                 ['Compromised',  0],
                 ['Untested',  0],
             ]
@@ -83,11 +83,11 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 requirements tested successfully'},
+                {label: '1 requirements tested successfully'},
                 {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
-                {label: '1} requirements with failures'},
-                {label: '1} requirements with errors'},
+                {label: '0} requirements with failures'},
+                {label: '0} requirements with errors'},
                 {label: '0} requirements compromised'},
                 {label: '0} requirements untested'},
             ]
@@ -183,7 +183,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 07-02-2018 11:36</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-02-2018 18:11</span>
     <br style="clear:left"/>
 </div>
 
@@ -219,9 +219,9 @@
 
                                 <tr>
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria (tests)</a></td>
-                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
                                     <td>0</td>
-                                    <td>2</td>
                                     <td>0</td>
                                     <td>0</td>
                                     <td></td>
@@ -250,9 +250,9 @@
         <body>
         <tr>
             <td class="summary-leading-column">Automated</td>
-            <td>2</td>
+            <td>1</td>
+            <td>1 (100%)</td>
             <td>0 (0%)</td>
-            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -266,15 +266,15 @@
         </tr>
         <tr>
             <td class="summary-leading-column">Total</td>
-            <td>2</td>
+            <td>1</td>
+            <td>1 (100%)</td>
             <td>0 (0%)</td>
-            <td>2 (100%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">1 minutes 58 seconds</td>
+                <td colspan="5">57 seconds</td>
         </tr>
         </body>
     </table>
@@ -303,50 +303,27 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
-                                        <a href="6830b7aeb69c945899c05ac8bd1a7ce949fbc09eab8613207a0b0d74a6b9e907.html" class="ellipsis"
-                                           title="Create Admin Account Element should be present exception: ...">
-                                            Create Admin Account
+                                        <a href="48e69bd5ef289df4d16034e43e81070a5f4560f6e90dece33ad8fcb87a5569ee.html" class="ellipsis"
+                                           title="Create Admin-Duplicate account ">
+                                            Create Admin-Duplicate account
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">14</td>
+                                <td class="SUCCESS-text">11</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-02-07 11:36:25">11:36:25</td>
+                                <td class="SUCCESS-text" data-sort="2018-02-27 18:11:51">18:11:51</td>
 
-                                <td class="FAILURE-text">68.34</td>
-                            </tr>
-
-                            <tr class="test-ERROR">
-                                <td><span class="summary-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
-                                    
-                                    <span style="display:none">ERROR</span></td>
-                                <td class="ERROR-text">
-                                    <div class="ellipsis">
-
-                                        <a href="aa72f1e7b5a37aa8c4618f073a823a8b28f674d1d542a9b532edc0002f2a7103.html" class="ellipsis"
-                                           title="Create Partner account Web driver exception: The following e...">
-                                            Create Partner account
-                                                <span class="related-issue-title"></span>
-                                        </a>
-                                    </div>
-                                </td>
-
-                                <td class="ERROR-text">11</td>
-
-
-                                <td class="ERROR-text" data-sort="2018-02-07 11:37:33">11:37:33</td>
-
-                                <td class="ERROR-text">50.44</td>
+                                <td class="SUCCESS-text">57.29</td>
                             </tr>
                         </tbody>
                     </table>

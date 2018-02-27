@@ -22,4 +22,13 @@ public class ManageUserProfileStep extends ScenarioSteps{
 		manageUserProfilePage.click_save();
 	}
 
+	public void click_on_enable_button() {
+		manageUserProfilePage.click_enable_button();
+		
+	}
+
+	public String get_error_message() {
+		return manageUserProfilePage.get_err_message();
+	}
+
 }

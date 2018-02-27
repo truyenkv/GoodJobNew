@@ -3,8 +3,13 @@ package GoodJobProject.pages;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
+import net.serenitybdd.screenplay.questions.JavaScript;
+import net.serenitybdd.screenplay.questions.JavaScript.JavaScriptBuilder;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptExecutor;
 
 public class ManagePage extends PageObject {
 	

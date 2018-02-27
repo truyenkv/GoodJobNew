@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 public class ManageAdminPage extends PageObject{
 
 	
-	@FindBy(xpath="//*[@class='manage-content']/div[2]/div/button/span")
+	@FindBy(xpath="//*[@class='add-user-button-top col-xs-12']//button[contains(text(),'Add User')]")
 	private WebElementFacade addBtn;
 	
 	@FindBy(xpath="//*[@class='manage-content']/div[1]")
@@ -25,7 +25,7 @@ public class ManageAdminPage extends PageObject{
 	@FindBy(xpath="//*[@class='rt-tr -odd']/div[1]")
 	private List<WebElementFacade> usernameOdd;
 	
-	@FindBy(xpath="/*[@class='rt-tr -even']/div[2]")
+	@FindBy(xpath="//*[@class='rt-tr -even']/div[2]")
 	private List<WebElementFacade> emailEven;
 	
 	@FindBy(xpath="//*[@class='rt-tr -even']/div[1]")
@@ -36,7 +36,7 @@ public class ManageAdminPage extends PageObject{
 	
 	int count = 0;
 	int indexOdd = -1, indexEven = -1;
-	
+	String emailtepm = "";
 	/**
 	 * click on Add User button
 	 * 
@@ -66,6 +66,7 @@ public class ManageAdminPage extends PageObject{
 	 * 
 	 */
 	public boolean getEmail(String email) {
+		waitABit(3000);
 		for(int i=0; i<emailOdd.size(); i++)
 			{
 				if(emailOdd.get(i).getText().equals(email))
@@ -78,7 +79,7 @@ public class ManageAdminPage extends PageObject{
 			
 		for(int j=0; j<emailEven.size(); j++)
 		{
-			if(emailOdd.get(j).getText().equals(email))
+			if(emailEven.get(j).getText().equals(email))
 			{
 				count+=1;
 				indexEven = j;

@@ -18,7 +18,6 @@ public class ManageAdminStep extends ScenarioSteps{
 	}
 
 	public boolean get_Email_Is_Shown(String email) {
-		waitABit(5000);
 		return manageAdminPage.getEmail(email);
 	}
 

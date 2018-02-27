@@ -133,7 +133,7 @@ public class GoodJobDefinition {
 		manageAdminStep.click_On_Add_Button();
 	}
 
-	@When("^Input First Name is \"([^\"]*)\", Last Name is \"([^\"]*)\" and Email is \"([^\"]*)\"\\.$")
+	@When("^Input First Name is \"([^\"]*)\", Last Name is \"([^\"]*)\" and Email is \"([^\"]*)\"$")
 	public void input_First_Name_is_Last_Name_is_and_Email_is(String firstName,
 			String lastName, String email) throws Exception {
 		manageUserProfileStep.input_FistName(firstName);
@@ -240,6 +240,16 @@ public class GoodJobDefinition {
 	@Then("^the user should see ([^\"]*) shows correctly$")
 	public void the_user_should_see_User_menu(String welcome) throws Exception {
 		Assert.assertEquals(welcome, homeStep.get_welcome_user_menu());
+	}
+	
+	@Then("^Click on Enable button on Confirmation popup$")
+	public void click_on_Enable_button_on_Confirmation_popup() throws Exception {
+		manageUserProfileStep.click_on_enable_button();
+	}
+	
+	@Then("^The \"([^\"]*)\" was shown on screen\\.$")
+	public void the_was_shown_on_screen(String errMessage) throws Exception {
+		Assert.assertEquals(errMessage, manageUserProfileStep.get_error_message());
 	}
 
 	@Then("^([^\"]*) is shown ([^\"]*)$")
