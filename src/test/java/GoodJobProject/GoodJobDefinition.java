@@ -14,6 +14,8 @@ import GoodJobProject.steps.EmailStep;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
 import GoodJobProject.steps.ManageAdminStep;
+import GoodJobProject.steps.ManageCompaniesStep;
+import GoodJobProject.steps.ManageCompanyStep;
 import GoodJobProject.steps.ManagePartnerProfileStep;
 import GoodJobProject.steps.ManagePartnerStep;
 import GoodJobProject.steps.ManageStep;
@@ -65,7 +67,13 @@ public class GoodJobDefinition {
 
 	@Steps
 	ManagePartnerProfileStep managePartProfileStep;
-
+	
+	@Steps
+	ManageCompaniesStep manageCompaniesStep;
+	
+	@Steps
+	ManageCompanyStep manageCompanyStep;
+	
 	@Given("^open page with url is \"([^\"]*)\"$")
 	public void the_user_is_on_the_GoodJob_login_page(String url)
 			throws Exception {
@@ -109,9 +117,9 @@ public class GoodJobDefinition {
 		manageStep.click_on_manage_admin_button();
 	}
 
-	@When("^Click on Save button on Manage Administrators screen$")
-	public void click_on_Save_button_on_manage_admininstrators_screen() throws Exception {
-		manageAdminStep.click_on_save_button();
+	@When("^Click on Save button on Manage User Profile screen$")
+	public void click_on_Save_button_on_manage_user_profile_screen() throws Exception {
+		manageUserProfileStep.click_on_save_button();
 	}
 
 	@Given("^The user login \"([^\"]*)\" by \"([^\"]*)\" and \"([^\"]*)\" successfully$")
@@ -277,6 +285,43 @@ public class GoodJobDefinition {
 		default:
 			break;
 		}
+	}
+	
+	@When("^Click on Add Company button on Manage Companies menu\\.$")
+	public void click_on_Add_Company_button_Manage_Companies_menu() throws Exception {
+		manageCompaniesStep.click_on_Add_Company_button();
+	}
+
+
+	@When("^Input required field are Company Name: \"([^\"]*)\", Company Identifier: \"([^\"]*)\"\\.$")
+	public void input_Company_Name_is_Company_Identifier_is(String companyName, String companyIdentifier) throws Exception {
+	    manageCompanyStep.input_required_fields(companyName, companyIdentifier);
+	}
+
+	@When("^Select required drop down are Sector / Industry, Sub-sector and Percentage of temporary workers\\.$")
+	public void selected_Sector_Industry_Sub_sector_Percentage_of_temporary_workers() throws Exception {
+	    manageCompanyStep.select_drop_down_required();
+	}
+
+	@When("^Input Street Address one is \"([^\"]*)\", City is \"([^\"]*)\", State is \"([^\"]*)\", Zip is \"([^\"]*)\"\\.$")
+	public void input_Street_Address_is_Street_Address_is_City_is_State_is_Zip_is(String address, String city, String state, String zip) throws Exception {
+		manageCompanyStep.input_locations_value(address, city, state, zip);
+	}
+
+	@When("^Click on Save button on Manage Company screen\\.$")
+	public void click_on_Save_button_on_Manage_Company_screen() throws Exception {
+	    manageCompanyStep.click_on_Save_button();
+	}
+
+	@When("^Add user with Fist Name is \"([^\"]*)\", Last Name is \"([^\"]*)\", and Email is \"([^\"]*)\"$")
+	public void input_Manager_user_Fist_Name_is_Last_Name_is_and_Email_is(String firstName, String lastName, String email) throws Exception {
+		manageCompanyStep.add_user(firstName, lastName, email);
+	}
+
+	@Then("^\"([^\"]*)\" Shows correctly be shown on Manage Companies screen\\.$")
+	public void shows_correctly_be_shown_on_Manage_Companies_screen(String arg1) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
 	}
 
 }

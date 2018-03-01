@@ -25,10 +25,6 @@ public class ManageAdminStep extends ScenarioSteps{
 		return manageAdminPage.getUserName(username);
 	}
 
-	public void click_on_save_button() {
-		manageAdminPage.click_on_save_button();
-		
-	}
 
 
 

@@ -31,8 +31,6 @@ public class ManageAdminPage extends PageObject{
 	@FindBy(xpath="//*[@class='rt-tr -even']/div[1]")
 	private List<WebElementFacade> usernameEven;
 
-	@FindBy(xpath="//button[contains(text(),'Save')]")
-	private WebElementFacade saveBtn;
 	
 	int count = 0;
 	int indexOdd = -1, indexEven = -1;
@@ -120,9 +118,7 @@ public class ManageAdminPage extends PageObject{
 	 * @param saveBtn 
 	 * 
 	 */
-	public void click_on_save_button() {
-		saveBtn.waitUntilPresent().click();
-	}
+	
 }
 
 

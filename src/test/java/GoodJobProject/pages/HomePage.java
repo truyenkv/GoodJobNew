@@ -54,13 +54,14 @@ public class HomePage extends PageObject{
 	}
 
 	public void click_user_menu() {
-		waitABit(10000);
+		waitABit(5000);
 		userMenu.click();
 	}
 
 	public void click_profile_link() {
 		waitABit(5000);
-		withAction().moveToElement(userProfile).click().perform();
+		//withAction().moveToElement(userProfile).click().perform();
+		userProfile.click();
 	}
 
 	public String get_welcome_user_menu_text() {
