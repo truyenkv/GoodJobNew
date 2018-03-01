@@ -9,7 +9,8 @@ public class ManageCompaniesPage extends PageObject{
 	@FindBy(xpath="//button[contains(text(),'Add Company')]")
 	private WebElementFacade addComBtn;
 	
-	
+	@FindBy(xpath="//*[@class='col-xs-12']")
+	private WebElementFacade companyTitle;
 	/**
 	 * Click on Add Company button
 	 * 
@@ -17,6 +18,11 @@ public class ManageCompaniesPage extends PageObject{
 	 */
 	public void click_Add_Company_button() {
 		addComBtn.waitUntilPresent().click();
+	}
+
+
+	public String get_company_list_title() {
+		return companyTitle.waitUntilPresent().getText();
 	}
 	
 

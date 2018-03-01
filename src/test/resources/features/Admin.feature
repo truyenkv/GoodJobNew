@@ -48,14 +48,14 @@ Feature: Create User Account
   Scenario: Create Company account
   	When Click on Manage menu.
     And Click on Add Company button on Manage Companies menu.
-    And Input required field are Company Name: "tr.company1", Company Identifier: "11-11111111".
+    And Input required field are Company Name: "tr.company4", Company Identifier: "11-11111111".
     And Select required drop down are Sector / Industry, Sub-sector and Percentage of temporary workers.
-    And Input Street Address one is "truyen.company3", City is "newyork", State is "US", Zip is "11111".
+    And Input Street Address is "123 new orl land", City is "newyork", State is "US", Zip is "11111".
     And Click on Save button on Manage Company screen.
     And Add user with Fist Name is "company1 fName", Last Name is "company2 lName", and Email is "truyen.company1@yopmail.com"
     And Click on Save button on Manage Company screen.
-    Then System should navigate to Manage Companies screen.
-    And "tr.company1" Shows correctly be shown on Manage Companies screen.
+    Then System should navigate to Manage Companies screen and "Manage Companies" should shown.
+    And "tr.company4" Shows correctly be shown on Manage Companies screen.
     
     
   

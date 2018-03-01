@@ -303,7 +303,7 @@ public class GoodJobDefinition {
 	    manageCompanyStep.select_drop_down_required();
 	}
 
-	@When("^Input Street Address one is \"([^\"]*)\", City is \"([^\"]*)\", State is \"([^\"]*)\", Zip is \"([^\"]*)\"\\.$")
+	@When("^Input Street Address is \"([^\"]*)\", City is \"([^\"]*)\", State is \"([^\"]*)\", Zip is \"([^\"]*)\"\\.$")
 	public void input_Street_Address_is_Street_Address_is_City_is_State_is_Zip_is(String address, String city, String state, String zip) throws Exception {
 		manageCompanyStep.input_locations_value(address, city, state, zip);
 	}
@@ -317,11 +317,15 @@ public class GoodJobDefinition {
 	public void input_Manager_user_Fist_Name_is_Last_Name_is_and_Email_is(String firstName, String lastName, String email) throws Exception {
 		manageCompanyStep.add_user(firstName, lastName, email);
 	}
+	
+	@Then("^System should navigate to Manage Companies screen and \"([^\"]*)\" should shown\\.$")
+	public void system_should_navigate_to_Manage_Companies_screen_and_should_shown(String companyTitle) throws Exception {
+		Assert.assertEquals(companyTitle, manageCompaniesStep.get_title());
+	}
 
 	@Then("^\"([^\"]*)\" Shows correctly be shown on Manage Companies screen\\.$")
 	public void shows_correctly_be_shown_on_Manage_Companies_screen(String arg1) throws Exception {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
 	}
 
 }
