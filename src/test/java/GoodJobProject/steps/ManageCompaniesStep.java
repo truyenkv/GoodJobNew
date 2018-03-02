@@ -15,5 +15,10 @@ public class ManageCompaniesStep extends ScenarioSteps{
 	public String get_title() {
 		return manageCompaniesPage.get_company_list_title();
 	}
+
+
+	public boolean check_company_is_shown(String companyName) {
+		return manageCompaniesPage.check_company_is_shown(companyName);
+	}
 	
 }

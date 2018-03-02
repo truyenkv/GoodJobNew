@@ -10,10 +10,6 @@ public class ManageCompanyStep extends ScenarioSteps{
 		manageCompanyPage.input_required_fields(companyName, companyIdentifier);
 	}
 
-	public void select_drop_down_required() {
-		manageCompanyPage.select_required_drop_down_list();
-	}
-
 	public void input_locations_value(String address, String city, String state, String zip) {
 		manageCompanyPage.input_location_value(address, city, state, zip);
 	}

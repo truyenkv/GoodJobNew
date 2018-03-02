@@ -293,14 +293,9 @@ public class GoodJobDefinition {
 	}
 
 
-	@When("^Input required field are Company Name: \"([^\"]*)\", Company Identifier: \"([^\"]*)\"\\.$")
+	@When("^Input required field are Company Name: \"([^\"]*)\", Company Identifier: \"([^\"]*)\"\\ and select required drop down box.$")
 	public void input_Company_Name_is_Company_Identifier_is(String companyName, String companyIdentifier) throws Exception {
 	    manageCompanyStep.input_required_fields(companyName, companyIdentifier);
-	}
-
-	@When("^Select required drop down are Sector / Industry, Sub-sector and Percentage of temporary workers\\.$")
-	public void selected_Sector_Industry_Sub_sector_Percentage_of_temporary_workers() throws Exception {
-	    manageCompanyStep.select_drop_down_required();
 	}
 
 	@When("^Input Street Address is \"([^\"]*)\", City is \"([^\"]*)\", State is \"([^\"]*)\", Zip is \"([^\"]*)\"\\.$")
@@ -324,8 +319,57 @@ public class GoodJobDefinition {
 	}
 
 	@Then("^\"([^\"]*)\" Shows correctly be shown on Manage Companies screen\\.$")
-	public void shows_correctly_be_shown_on_Manage_Companies_screen(String arg1) throws Exception {
+	public void shows_correctly_be_shown_on_Manage_Companies_screen(String companyName) throws Exception {
+		Assert.assertEquals(true, manageCompaniesStep.check_company_is_shown(companyName));	    
+	}
+	
+	@When("^Join Working Metrics screen via link is \"([^\"]*)\"$")
+	public void join_Working_Metrics_screen_via_link_is(String arg1) throws Exception {
 	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+
+	@When("^Click on Create an account on Working Metrics screen\\.$")
+	public void click_on_Create_an_account_on_Working_Metrics_screen() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^Create password is \"([^\"]*)\"\\.$")
+	public void create_password_is(String arg1) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^Authorized company, update many drop down list value\\.$")
+	public void authorized_company_update_many_drop_down_list_value() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^Add a new User account with First Name is \"([^\"]*)\", Last Name is \"([^\"]*)\", email is \"([^\"]*)\", role is user\\.$")
+	public void add_a_new_User_account_with_First_Name_is_Last_Name_is_email_is_role_is_user(String arg1, String arg2, String arg3) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^Next to Location screens\\.$")
+	public void next_to_Location_screens() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@When("^Next to Report screen\\.$")
+	public void next_to_Report_screen() throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
+	}
+
+	@Then("^The title is \"([^\"]*)\" should show on on Report screens\\.$")
+	public void the_title_is_should_show_on_on_Report_screens(String arg1) throws Exception {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new PendingException();
 	}
 
 }

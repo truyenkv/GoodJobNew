@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Create User Account" skipped="0" tests="1" time="72.82" timestamp="2018-02-28T14:04:13.900+07:00[Asia/Bangkok]"><testcase name="Update User Profile"><error message="-1" type="java.lang.ArrayIndexOutOfBoundsException">-1</error><system-err>-1&#13;
-GoodJobProject.pages.ManageAdminPage.getUserName(ManageAdminPage.java:105)&#13;
-GoodJobProject.steps.ManageAdminStep.get_User_Name_Is_Shown(ManageAdminStep.java:25)&#13;
-GoodJobProject.GoodJobDefinition.User_name_should_be_shown_on_screen(GoodJobDefinition.java:159)&#13;
-✽."Truyen Kieu" Shows correctly be shown on screen.(src/test/resources/features/createuser.feature:46)&#13;
-</system-err></testcase></testsuite>

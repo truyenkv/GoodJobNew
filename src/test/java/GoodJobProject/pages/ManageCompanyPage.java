@@ -4,6 +4,8 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -54,20 +56,14 @@ public class ManageCompanyPage extends PageObject{
 	 */
 	public void input_required_fields(String companyName, String companyIdentifier) {
 		companyNameInput.waitUntilPresent().type(companyName);
-		einInput.waitUntilPresent().type(companyIdentifier);
-	}
-
-	
-
-	/**
-	 * Select value for required fields
-	 * 
-	 * @param companyName and companyIdentifier
-	 */
-	public void select_required_drop_down_list() {
 		try {
 			Robot r = new Robot();
-			sectorDrop.waitUntilPresent().click();
+			einInput.waitUntilPresent().type(companyIdentifier);
+//			JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
+//			excutor.executeScript("arguments[0].click();", sectorDrop);
+			r.keyPress(KeyEvent.VK_TAB);
+			r.keyRelease(KeyEvent.VK_TAB);
+//			sectorDrop.waitUntilPresent().click();
 			waitABit(2000);
 			r.keyPress(KeyEvent.VK_DOWN);
 			waitABit(2000);
@@ -77,7 +73,10 @@ public class ManageCompanyPage extends PageObject{
 			r.keyPress(KeyEvent.VK_ENTER);
 			r.keyRelease(KeyEvent.VK_ENTER);
 			waitABit(3000);
-			subSectorDrop.click();
+			r.keyPress(KeyEvent.VK_TAB);
+			r.keyRelease(KeyEvent.VK_TAB);
+//			excutor.executeScript("arguments[0].click();", subSectorDrop);
+//			subSectorDrop.click();
 			r.keyPress(KeyEvent.VK_DOWN);
 			waitABit(2000);
 			r.keyPress(KeyEvent.VK_DOWN);
@@ -86,7 +85,10 @@ public class ManageCompanyPage extends PageObject{
 			r.keyPress(KeyEvent.VK_ENTER);
 			r.keyRelease(KeyEvent.VK_ENTER);
 			waitABit(3000);
-			percentageDrop.click();
+			r.keyPress(KeyEvent.VK_TAB);
+			r.keyRelease(KeyEvent.VK_TAB);
+//			excutor.executeScript("arguments[0].click();", percentageDrop);
+//			percentageDrop.click();
 			r.keyPress(KeyEvent.VK_DOWN);
 			waitABit(2000);
 			r.keyPress(KeyEvent.VK_DOWN);
@@ -99,8 +101,9 @@ public class ManageCompanyPage extends PageObject{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-				
 	}
+
+	
 
 
 	/**
@@ -109,7 +112,7 @@ public class ManageCompanyPage extends PageObject{
 	 * @param address, city, state, zip
 	 */
 	public void input_location_value(String address, String city, String state,	String zip) {	
-		stateInput.waitUntilPresent().type(address);
+		street1Input.waitUntilPresent().type(address);
 		cityInput.waitUntilPresent().type(city);
 		stateInput.waitUntilPresent().type(state);
 		postalCodeInput.waitUntilPresent().type(zip);
@@ -122,7 +125,7 @@ public class ManageCompanyPage extends PageObject{
 	 * @param save
 	 */
 	public void click_Save_button() {
-		saveBtn.click();
+		saveBtn.waitUntilPresent().click();
 	}
 
 
