@@ -24,7 +24,6 @@ public class ManageCompaniesPage extends PageObject{
 	 * @param addComBtn
 	 */
 	public void click_Add_Company_button() {
-//		addComBtn.waitUntilPresent().click();
 		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
 		excutor.executeScript("arguments[0].click();", addComBtn);
 	}

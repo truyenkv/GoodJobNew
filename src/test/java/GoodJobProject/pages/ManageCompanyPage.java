@@ -59,11 +59,8 @@ public class ManageCompanyPage extends PageObject{
 		try {
 			Robot r = new Robot();
 			einInput.waitUntilPresent().type(companyIdentifier);
-//			JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
-//			excutor.executeScript("arguments[0].click();", sectorDrop);
 			r.keyPress(KeyEvent.VK_TAB);
 			r.keyRelease(KeyEvent.VK_TAB);
-//			sectorDrop.waitUntilPresent().click();
 			waitABit(2000);
 			r.keyPress(KeyEvent.VK_DOWN);
 			waitABit(2000);
@@ -75,8 +72,6 @@ public class ManageCompanyPage extends PageObject{
 			waitABit(3000);
 			r.keyPress(KeyEvent.VK_TAB);
 			r.keyRelease(KeyEvent.VK_TAB);
-//			excutor.executeScript("arguments[0].click();", subSectorDrop);
-//			subSectorDrop.click();
 			r.keyPress(KeyEvent.VK_DOWN);
 			waitABit(2000);
 			r.keyPress(KeyEvent.VK_DOWN);
@@ -87,8 +82,6 @@ public class ManageCompanyPage extends PageObject{
 			waitABit(3000);
 			r.keyPress(KeyEvent.VK_TAB);
 			r.keyRelease(KeyEvent.VK_TAB);
-//			excutor.executeScript("arguments[0].click();", percentageDrop);
-//			percentageDrop.click();
 			r.keyPress(KeyEvent.VK_DOWN);
 			waitABit(2000);
 			r.keyPress(KeyEvent.VK_DOWN);
@@ -98,7 +91,6 @@ public class ManageCompanyPage extends PageObject{
 			r.keyRelease(KeyEvent.VK_ENTER);
 			
 		} catch (AWTException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

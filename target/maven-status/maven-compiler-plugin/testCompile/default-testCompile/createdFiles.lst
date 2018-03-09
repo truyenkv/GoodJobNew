@@ -2,11 +2,14 @@ GoodJobProject\pages\ManagePartnerPage.class
 GoodJobProject\steps\ManageAdminStep.class
 GoodJobProject\steps\ManageCompaniesStep.class
 GoodJobProject\pages\basePage.class
+GoodJobProject\pages\CompanyInformationAuthorPage.class
 GoodJobProject\pages\ManageCompanyPage.class
 GoodJobProject\pages\ManagePartnerProfilePage.class
+GoodJobProject\steps\CompanyUsersAuthorStep.class
 GoodJobProject\steps\ManageStep.class
 GoodJobProject\pages\HomePage.class
 GoodJobProject\pages\UpdatePasswordPage.class
+GoodJobProject\steps\CompanyInformationAuthorStep.class
 GoodJobProject\pages\ManagePage.class
 GoodJobProject\pages\ManageUserProfilePage.class
 GoodJobProject\pages\EmailPage.class
@@ -23,6 +26,7 @@ GoodJobProject\steps\ReportStep.class
 GoodJobProject\steps\LoginStep.class
 GoodJobProject\DefinitionTestSuite.class
 GoodJobProject\pages\ManageCompaniesPage.class
+GoodJobProject\pages\CompanyUsersAuthorPage.class
 GoodJobProject\steps\baseStep.class
 GoodJobProject\GoodJobDefinition.class
 GoodJobProject\steps\UpdatePasswordStep.class

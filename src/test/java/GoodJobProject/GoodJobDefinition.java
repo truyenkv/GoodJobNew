@@ -10,6 +10,8 @@ import org.jruby.ir.operands.Array;
 
 import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
+import GoodJobProject.steps.CompanyInformationAuthorStep;
+import GoodJobProject.steps.CompanyUsersAuthorStep;
 import GoodJobProject.steps.EmailStep;
 import GoodJobProject.steps.HomeStep;
 import GoodJobProject.steps.LoginStep;
@@ -74,9 +76,14 @@ public class GoodJobDefinition {
 	@Steps
 	ManageCompanyStep manageCompanyStep;
 	
+	@Steps
+	CompanyInformationAuthorStep comInforAuthorStep;
+	
+	@Steps
+	CompanyUsersAuthorStep comUserAuthorStep;
+	
 	@Given("^open page with url is \"([^\"]*)\"$")
-	public void the_user_is_on_the_GoodJob_login_page(String url)
-			throws Exception {
+	public void the_user_is_on_the_GoodJob_login_page(String url)throws Exception {
 		loginStep.open_login_page(url);
 	}
 
@@ -324,52 +331,47 @@ public class GoodJobDefinition {
 	}
 	
 	@When("^Join Working Metrics screen via link is \"([^\"]*)\"$")
-	public void join_Working_Metrics_screen_via_link_is(String arg1) throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void join_Working_Metrics_screen_via_link_is(String token) throws Exception {
+		welcomeStep.open_site(token);
 	}
 
 
 	@When("^Click on Create an account on Working Metrics screen\\.$")
 	public void click_on_Create_an_account_on_Working_Metrics_screen() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+		welcomeStep.click_on_create_an_account_button();
 	}
 
 	@When("^Create password is \"([^\"]*)\"\\.$")
-	public void create_password_is(String arg1) throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void create_password_is(String password) throws Exception {
+		updatePassStep.update_password(password);
 	}
 
 	@When("^Authorized company, update many drop down list value\\.$")
 	public void authorized_company_update_many_drop_down_list_value() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	    comInforAuthorStep.update_information();
 	}
 
 	@When("^Add a new User account with First Name is \"([^\"]*)\", Last Name is \"([^\"]*)\", email is \"([^\"]*)\", role is user\\.$")
-	public void add_a_new_User_account_with_First_Name_is_Last_Name_is_email_is_role_is_user(String arg1, String arg2, String arg3) throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
+	public void add_a_new_User_account_with_First_Name_is_Last_Name_is_email_is_role_is_user(String firstName, String lastName, String email) throws Exception {
+	    comUserAuthorStep.add_new_user(firstName, lastName, email);
 	}
 
-	@When("^Next to Location screens\\.$")
-	public void next_to_Location_screens() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@When("^Next to Report screen\\.$")
-	public void next_to_Report_screen() throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
-
-	@Then("^The title is \"([^\"]*)\" should show on on Report screens\\.$")
-	public void the_title_is_should_show_on_on_Report_screens(String arg1) throws Exception {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new PendingException();
-	}
+//	@When("^Next to Location screens\\.$")
+//	public void next_to_Location_screens() throws Exception {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
+//
+//	@When("^Next to Report screen\\.$")
+//	public void next_to_Report_screen() throws Exception {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
+//
+//	@Then("^The title is \"([^\"]*)\" should show on on Report screens\\.$")
+//	public void the_title_is_should_show_on_on_Report_screens(String arg1) throws Exception {
+//	    // Write code here that turns the phrase above into concrete actions
+//	    throw new PendingException();
+//	}
 
 }

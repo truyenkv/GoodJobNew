@@ -5,11 +5,14 @@ D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManagePartnerProfilePage
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManageCompanyPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\WorkingMetricsPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\models\ListUserAccount.java
+D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\CompanyUsersAuthorStep.java
+D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\CompanyInformationAuthorPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\DefinitionTestSuite.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManageUserProfilePage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\HomePage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\UpdatePasswordPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageCompanyStep.java
+D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\CompanyUsersAuthorPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\LoginPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\HomeStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\EmailPage.java
@@ -29,5 +32,6 @@ D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\UpdatePasswordStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\UploadEmployedDataPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\baseStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManagePage.java
+D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\CompanyInformationAuthorStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\WorkingMetricsStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageStep.java

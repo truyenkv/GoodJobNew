@@ -18,18 +18,6 @@ public class ManageAdminPage extends PageObject{
 	
 	@FindBy(xpath="//*[@class='manage-content']/div[1]")
 	private WebElementFacade title;
-	
-//	@FindBy(xpath="//*[@class='rt-tr -odd']/div[2]")
-//	private List<WebElementFacade> emailOdd;
-//	
-//	@FindBy(xpath="//*[@class='rt-tr -odd']/div[1]")
-//	private List<WebElementFacade> usernameOdd;
-//	
-//	@FindBy(xpath="//*[@class='rt-tr -even']/div[2]")
-//	private List<WebElementFacade> emailEven;
-//	
-//	@FindBy(xpath="//*[@class='rt-tr -even']/div[1]")
-//	private List<WebElementFacade> usernameEven;
 
 	@FindBy(xpath="//*[@class='rt-tr-group']/div/div[2]")
 	private List<WebElementFacade> emailList;
@@ -84,29 +72,6 @@ public class ManageAdminPage extends PageObject{
 			return false;
 		else
 			return true;
-//		for(int i=0; i<emailOdd.size(); i++)
-//			{
-//				if(emailOdd.get(i).getText().equals(email))
-//				{
-//					count+=1;
-//					indexOdd=i;
-//				}
-//				
-//			}
-//			
-//		for(int j=0; j<emailEven.size(); j++)
-//		{
-//			if(emailEven.get(j).getText().equals(email))
-//			{
-//				count+=1;
-//				indexEven = j;
-//			}
-//			
-//		}
-//		if (count==1)
-//			return true;
-//		else 
-//			return false;
 		}
 
 	
@@ -126,18 +91,6 @@ public class ManageAdminPage extends PageObject{
 			else 
 				return false;
 		}
-//		if(count!=1)
-//			return false;
-//		else
-//		{
-//			if((usernameOdd.get(indexOdd).getText().equals(username)) || (usernameEven.get(indexEven).getText().equals(username)))
-//			{
-//				return true;
-//			}
-//			else
-//				return false;
-//		}
-	
 	}
 	
 }

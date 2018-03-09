@@ -17,6 +17,6 @@ public class WorkingMetricsPage extends PageObject{
 	 * @param createAccountBtn 
 	 */
 	public void click_create_an_account_button() {
-		createAccountBtn.waitUntilPresent().click();
+		createAccountBtn.waitUntilPresent().waitUntilPresent().click();
 	}
 }

@@ -22,8 +22,8 @@ public class UpdatePasswordPage extends PageObject{
 	 * @param password
 	 */
 	public void update_pass(String password) {
-		createPassword.waitUntilPresent().type(password);
-		retypeCreatePassword.waitUntilPresent().type(password);
+		createPassword.waitUntilPresent().waitUntilPresent().type(password);
+		retypeCreatePassword.waitUntilPresent().waitUntilPresent().type(password);
 		nextBtn.waitUntilPresent().click();
 	}
 	

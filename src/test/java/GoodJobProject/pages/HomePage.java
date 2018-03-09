@@ -50,7 +50,6 @@ public class HomePage extends PageObject{
 	public void click_Manage_button() {
 		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
 		excutor.executeScript("arguments[0].click();", manageBtn);
-		//manageBtn.waitUntilPresent().click();
 	}
 
 	public void click_user_menu() {
@@ -60,7 +59,6 @@ public class HomePage extends PageObject{
 
 	public void click_profile_link() {
 		waitABit(5000);
-		//withAction().moveToElement(userProfile).click().perform();
 		userProfile.click();
 	}
 
