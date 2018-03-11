@@ -1,16 +1,12 @@
 package GoodJobProject;
 
-import java.awt.AWTException;
 import java.util.ArrayList;
 import java.util.List;
-
-import javax.validation.constraints.AssertTrue;
-
-import org.jruby.ir.operands.Array;
 
 import junit.framework.Assert;
 import net.thucydides.core.annotations.Steps;
 import GoodJobProject.steps.CompanyInformationAuthorStep;
+import GoodJobProject.steps.CompanyLocatorAuthorStep;
 import GoodJobProject.steps.CompanyUsersAuthorStep;
 import GoodJobProject.steps.EmailStep;
 import GoodJobProject.steps.HomeStep;
@@ -24,7 +20,7 @@ import GoodJobProject.steps.ManageStep;
 import GoodJobProject.steps.ManageUserProfileStep;
 import GoodJobProject.steps.ReportStep;
 import GoodJobProject.steps.UpdatePasswordStep;
-import GoodJobProject.steps.UploadEmployedDataStep;
+import GoodJobProject.steps.UploadEmployeeDataStep;
 import GoodJobProject.steps.WorkingMetricsStep;
 import GoodJobProject.steps.models.ListUserAccount;
 import cucumber.api.DataTable;
@@ -59,9 +55,6 @@ public class GoodJobDefinition {
 	UpdatePasswordStep updatePassStep;
 
 	@Steps
-	UploadEmployedDataStep uploadEmployeeDataStep;
-
-	@Steps
 	ReportStep reportStep;
 
 	@Steps
@@ -81,6 +74,12 @@ public class GoodJobDefinition {
 	
 	@Steps
 	CompanyUsersAuthorStep comUserAuthorStep;
+	
+	@Steps
+	CompanyLocatorAuthorStep comLocatorAuthorStep;
+	
+	@Steps
+	UploadEmployeeDataStep uploadEmployeeDataStep;
 	
 	@Given("^open page with url is \"([^\"]*)\"$")
 	public void the_user_is_on_the_GoodJob_login_page(String url)throws Exception {
@@ -278,10 +277,10 @@ public class GoodJobDefinition {
 		case "Company":
 			Assert.assertEquals(item, homeStep.get_upload_employee_data_menu());
 			break;
-		case "Company Manager":
-			Assert.assertEquals(item,
-					uploadEmployeeDataStep.get_compelente_step_title());
-			break;
+//		case "Company Manager":
+//			Assert.assertEquals(item,
+//					uploadEmployeeDataStep.get_compelente_step_title());
+//			break;
 		case "Company User":
 			Assert.assertEquals(item,
 					reportStep.get_social_impact_scorecard_title());
@@ -356,22 +355,19 @@ public class GoodJobDefinition {
 	    comUserAuthorStep.add_new_user(firstName, lastName, email);
 	}
 
-//	@When("^Next to Location screens\\.$")
-//	public void next_to_Location_screens() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@When("^Next to Report screen\\.$")
-//	public void next_to_Report_screen() throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
-//
-//	@Then("^The title is \"([^\"]*)\" should show on on Report screens\\.$")
-//	public void the_title_is_should_show_on_on_Report_screens(String arg1) throws Exception {
-//	    // Write code here that turns the phrase above into concrete actions
-//	    throw new PendingException();
-//	}
+	@When("^Next to Location screens\\.$")
+	public void next_to_Location_screens() throws Exception {
+	    comUserAuthorStep.click_next_button();
+	}
+
+	@When("^Next to Report screen\\.$")
+	public void next_to_Report_screen() throws Exception {
+	    comLocatorAuthorStep.click_next_button();
+	}
+
+	@Then("^The title is \"([^\"]*)\" should show on Upload Employee Data screens\\.$")
+	public void the_title_is_should_show_on_Upload_Employee_screens(String title) throws Exception {
+		Assert.assertEquals(title, uploadEmployeeDataStep.get_title_on_upload_employee_data());
+	}
 
 }

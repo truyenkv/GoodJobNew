@@ -9,4 +9,8 @@ public class CompanyUsersAuthorStep extends ScenarioSteps{
 	public void add_new_user(String firstName, String lastName, String email) {
 		comUserAuthorPage.add_new_users(firstName, lastName, email);
 	}
+
+	public void click_next_button() {
+		comUserAuthorPage.click_on_next_button();
+	}
 }
