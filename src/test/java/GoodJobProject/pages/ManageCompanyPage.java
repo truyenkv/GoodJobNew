@@ -48,7 +48,6 @@ public class ManageCompanyPage extends PageObject{
 	@FindBy(xpath="//span[@class='glyphicon glyphicon-ok']")
 	private WebElementFacade okIcon;
 	
-	
 	/**
 	 * Input required fields on Manage company
 	 * 
@@ -56,9 +55,10 @@ public class ManageCompanyPage extends PageObject{
 	 */
 	public void input_required_fields(String companyName, String companyIdentifier) {
 		companyNameInput.waitUntilPresent().type(companyName);
+		einInput.waitUntilPresent().type(companyIdentifier);
 		try {
 			Robot r = new Robot();
-			einInput.waitUntilPresent().type(companyIdentifier);
+			einInput.click();
 			r.keyPress(KeyEvent.VK_TAB);
 			r.keyRelease(KeyEvent.VK_TAB);
 			waitABit(2000);
@@ -108,6 +108,7 @@ public class ManageCompanyPage extends PageObject{
 		cityInput.waitUntilPresent().type(city);
 		stateInput.waitUntilPresent().type(state);
 		postalCodeInput.waitUntilPresent().type(zip);
+		waitABit(2000);
 	}
 
 

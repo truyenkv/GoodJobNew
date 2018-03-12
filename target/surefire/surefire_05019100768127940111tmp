@@ -1,0 +1,7 @@
+#surefire_0
+#Mon Mar 12 18:05:18 ICT 2018
+user.dir=D\:\\GitHub\\GoodJobNew
+webdriver.driver=chrome
+webdriver.chrome.driver=D\:\\Driver\\chromedriver.exe
+localRepository=C\:\\Users\\kvtruyen\\.m2\\repository
+basedir=D\:\\GitHub\\GoodJobNew
