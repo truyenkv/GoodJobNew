@@ -108,7 +108,6 @@ public class ManageCompanyPage extends PageObject{
 		cityInput.waitUntilPresent().type(city);
 		stateInput.waitUntilPresent().type(state);
 		postalCodeInput.waitUntilPresent().type(zip);
-		waitABit(2000);
 	}
 
 
@@ -118,7 +117,10 @@ public class ManageCompanyPage extends PageObject{
 	 * @param save
 	 */
 	public void click_Save_button() {
-		saveBtn.waitUntilPresent().click();
+		waitABit(2000);
+		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
+		excutor.executeScript("arguments[0].click();", saveBtn);
+		//saveBtn.waitUntilPresent().click();
 	}
 
 

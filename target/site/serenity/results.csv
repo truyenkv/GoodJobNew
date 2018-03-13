@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Create User Account","Create Admin Account successfully","SUCCESS","2018-03-13T10:58:44.412+07:00[Asia/Bangkok]","0.0","85.56"
+"Create User Account","Create Admin-Archived account","SUCCESS","2018-03-13T11:00:09.978+07:00[Asia/Bangkok]","0.0","69.32"
+"Create User Account","Create Admin-Duplicate account","SUCCESS","2018-03-13T11:01:19.297+07:00[Asia/Bangkok]","0.0","62.45"
+"Create User Account","Update User Profile","SUCCESS","2018-03-13T11:02:21.747+07:00[Asia/Bangkok]","0.0","97.07"
+"Create User Account","Create Company account","SUCCESS","2018-03-13T11:03:58.823+07:00[Asia/Bangkok]","0.0","125.36"
