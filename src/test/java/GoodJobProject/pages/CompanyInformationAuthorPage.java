@@ -16,6 +16,7 @@ public class CompanyInformationAuthorPage extends PageObject{
 	private WebElementFacade nextBtn;
 
 	public void update_information() {
+		waitABit(3000);
 		companyNameInput.waitUntilPresent().click();
 		try {
 			Robot r = new Robot();
