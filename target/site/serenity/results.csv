@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Company User account checks login on first time.","User login in first time","SUCCESS","2018-03-24T17:11:51.601+07:00[Asia/Bangkok]","0.0","20.14"
+"Create User Account","Create Admin Account successfully","ERROR","2018-03-29T17:56:23.327+07:00[Asia/Bangkok]","0.0","61.02"
+"Create User Account","Create Admin-Archived account","ERROR","2018-03-29T17:57:24.355+07:00[Asia/Bangkok]","0.0","50.15"
+"Create User Account","Create Admin-Duplicate account","ERROR","2018-03-29T17:58:14.514+07:00[Asia/Bangkok]","0.0","50.95"
+"Create User Account","Update User Profile","ERROR","2018-03-29T17:59:05.469+07:00[Asia/Bangkok]","0.0","100.23"
+"Create User Account","Create Company account","ERROR","2018-03-29T18:00:45.706+07:00[Asia/Bangkok]","0.0","51.23"
