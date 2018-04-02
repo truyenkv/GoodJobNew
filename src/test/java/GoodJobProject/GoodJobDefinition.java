@@ -333,6 +333,11 @@ public class GoodJobDefinition {
 	public void join_Working_Metrics_screen_via_link_is(String token) throws Exception {
 		welcomeStep.open_site(token);
 	}
+	
+	@When("^Add another location, Address is \"([^\"]*)\", city is \"([^\"]*)\", State is \"([^\"]*)\" and Zip is \"([^\"]*)\"$")
+	public void add_another_location_Address_is_city_is_State_is_and_Zip_is(String address, String city, String state, String zip) throws Exception {
+		comLocatorAuthorStep.add_new_location(address, city, state, zip);
+	}
 
 
 	@When("^Click on Create an account on Working Metrics screen\\.$")

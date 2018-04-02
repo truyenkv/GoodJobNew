@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Company Manage account checks login on first time." skipped="0" tests="1" time="110.65" timestamp="2018-04-02T15:42:10.361+07:00[Asia/Bangkok]"><testcase name="Admin authorise and add user successfully"><failure message="The following error occurred: Expected enabled element was not enabled&#10;Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'&#10;System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">The following error occurred: Expected enabled element was not enabled
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown</failure><system-err>The following error occurred: Expected enabled element was not enabled
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown&#13;
+GoodJobProject.pages.CompanyUsersAuthorPage.click_on_next_button(CompanyUsersAuthorPage.java:59)&#13;
+GoodJobProject.steps.CompanyUsersAuthorStep.click_next_button(CompanyUsersAuthorStep.java:14)&#13;
+GoodJobProject.GoodJobDefinition.next_to_Location_screens(GoodJobDefinition.java:360)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

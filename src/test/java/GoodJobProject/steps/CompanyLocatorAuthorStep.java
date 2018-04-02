@@ -9,5 +9,9 @@ public class CompanyLocatorAuthorStep extends ScenarioSteps{
 	public void click_next_button() {
 		comLocationAuthorPage.click_next_button();
 	}
+
+	public void add_new_location(String address, String city, String state, String zip) {
+		comLocationAuthorPage.add_location(address, city, state, zip);
+	}
 	
 }

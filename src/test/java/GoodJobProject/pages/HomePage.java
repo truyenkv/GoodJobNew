@@ -48,6 +48,7 @@ public class HomePage extends PageObject{
 	}
 
 	public void click_Manage_button() {
+		waitABit(2000);
 		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
 		excutor.executeScript("arguments[0].click();", manageBtn);
 	}
