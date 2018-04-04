@@ -53,13 +53,13 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 1],
                 
                 ['Pending', 0],
                 
                 ['Ignored/Skipped', 0],
                 
-                ['Failing', 1],
+                ['Failing', 0],
                 
                 ['Errors',  0],
                 ['Compromised',  0]
@@ -92,10 +92,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 / 1 tests passed' },
+                {label: '1 / 1 tests passed' },
                 {label: '0 / 1 tests pending'},
                 {label: '0 / 1 tests not executed'},
-                {label: '1 / 1 tests failed'},
+                {label: '0 / 1 tests failed'},
                 {label: '0 / 1 errors'},
                 {label: '0 / 1 compromised tests'}
             ]
@@ -103,13 +103,13 @@
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0],
+                ['Passing', 1],
                 
                 ['Pending', 0],
                 
                 ['Ignored', 0],
                 
-                ['Failing', 1],
+                ['Failing', 0],
                 
                 ['Errors', 0],
                 ['Compromised', 0],
@@ -143,10 +143,10 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 / 1 tests passed (0% of all test steps)' },
+                {label: '1 / 1 tests passed (1% of all test steps)' },
                 {label: '0 / 1 tests pending'},
                 {label: '0 / 1 tests not executed'},
-                {label: '1 / 1 tests failed (1% of all test steps)'},
+                {label: '0 / 1 tests failed (0% of all test steps)'},
                 {label: '0 / 1 errors (0% of all test steps)'}
             ]
         });
@@ -216,7 +216,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-04-2018 15:44</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 03-04-2018 18:11</span>
     <br style="clear:left"/>
 </div>
 <div class="clr"></div>
@@ -236,18 +236,9 @@
 
                     <span class="test-count"> |
                         1
-                            <a href="afe04bad9cada8424705d89d698998e270e52a860a47fb916d7e2f2a7ecfc3cd.html">unsuccessful</a>
+                            <a href="0d9c18706075d39b2acf0139d9ef25ee06164ae86d3e831d7d60e4a8fde3a13f.html">passed</a>
                         
-                    </span>(
-                    <span class="test-count">
-                        1
-                            <a href="81ae4acfa01dcb038570ead54d005951404c7b4db9a64de4312b3195983d0895.html">failed</a>
-                        ,
                     </span>
-                    <span class="test-count">
-                        0
-errors
-                    </span>)
 
                 
 
@@ -299,8 +290,8 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>1</td>
-            <td>0 (0%)</td>
             <td>1 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -315,8 +306,8 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>1</td>
-            <td>0 (0%)</td>
             <td>1 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -378,8 +369,8 @@ errors
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>1</td>
-            <td>0 (0%)</td>
             <td>1 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -394,8 +385,8 @@ errors
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>1</td>
-            <td>0 (0%)</td>
             <td>1 (100%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
@@ -445,27 +436,27 @@ errors
                         </thead>
                         <tbody>
 
-                            <tr class="test-FAILURE">
-                                <td><span class="summary-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">FAILURE</span></td>
-                                <td class="FAILURE-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="d7f0eafda08a1188a044ee33cedb6fefae5f8b3f70b98d76d956ea23a109b10a.html" class="ellipsis"
-                                           title="Admin authorise and add user successfully Element should be enabled exception: ...">
+                                           title="Admin authorise and add user successfully ">
                                             Admin authorise and add user successfully
                                                 <span class="related-issue-title"></span>
                                         </a>
                                     </div>
                                 </td>
 
-                                <td class="FAILURE-text">9</td>
+                                <td class="SUCCESS-text">9</td>
 
 
-                                <td class="FAILURE-text" data-sort="2018-04-02 15:42:10">15:42:10</td>
+                                <td class="SUCCESS-text" data-sort="2018-04-03 18:09:32">18:09:32</td>
 
-                                <td class="FAILURE-text">110.65</td>
+                                <td class="SUCCESS-text">110.07</td>
                             </tr>
                         </tbody>
                     </table>

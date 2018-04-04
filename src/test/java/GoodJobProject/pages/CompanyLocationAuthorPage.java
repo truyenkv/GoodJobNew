@@ -23,6 +23,9 @@ public class CompanyLocationAuthorPage extends PageObject{
 	@FindBy(xpath="//button[contains(text(),'Add another location')]")
 	private WebElementFacade addLocationBtn;
 	
+	@FindBy(xpath="//*[@class='glyphicon glyphicon-ok']")
+	private WebElementFacade okIcon;
+
 	
 	public void click_next_button() {
 		nextBtn.waitUntilPresent().click();
@@ -35,5 +38,7 @@ public class CompanyLocationAuthorPage extends PageObject{
 		cityField.waitUntilPresent().sendKeys(city);
 		stateField.waitUntilPresent().sendKeys(state);
 		zipField.waitUntilPresent().sendKeys(zip);
+		waitABit(2000);
+		okIcon.waitUntilPresent().click();
 	}
 }
