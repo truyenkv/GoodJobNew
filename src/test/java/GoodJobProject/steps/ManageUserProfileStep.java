@@ -31,4 +31,9 @@ public class ManageUserProfileStep extends ScenarioSteps{
 		return manageUserProfilePage.get_err_message();
 	}
 
+	public String get_confirm_message() {
+		// TODO Auto-generated method stub
+		return manageUserProfilePage.get_confirm();
+	}
+
 }

@@ -26,9 +26,7 @@ public class ManageAdminPage extends PageObject{
 	private List<WebElementFacade> userList;
 	
 	int count = 0;
-	int indexOdd = -1, indexEven = -1;
 	int index = -1;
-	String emailtepm = "";
 	/**
 	 * click on Add User button
 	 * 
@@ -72,7 +70,7 @@ public class ManageAdminPage extends PageObject{
 			return false;
 		else
 			return true;
-		}
+	}
 
 	
 	/**

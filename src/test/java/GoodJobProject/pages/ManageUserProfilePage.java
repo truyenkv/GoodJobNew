@@ -27,6 +27,10 @@ public class ManageUserProfilePage extends PageObject {
 	private WebElementFacade errMess;
 	
 	
+	@FindBy(xpath="//*[@class='modal-body']")
+	private WebElementFacade confirmMess;
+	
+	
 	/**
 	 * Update First Name 
 	 * 
@@ -81,6 +85,11 @@ public class ManageUserProfilePage extends PageObject {
 
 	public String get_err_message() {
 		return errMess.waitUntilPresent().getText();
+	}
+
+
+	public String get_confirm() {
+		return confirmMess.getText();
 	}
 
 

@@ -374,5 +374,10 @@ public class GoodJobDefinition {
 	public void the_title_is_should_show_on_Upload_Employee_screens(String title) throws Exception {
 		Assert.assertEquals(title, uploadEmployeeDataStep.get_title_on_upload_employee_data());
 	}
+	
+	@Then("^Confirmation popup should shows \"([^\"]*)\"$")
+	public void confirmation_popup_should_shows(String confirmMess) throws Exception {
+	    Assert.assertEquals(confirmMess, manageUserProfileStep.get_confirm_message());
+	}
 
 }

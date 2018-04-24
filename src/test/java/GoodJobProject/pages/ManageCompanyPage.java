@@ -48,6 +48,13 @@ public class ManageCompanyPage extends PageObject{
 	@FindBy(xpath="//span[@class='glyphicon glyphicon-ok']")
 	private WebElementFacade okIcon;
 	
+	
+	@FindBy(xpath="//*[@id='react-select-9--value']")
+	private WebElementFacade Sector;
+	
+	
+	
+	
 	/**
 	 * Input required fields on Manage company
 	 * 
@@ -56,6 +63,7 @@ public class ManageCompanyPage extends PageObject{
 	public void input_required_fields(String companyName, String companyIdentifier) {
 		companyNameInput.waitUntilPresent().type(companyName);
 		einInput.waitUntilPresent().type(companyIdentifier);
+		waitABit(1000);
 		try {
 			Robot r = new Robot();
 			einInput.click();

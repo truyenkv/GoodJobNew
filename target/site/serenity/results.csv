@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Company Manage account checks login on first time.","Admin authorise and add user successfully","SUCCESS","2018-04-03T18:09:32.235+07:00[Asia/Bangkok]","0.0","110.07"
+"Company User account checks login on first time.","User login in first time","SUCCESS","2018-04-24T10:23:58.605+07:00[Asia/Bangkok]","0.0","66.46"
