@@ -1,10 +1,10 @@
 package GoodJobProject.steps;
 
-import GoodJobProject.pages.basePage;
+import GoodJobProject.pages.Common;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class baseStep extends ScenarioSteps{
-	basePage basePage;
+	Common basePage;
 	
 	public void open_browser_with_url(String url)
 	{

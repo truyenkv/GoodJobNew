@@ -5,9 +5,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
 public class CompanyLocationAuthorPage extends PageObject{
-	@FindBy(xpath="//button[contains(text(),'Next')]")
-	private WebElementFacade nextBtn;
-	
+		
 	@FindBy(xpath="//*[@class='rt-tr-group'][last()]/div/div[2]/input")
 	private WebElementFacade addressField;
 
@@ -23,12 +21,10 @@ public class CompanyLocationAuthorPage extends PageObject{
 	@FindBy(xpath="//button[contains(text(),'Add another location')]")
 	private WebElementFacade addLocationBtn;
 	
-	@FindBy(xpath="//*[@class='glyphicon glyphicon-ok']")
-	private WebElementFacade okIcon;
-
+	
 	
 	public void click_next_button() {
-		nextBtn.waitUntilPresent().click();
+		Common.nextBtn.waitUntilPresent().click();
 	}
 
 	public void add_location(String address, String city, String state,	String zip) {
@@ -39,6 +35,6 @@ public class CompanyLocationAuthorPage extends PageObject{
 		stateField.waitUntilPresent().sendKeys(state);
 		zipField.waitUntilPresent().sendKeys(zip);
 		waitABit(2000);
-		okIcon.waitUntilPresent().click();
+		Common.okIcon.waitUntilPresent().click();
 	}
 }

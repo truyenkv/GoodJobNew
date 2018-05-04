@@ -64,11 +64,10 @@ public class ManageAdminPage extends PageObject{
 			{
 				count+=1;
 				index=i;
+				if(count!=1)
+					return false;
 			}
 		}
-		if(count!=1)
-			return false;
-		else
 			return true;
 	}
 

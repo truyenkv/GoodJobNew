@@ -6,6 +6,7 @@ D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManageCompanyPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\WorkingMetricsPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\models\ListUserAccount.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\CompanyUsersAuthorStep.java
+D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\Common.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\CompanyInformationAuthorPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\DefinitionTestSuite.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManageUserProfilePage.java
@@ -25,7 +26,6 @@ D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ReportPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManageCompaniesPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\LoginStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ReportStep.java
-D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\basePage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\pages\ManagePartnerPage.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\EmailStep.java
 D:\GitHub\GoodJobNew\src\test\java\GoodJobProject\steps\ManageCompaniesStep.java

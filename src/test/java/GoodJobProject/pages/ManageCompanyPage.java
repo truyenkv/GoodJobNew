@@ -30,8 +30,8 @@ public class ManageCompanyPage extends PageObject{
 	
 	private WebElementFacade emailInput;
 	
-	@FindBy(xpath="//button[contains(text(),'Save')]")
-	private WebElementFacade saveBtn;
+//	@FindBy(xpath="//button[contains(text(),'Save')]")
+//	private WebElementFacade saveBtn;
 	
 	@FindBy(xpath="//input[@aria-activedescendant='react-select-4--value']")
 	private WebElementFacade sectorDrop;
@@ -127,8 +127,7 @@ public class ManageCompanyPage extends PageObject{
 	public void click_Save_button() {
 		waitABit(2000);
 		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
-		excutor.executeScript("arguments[0].click();", saveBtn);
-		//saveBtn.waitUntilPresent().click();
+		excutor.executeScript("arguments[0].click();", Common.saveBtn);
 	}
 
 

@@ -12,10 +12,8 @@ Feature: Login to GoodJob
    
   Examples:
   	|role				|email											|password			|dashboad				|page									|
-  	|Admin 			|truyen.kieu.10@yopmail.com	|Cdbently2408^|Welcome Admin	|Companies1						|
-  	|Company		|company.tr.02@yopmail.com	|Cdbently2408^|Welcome Company|Upload Employee Data	|
-  	|Partner		|partner.tr.01@yopmail.com	|Cdbently2408^|Welcome Partner|Dashboard						|
-  
+  	|Admin 			|cd.001@yopmail.com					|11111111xx@X |Welcome Truyen	|Companies						|
+
     
 
   

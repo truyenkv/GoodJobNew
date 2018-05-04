@@ -22,11 +22,7 @@ public class CompanyUsersAuthorPage extends PageObject{
 	@FindBy(xpath="//button[contains(text(),'Add a user')]")
 	private WebElementFacade addAUser;
 	
-	@FindBy(xpath="//button[contains(text(),'Next')]")
-	private WebElementFacade nextBtn;
 
-	@FindBy(xpath="//*[@class='glyphicon glyphicon-ok']")
-	private WebElementFacade okIcon;
 	
 	@FindBy(xpath="//span[contains(text(),'Manager')]")
 	private WebElementFacade roleOption;
@@ -51,12 +47,12 @@ public class CompanyUsersAuthorPage extends PageObject{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		okIcon.waitUntilPresent().click();		
+		Common.okIcon.waitUntilPresent().click();		
 	}
 
 
 	public void click_on_next_button() {
-		nextBtn.waitUntilPresent().click();
+		Common.nextBtn.waitUntilPresent().click();
 		
 	}
 	

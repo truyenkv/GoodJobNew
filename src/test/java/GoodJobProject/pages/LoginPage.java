@@ -1,5 +1,7 @@
 package GoodJobProject.pages;
 
+import java.io.IOException;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -7,7 +9,9 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Wait;
 
-public class LoginPage extends PageObject {
+import com.opera.core.systems.runner.inprocess.ScreenCapture;
+
+public class LoginPage extends PageObject{
 
 	private WebElementFacade loginEmail; 
 
@@ -28,6 +32,7 @@ public class LoginPage extends PageObject {
 	}
 
 	public void click_Login_button() {
-		loginBtn.waitUntilPresent().click();		
+		loginBtn.waitUntilPresent().click();	
+		
 	}
 }

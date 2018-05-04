@@ -17,8 +17,8 @@ public class ManageUserProfilePage extends PageObject {
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
 	private WebElementFacade cancelBtn;
 	
-	@FindBy(xpath="//button[contains(text(),'Save')]")
-	private WebElementFacade saveBtn;
+//	@FindBy(xpath="//button[contains(text(),'Save')]")
+//	private WebElementFacade saveBtn;
 	
 	@FindBy(xpath="//button[contains(text(),'Enable')]")
 	private WebElementFacade enableBtn;
@@ -69,7 +69,7 @@ public class ManageUserProfilePage extends PageObject {
 	 * @param saveBtn
 	 */
 	public void click_save() {
-		saveBtn.waitUntilPresent().click();
+		Common.saveBtn.waitUntilPresent().click();
 	}
 
 	

@@ -1,7 +1,6 @@
 GoodJobProject\pages\ManagePartnerPage.class
 GoodJobProject\steps\ManageAdminStep.class
 GoodJobProject\steps\ManageCompaniesStep.class
-GoodJobProject\pages\basePage.class
 GoodJobProject\pages\CompanyInformationAuthorPage.class
 GoodJobProject\pages\ManageCompanyPage.class
 GoodJobProject\pages\ManagePartnerProfilePage.class
@@ -37,3 +36,4 @@ GoodJobProject\steps\ManageCompanyStep.class
 GoodJobProject\steps\WorkingMetricsStep.class
 GoodJobProject\pages\LoginPage.class
 GoodJobProject\steps\ManageUserProfileStep.class
+GoodJobProject\pages\Common.class
