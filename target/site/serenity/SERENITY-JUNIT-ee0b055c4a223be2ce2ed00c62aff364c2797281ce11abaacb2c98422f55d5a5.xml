@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Company Manage account checks login on first time." skipped="0" tests="1" time="84.09" timestamp="2018-05-22T19:37:16.885+07:00[Asia/Bangkok]"><testcase name="Upload file base on Year - Period."><failure message="The following error occurred: Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)&#10;Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'&#10;System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'&#10;System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">The following error occurred: Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown</failure><system-err>The following error occurred: Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
+System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown&#13;
+GoodJobProject.pages.UploadEmployeeDataPage.click_on_Next_button(UploadEmployeeDataPage.java:38)&#13;
+GoodJobProject.steps.UploadEmployeeDataStep.click_on_Next_button(UploadEmployeeDataStep.java:14)&#13;
+GoodJobProject.GoodJobDefinition.next_to_Provide_employee_data_tab(GoodJobDefinition.java:391)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

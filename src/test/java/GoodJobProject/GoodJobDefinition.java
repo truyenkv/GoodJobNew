@@ -379,5 +379,59 @@ public class GoodJobDefinition {
 	public void confirmation_popup_should_shows(String confirmMess) throws Exception {
 	    Assert.assertEquals(confirmMess, manageUserProfileStep.get_confirm_message());
 	}
+	
+	@When("^Open the Upload Employee Data screen$")
+	public void open_the_Upload_Employee_Data_screen() throws Exception {
+	    uploadEmployeeDataStep.click_on_uploadEmployeeData_menu();
+	}
 
+	
+	@When("^Next to Provide employee data tab\\.$")
+	public void next_to_Provide_employee_data_tab() throws Exception {
+	    uploadEmployeeDataStep.click_on_Next_button();
+	}
+	
+	@When("^Select the Quater and upload file \"([^\"]*)\"$")
+	public void select_the_Quater_and_upload_file(String filePath) throws Exception {
+	    //uploadEmployeeDataStep.select_quarter();
+	    uploadEmployeeDataStep.upload_file(filePath);
+	}
+
+
+	@When("^Next to Provide baseline employee data tab\\.$")
+	public void next_to_Provide_baseline_employee_data_tab() throws Exception {
+		uploadEmployeeDataStep.click_on_Next_button();
+	}
+
+	@When("^Upload file \"([^\"]*)\"$")
+	public void upload_file(String filePath) throws Exception {
+		uploadEmployeeDataStep.upload_file(filePath);
+	}
+
+	@When("^Next to Review employee data tab$")
+	public void next_to_Review_employee_data_tab() throws Exception {
+		uploadEmployeeDataStep.click_on_Next_button();
+	}
+
+	@When("^Click on Upload button$")
+	public void click_on_Upload_button() throws Exception {
+	    uploadEmployeeDataStep.click_upload_button();
+	}
+
+	@Then("^The system should be navigated to \"([^\"]*)\" screen$")
+	public void the_system_should_be_navigated_to_screen(String title) throws Exception {
+	    Assert.assertEquals(title, uploadEmployeeDataStep.get_title_after_uploadfile());
+	}
+	
+	@Then("^The message \"([^\"]*)\"$")
+	public void the_message(String warningMess) throws Exception {
+	    Assert.assertEquals(warningMess, uploadEmployeeDataStep.get_warning_message());
+	}
+
+	@When("^Upload file to year is \"([^\"]*)\" and Period is \"([^\"]*)\"$")
+	public void upload_file_to_year_is_and_Period_is(String year, String period) throws Exception {
+	    Assert.assertEquals(true, uploadEmployeeDataStep.determined_the_year(year));
+	    Assert.assertEquals(true, uploadEmployeeDataStep.determined_the_period(period));
+	    uploadEmployeeDataStep.click_upload_icon();
+	}
 }
