@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="87.206" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="GoodJobProject.DefinitionTestSuite" time="97.028" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_144\jre\bin"/>
@@ -66,65 +66,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Upload file base on Year - Period." classname="Company Manage account checks login on first time." time="83.734">
-    <error message="The following error occurred: Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)&#10;Build info: version: &apos;3.7.0&apos;, revision: &apos;2321c73&apos;, time: &apos;2017-11-02T22:22:35.584Z&apos;&#10;System info: host: &apos;KVTRUYEN&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: driver.version: unknown" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
-The following error occurred: Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
-Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
-System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-Caused by: org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)
-Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'
-System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: driver.version: unknown
-</error>
-    <system-out><![CDATA[XXX Created runtime cucumber.runtime.RuntimeOptions@34f5090e
-7
-]]></system-out>
-    <system-err><![CDATA[[main] INFO net.serenitybdd.core.Serenity - &amp#27;[36m
-
--------------------------------------------------------------------------------------
-     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
-    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
-   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
-    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
-.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
-|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
-                                                                                     
- News and tutorials at http://www.serenity-bdd.info                                  
- Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
- Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
--------------------------------------------------------------------------------------
-&amp#27;[0m
-[main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Company Manage account checks login on first time.
-[main] INFO net.serenitybdd.core.Serenity - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: Upload file base on Year - Period.
--------------------------------------------------------------------(company-manage-account-checks-login-on-first-time.;upload-file-base-on-year---period.)
-Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 26344
-Only local connections are allowed.
-May 22, 2018 7:37:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
-[main] ERROR net.serenitybdd.core.Serenity - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: Upload file base on Year - Period.
---------------------------------------------------------------------------
-[main] ERROR net.serenitybdd.core.Serenity - TEST FAILED AT STEP Click on next button
-[main] ERROR net.serenitybdd.core.Serenity - The following error occurred: Expected condition failed: waiting for Common.nextBtn to be present (tried for 5 second(s) with 100 MILLISECONDS interval)Build info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknownBuild info: version: '3.7.0', revision: '2321c73', time: '2017-11-02T22:22:35.584Z'System info: host: 'KVTRUYEN', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'Driver info: driver.version: unknown
-]]></system-err>
-  </testcase>
+  <testcase name="Upload file base on Year - Period." classname="Company Manage account checks login on first time." time="93.973"/>
 </testsuite>

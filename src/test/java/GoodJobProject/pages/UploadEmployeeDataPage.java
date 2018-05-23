@@ -3,6 +3,8 @@ package GoodJobProject.pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -23,7 +25,7 @@ public class UploadEmployeeDataPage extends PageObject{
 	@FindBy(xpath="//*[@class='rt-tr-group']/div/div[2]")
 	private List<WebElementFacade> periodList;
 	
-	@FindBy(xpath="//*[@class='rt-tr-group']/div/div[5]")
+	@FindBy(xpath="//*[@class='rt-tr-group']/div/div[5]/div/span")
 	private List<WebElementFacade> uploadIconList;
 
 	List<Integer> listIndex = new ArrayList<Integer>();
@@ -80,6 +82,10 @@ public class UploadEmployeeDataPage extends PageObject{
 			}
 		}
 
+		for(Integer index : listIndex)
+		{
+			System.out.println(index);
+		}
 		if(listIndex.size()==0)
 			return false;
 		return true;
@@ -109,7 +115,9 @@ public class UploadEmployeeDataPage extends PageObject{
 
 	public void click_upload_icon() {
 		waitABit(4000);
-		uploadIconList.get(periodIndex).click();
+		//uploadIconList.get(periodIndex).click();
+		JavascriptExecutor excutor = (JavascriptExecutor)getDriver();
+		excutor.executeScript("arguments[0].click();", uploadIconList.get(periodIndex));
 	}
 	
 	

@@ -51,7 +51,6 @@ public class UploadEmployeeDataStep extends ScenarioSteps{
 
 	public void click_upload_icon() {
 		uploadEmployeeDataPage.click_upload_icon();
-		
 	}
 
 }

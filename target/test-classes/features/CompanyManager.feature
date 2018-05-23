@@ -42,7 +42,7 @@ Feature: Company Manage account checks login on first time.
    Scenario: Upload file base on Year - Period.
    Given The user login "http://goodjobs-dev.dynagility.us/login" by "bently.c2@yopmail.com" and "12345678xx@X" successfully
    When Open the Upload Employee Data screen
-   And Upload file to year is "2016" and Period is "2nd Quarter"
+   And Upload file to year is "2017" and Period is "2nd Quarter"
    And Next to Provide employee data tab.
    And Upload file "D:\UploadTemplate_Q4_2013.xlsx"
    And Next to Review employee data tab
